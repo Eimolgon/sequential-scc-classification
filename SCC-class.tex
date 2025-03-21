@@ -256,6 +256,42 @@ Lorem ipsum ...
 
 \section{Single-bicycle crash anatomy}
 
+% \begin{tikzpicture}[grow cyclic, text width=2.7cm, align=flush center,
+% 	level 1/.style={level distance=6cm,sibling angle=90},
+% 	level 2/.style={level distance=4cm,sibling angle=45},
+%         level 3/.style={level distance=2cm,sibling angle=45}]
+\begin{tikzpicture}[grow cyclic, align=flush center,
+    level 1/.style={level distance=6cm}, 
+    level 2/.style={level distance=4cm},
+    level 3/.style={level distance=2cm}]
+    \node{Crash}
+        child[grow = north east]{ 
+            node{Pitch-over}
+            child[grow = north east]{
+                node{No external perturbation}
+                }
+            child[grow = south east]{
+                node{External perturbation}
+                }
+            }
+        child[grow = south]{
+            node{Roll-over}
+            child[grow = east]{
+                node{High-side \\ Low-side}
+                child[grow = north east]{
+                node{No external perturbation}
+                    }
+                child[grow = south east]{
+                    node{External perturbation}
+                    }
+                }
+            }
+        ;
+\end{tikzpicture}
+
+
+
+
 I was riding my bicycle and I crashed. Why? Because I lost control. What does 
 it mean? \textit{explain controllability}. When does it happen? 
 \textit{when task demand surpases rider capability}. What increases the task
