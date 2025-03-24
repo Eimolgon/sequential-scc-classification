@@ -62,6 +62,9 @@ At last, would be useful to identify the intended manoeuvre prior to the crash s
 4. Start / Stop (Low-speed scenarios).
 5. Unplanned turning / avoidance.
 
+**Difference between categorization and classification**
+[Here](https://english.stackexchange.com/questions/379039/categorization-vs-classification)
+
 
 ### Jason:
 
