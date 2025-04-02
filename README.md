@@ -66,6 +66,17 @@ At last, would be useful to identify the intended manoeuvre prior to the crash s
 [Here](https://english.stackexchange.com/questions/379039/categorization-vs-classification)
 
 
+- The available literature tries to capture the characteristics of single actor-
+bicycle crashes that allow to cluster them by some simmilarities. However, these
+approaches neglect the neuro-physiological factors of the rider, which are
+expected to play a decisive role in the outcome of the critical situation.
+
+For this reason, in this Bicycle dynamics-based crash classification, we include
+rider factors that will be studied in the future to understand how and why a
+critical situation results in a crash
+
+
+
 ### Jason:
 
 - [ ] slide for colloquial, slip for tyre dynamics
