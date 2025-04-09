@@ -15,6 +15,9 @@
 \usetikzlibrary{mindmap, trees}
 \usepackage{siunitx}
 \usepackage{xcolor}
+\usepackage{rotating}
+\usepackage{threeparttable}
+
 
 
 \begin{document}
@@ -292,15 +295,14 @@ Lorem ipsum ...
 
 
 
-I was riding my bicycle and I crashed. Why? Because I lost control. What does 
-it mean? \textit{explain controllability}. When does it happen? 
-\textit{when task demand surpases rider capability}. What increases the task
-demand? ... and pre-crash scenarios suppose ain exponential increase of task
-demand. So, how the 'normal' behaviour of the bicycle does look like?
-Naturalistic data shows that it looks like this
-\textit{range of non-crashing states}. It seems like the crash is somehow given
-by the human capabilities, which are constrained by human limits. What are
-those human limits?
+I was riding my bicycle and I crashed.
+Why? Because I lost control.
+What does it mean? \textit{explain controllability}.
+When does it happen? \textit{when task demand surpases rider capability}.
+What increases the task demand? ... and pre-crash scenarios suppose ain exponential increase of task demand.
+So, how the 'normal' behaviour of the bicycle does look like? Naturalistic data shows that it looks like this \textit{range of non-crashing states}.
+It seems like the crash is somehow given by the human capabilities, which are constrained by human limits.
+What are those human limits?
 
 
 
@@ -351,17 +353,72 @@ Bicycle riding task from human perspective encompasses maintaining balance, stab
 
 \section{Available literature}
 
+% Put the footnotes here https://www.overleaf.com/learn/latex/Footnotes -> See the three part table!
 
 \begin{center}
-    \begin{tabular}{c|c|c|c|c|c}
-        Author      & Country       & Data origin       & Share of SABC*        & Classification        & Main type (\%) \\
-        \hline; \hline
-        \cite{Alg22}    & Sweden    & -                 & 48 - 95\%             & Crash characteristics & Skidding (26\%) \\
-        \cite{Bec19}    & Australia & Hospital data     & 48\%                  & Mechanisms            & Avoidance braking \\
-        \cite{Boe17}    & Netherlands& Ambulance and police reports& 80\%       & Crash type            & Object collision \\
-
-    \end{tabular}
+    \begin{sidewaystable}
+        \begin{threeparttable}
+            \begin{tabular}{c|c|c|c|c|c}
+                \textbf{Author} & \textbf{Country} & \textbf{Data origin} & \textbf{Share of SABC}\tnote{1} & \textbf{Classification} & \textbf{Main type (\%)} \\
+                \hline \hline
+                {\small \cite{Alg22}}   & Sweden        & -                & 48 - 95\%\tnote{2} & Crash characteristics     & Skidding (26\%) \\
+                {\small\cite{Bec19}}    & Australia     & Hospital data                 & 48\%      & Mechanisms                & Avoidance braking \\
+                {\small\cite{Boe17}}    & Netherlands   & Ambulance and police reports  & 80\%      & Crash type                & Object collision \\
+                {\small\cite{Bou13}} & -  & Hospital and police data   & \textgreater 50\%\tnote{2} & Collision/No-collision & Loss of control (80\%) \\
+                {\small\cite{Gil21a}}   & Ireland       & Self-made survey              & 29\%      & Causes and factors        & Slippery roads \\
+                {\small\cite{Her18}}    & Switzerland   & Survey                        & -         & Mechanisms and factors    & Skidding (31\%) \\
+                {\small\cite{Meu20}}    & -             & Hospital data                 & 39\%      & -                         & - \\
+                {\small\cite{Sch12}}    & Netherlands   & -                   & -         & Mechanisms                & Riding off the road (21\%) \\
+                {\small\cite{Sch15}}    & International & -                             & 60 - 95\%\tnote{2} & -                         & - \\
+                {\small\cite{Sch17}}    & Netherlands   & Police report                 & -         & -                         & - \\
+                {\small\cite{Sch18}}    & Netherlands   & -                             & 68\%\tnote{3} / 77\%\tnote{4} & -                      & - \\
+                {\small\cite{Utr20}}    & Finland       & Insurance data                & -         & Mechanisms                & Skidding (47\%) \\
+                {\small\cite{Utr23a}}   & -             & -                   & 52 - 85\% & -                         & Loss of control or skidding \\
+                {\small\cite{Utr23b}}   & Finland & Crash institute data     & 35.2\%\tnote{5}  & Factors and mechanisms    & Riding off the road (71.9\%) \\
+                {\small\cite{Van16}}    & -     & Insurance data        & 31\%      & Human factors             & Riding off the road (21\%)
+            \end{tabular}
+            \vspace{10mm}
+            \begin{tablenotes}
+                \small
+                \item [1] Of total bicycle crashes.
+                \item [2] Of total cyclist hospital admission.
+                \item [3] Normal bicycles.
+                \item [4] Electric bicycles.
+                \item [5] Of fatal bicycle crashes.
+            \end{tablenotes}
+        \end{threeparttable}
+        \caption{Literature with statistics about single-actor bicycle crashes.}
+    \end{sidewaystable}
 \end{center}
+
+
+\begin{sidewaytable}
+    \begin{threeparttable}
+        \centering
+        \small
+        \begin{tabular}{c|c|c|c|c|c|c|c}
+            \textbf{\cite{Alg22}} & \textbf{\cite{Bec19}} & \textbf{\cite{Boe17}} & \textbf{\cite{Her18}} & \textbf{\cite{Gil21a}} & \textbf{\cite{Sch12}} & \textbf{\cite{Sch21}} & \textbf{\cite{Utr20}} \\
+            \hline \hline
+            Road surface &&&&&&& \\
+            On/off the bike &&&&&&& \\
+            Caught in track &&&&&&& \\
+            Object on the road &&&&&&& \\
+            Bicycle malfunction &&&&&&& \\
+            Skidding on ice &&&&&&& \\
+            Skidding on leaves &&&&&&& \\
+            Stationary object &&&&&&& \\
+            Loss of balance &&&&&&& \\
+            Evasive manoeuvre &&&&&&& \\
+            Curb stones&&&&&&& \\
+            Braking &&&&&&& \\
+            Other &&&&&&& 
+        \end{tabular}
+    \end{threeparttable}
+    \caption{Classifications in the literature.}
+\end{sidewaystable}
+
+
+
 
 
 \section{The Bicycle} \label{sec: bike}
