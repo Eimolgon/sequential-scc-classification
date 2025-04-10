@@ -17,6 +17,7 @@
 \usepackage{xcolor}
 \usepackage{rotating}
 \usepackage{threeparttable}
+\usetikzlibrary{shapes.rectangle, arrows.meta, positioning, fit, backgrounds}
 
 
 
@@ -28,7 +29,7 @@
         \vspace*{1cm}
             
         \LARGE
-        \textbf{Single-Actor bicycle Crashes: A Bicycle Dynamics-Based Classification}
+        \textbf{Single-Actor bicycle Crashes: A review of the current classifications and analyses}
          
         \vspace{1cm}
         \large
@@ -159,48 +160,17 @@ Despite some modern electric bicycles include advanced suspension systems, heavy
 
 \subsection{Research target}
 
-This review seeks to assess what is the current state of the art regarding the boundaries of bicycle controllability and/or rideability in critical situtions.
+The aim of this literature review is to provide a wider view at some concepts that are not completely clear regarding single-actor bicycle crash analysis.
 %
-We collectively call these boundary conditions `Point of No Return', which we expect to be the circumstances where rideability is lost.
-%
-Thus, the questions that shape this research are:
-
-% Ajay: include human controller in the questions
+These concepts are closely related with the following questions that shape this article:
 
 \begin{enumerate}
-    \item Is there a clear concept regarding the Point of No Return?
-        % Include in the body the other approaches to the point of no return.
-    \item How the concept of point of no return has been defined and used in the literature?
-    \item Are their existing strategies that could be employed to avoid reaching it? % Rethink if I will keep this.
-    \item What are the dynamics of a bicycle in a SBC?
-    \item How these dynamics are related to human capabilities and limitations?
+    \item What are the common approaches to study and analyse human-bicycle dynamics and control in crash scenarions?
+    \item Is there a classification of crashes that captures the particular behaviour of the human-bicycle system?
+    \item Is there single-actor bicycle crash data that is useful to study the dynamics of these events?
+    \item What are the standarised concepts in the field? (Name, crash sequence, ...)
 \end{enumerate}
 
-From here, it is expected to clarify what are the next objectives to explore in SBC analysis.
-%%
-
-% ----- Evaluate if this section remains -----
-\subsection{Importance of the knowledge about riding boundaries}
-
-
-The classical assessment of accident-induced injuries relies on passive safety, i.e. barriers, helmets, safety cells, soft impact surfaces, and a long list of devices and technologies focused on reduce damage in the event of humans colliding with objects \citep{Sav19}.
-%
-
-
-%
-In this category, we encounter Antilock Braking System (ABS), stability control and steering assitance, most of them implemented in automobiles.
-%
-% INCLUDE SHORT DEFINITION OF THE SYSTEMS.
-%
-The common mode of operation among all of these systems, is the automated ability of detecting a critical situation and correcting or assisting human response to recover the control of the system.
-%
-Since the implementation of stability control in cars, the risk of single-vehicle accidents was reduced by 31\% \citep{Lyc15}.
-%
-Moreover, \cite{Teo22} describes a 22\% reduction in fatal crashes per year with motorcyles that equip ABS.
-%
-Therefore, understanding what are the boundaries of riding and control in critical situations when riding a bicycle is crucial to continue evolving active safety systems that one day will be part of normal bicycles.
-
-% ----- ------ ------ ----- -----
 
 
 The article is structured as follows, a brief review about most important contributions in bicycle dynamics and control is presented in Section \ref{sec: bike}.
@@ -216,84 +186,53 @@ Finally, discussion and conclusions on the research are presented in Sections \r
 
 \section{Methods}
 
-INCLUDE HERE AJAY'S COMMENTS
-
-\subsection{Search strategy}
-
-The initial query for the broad range search on October 2024 was:
+The literature search was made in Google Scholar and Dimensions database in October 2024.
+*
+The interest relied on studies that analysed the dynamics of single-track vehicle crashes, which include bicycles, motorcycles and scooters.
+%
+Therefore, the initial query for the broad range search on October 2024 was:
 
     (bicycle OR bike OR two-wheel* OR single-track OR "two wheel*" OR "single track") AND (crash OR collision OR accident OR fall).
+
+
+The results of the search provided the main articles in the field, however, we used `snowballing' methodology to complement the search.
 %
-
-It was used in Dimesions database along with more focused entries in Google Scholar, such as:
-
-    Human AND (fall OR balance).
+This approach was particularly useful to cover base concepts that are not always clarified.
 
 
-Snowballing
+\subsection{Inclusion and exclusion criteria}
 
-
-
-\subsection{Elegibility criteria}
-
-Lorem ipsum ...
-
-\subsubsection{Inclusion criteria}
+The inclusion criteria for the snowballing technique was:
 
 \begin{itemize}
     \item The study presented statistics related to single bicycle crashes.
     \item The study takes into account the dynamics of the bicycle for the crash analysis.
-    \item Studies concerning human control to balance their body standing, on a tight rope, on a wheelchair \texit{wheelie} or on a bicycle.
+    \item Studies concerning human control of vehicles.
     \item Studies that explain the techniques to control a bicycle.
     \item Analyses on bicycle dynamics that explain its rideability and controllability.
 \end{itemize}
 
+On the other hand, the exclusion of articles was based on the following criteria: 
 
-\subsubsection{Exclusion criteria}
+\begin{itemize}
+    \item Studies focused only on injury outcomes.
+    \item Analyses of crashes of bicycles with other road users.
+    \item Articles in a language different than English.
+\end{itemize}
 
-- Studies focused only on injury output.
-- Analyses of crashes of bicycles with other road users.
-- Point of no return in psychology studies.
-- Only articles in english.
+
+\subsubsection{Some remarks on crashes with other road users} % Is this worthy to put here?
 
 
-\section{Single-bicycle crash anatomy}
-
-% \begin{tikzpicture}[grow cyclic, text width=2.7cm, align=flush center,
-% 	level 1/.style={level distance=6cm,sibling angle=90},
-% 	level 2/.style={level distance=4cm,sibling angle=45},
-%         level 3/.style={level distance=2cm,sibling angle=45}]
-\begin{tikzpicture}[grow cyclic, align=flush center,
-    level 1/.style={level distance=6cm}, 
-    level 2/.style={level distance=4cm},
-    level 3/.style={level distance=2cm}]
-    \node{Crash}
-        child[grow = north east]{ 
-            node{Pitch-over}
-            child[grow = north east]{
-                node{No external perturbation}
-                }
-            child[grow = south east]{
-                node{External perturbation}
-                }
-            }
-        child[grow = south]{
-            node{Roll-over}
-            child[grow = east]{
-                node{High-side \\ Low-side}
-                child[grow = north east]{
-                node{No external perturbation}
-                    }
-                child[grow = south east]{
-                    node{External perturbation}
-                    }
-                }
-            }
-        ;
-\end{tikzpicture}
+Bicycle crashes can be clustered in four categories like \cite{Gil24}, classifying them according to the nature of the other road user.
+%
+In these categories, we find bicycle-bicycle, bicycle-motorised vehicle, bicycle-pedestrian and single-actor bicycle crashes.
+%
+The categories including other road users are out of the scope of this review since those perturbations act as an active and uncontrollable and unpredictable perturbation on the human-bicycle system.
 
 
 
+\section{Results}
 
 I was riding my bicycle and I crashed.
 Why? Because I lost control.
@@ -306,7 +245,7 @@ What are those human limits?
 
 
 
-In the most basic understanding of a single-bicycle crash, this event is the result of the rider losing control of the vehicle.
+In the most basic understanding of a single-actor bicycle crash, this event is the result of the rider losing control of the vehicle.
 %
 \cite{Ful05} describes the loss of control as a relation between task demand and rider capability, when the task demand surpases the rider capability, the rider loses control and the crash occurs.
 %
@@ -332,9 +271,10 @@ In general, the theory shows an almost constant driver capability balancing with
 
 \subsection{Task demand increasing factors}
 
-In this work, we will call triggering events to all pre-crash conditions that exponentially increase the task demand and cause a crash.
+When the task demand increases exponentially, possibly leading to a loss of control, it is understood as a critical scenario \cite{}.
 %
-% STATISTICS HERE
+Critical scenarios and factors that contribute to them are known in the literature.
+%
 
 
 
@@ -344,17 +284,6 @@ In this work, we will call triggering events to all pre-crash conditions that ex
 
 Bicycle riding task from human perspective encompasses maintaining balance, stabilise the vehicle, and then following a desired trajectory.
 %
-
-
-\subsection{Human capability}
-
-
-
-
-\section{Available literature}
-
-% Put the footnotes here https://www.overleaf.com/learn/latex/Footnotes -> See the three part table!
-
 \begin{center}
     \begin{sidewaystable}
         \begin{threeparttable}
@@ -392,30 +321,30 @@ Bicycle riding task from human perspective encompasses maintaining balance, stab
 \end{center}
 
 
-\begin{sidewaytable}
-    \begin{threeparttable}
-        \centering
-        \small
-        \begin{tabular}{c|c|c|c|c|c|c|c}
-            \textbf{\cite{Alg22}} & \textbf{\cite{Bec19}} & \textbf{\cite{Boe17}} & \textbf{\cite{Her18}} & \textbf{\cite{Gil21a}} & \textbf{\cite{Sch12}} & \textbf{\cite{Sch21}} & \textbf{\cite{Utr20}} \\
-            \hline \hline
-            Road surface &&&&&&& \\
-            On/off the bike &&&&&&& \\
-            Caught in track &&&&&&& \\
-            Object on the road &&&&&&& \\
-            Bicycle malfunction &&&&&&& \\
-            Skidding on ice &&&&&&& \\
-            Skidding on leaves &&&&&&& \\
-            Stationary object &&&&&&& \\
-            Loss of balance &&&&&&& \\
-            Evasive manoeuvre &&&&&&& \\
-            Curb stones&&&&&&& \\
-            Braking &&&&&&& \\
-            Other &&&&&&& 
-        \end{tabular}
-    \end{threeparttable}
-    \caption{Classifications in the literature.}
-\end{sidewaystable}
+%\begin{sidewaystable}
+%    \begin{threeparttable}
+%        \centering
+%        \small
+%        \begin{tabular}{c|c|c|c|c|c|c|c}
+%            \textbf{\cite{Alg22}} & \textbf{\cite{Bec19}} & \textbf{\cite{Boe17}} & \textbf{\cite{Her18}} & \textbf{\cite{Gil21a}} & \textbf{\cite{Sch12}} & \textbf{\cite{Sch21}} & \textbf{\cite{Utr20}} \\
+%            \hline \hline
+%            Road surface & Sudden braking & Slope riding & Skidding & Infrastructure & Obstacle collision & Ride status & \\
+%            On/off the bike & Loss of controll downhill & Loss of trajectory & Crossing threshold & Road user & Ridding off lane & Collision/No-collision & \\
+%            Caught in track & Wet/slippery conditions & Crash with road object & Railway track interaction & Bicycle malfunction & Skidding & Ground hit & \\
+%            Object on the road & Other loss of control & Complex traffic situation & Obstacle collision & Other & Uneven road & Bicycle fall & \\
+%            Bicycle malfunction & Tram track interaction & - & Slipping off pedals & Multiple & Low speed & - & \\
+%            Skidding on ice & Striking pothole & - & Running off lane & - & Front wheel hit & - & \\
+%            Skidding on leaves & Striking object & - & Loss of balance & - & Abrupt steering & - & \\
+%            Stationary object & Wheel failure & - & Stopping abruptly & - & Braking & - & \\
+%            Loss of balance & Chain snapped & - & Obstacle collision roadside & - & Stunting & - & \\
+%            Evasive manoeuvre & Gearing issue & - & Not known & - & Bicycle malfunction & - & \\
+%            Curb stones & Racing & - & Other & - & Other & - & \\
+%            Braking & Animal-related & - & - & - & - & - & \\
+%            Other & Other/Unknown & - & - & - & - & - & 
+%        \end{tabular}
+%    \end{threeparttable}
+%    \caption{Classifications in the literature.}
+%\end{sidewaystable}
 
 
 
@@ -482,24 +411,6 @@ As a result, when TD increases over RC, the rider loses control of the system an
 
 
 
-\subsection{Classification of bicycle crashes} % Move this to methodology/exclusion criteria and summarise.
-
-A detailed description of the types of bicycle crashes and their conditions can be found in \citep{Dep22}.
-%
-However, in the sake of simplicity we will group them in four categories like \cite{Gil24}, focused on the interaction of the human-bicycle system with the environment:
-\begin{enumerate}
-    \item \textbf{Single Bicycle Crash (SBC):} it is when the cyclist loses the ability to control the bicycle due to falls or impacts not involving another road user.
-    \item \textbf{Bicycle-Bicycle Crash (BBC):} the crash occurs between two or more bicycles.
-    \item \textbf{Motor-Vehicle Bicycle Crash (MBC):} this category includes collisions between bicycles and motor vehicles such as cars, trucks or motorcycles. 
-    \item \textbf{Pedestrian Bicycle Crash (PBC):} interactions where the cyclist collides with a pedestrian and the outcome for the cyclist is a fall.
-\end{enumerate}
-
-
-Since the aim of the project is to find and understand the mechanisms of the human-bicycle system that cause the crash, we will focus only in SBCs.
-%
-BBC, MBC and PBC are out of the scope of the research due to they are composed mainly from an external active perturbation.
-
-
 \subsection{Single Bicycle Crashes: Types and Characteristics} % Join with table in section task demand increase
 
 % Propose a classification where all prior fit into
@@ -545,50 +456,6 @@ Collisions in the front assembly (front wheel, fork and handlebar) generate a su
 Bicycle malfunction such as chain slip can lead to rider disengagement.
 %
 At last, avoidance manoeuvres initially occurs in a open-loop control action \citep{Nug19}, which leads to excessive roll and steering rates, or in a few cases, it leads to pitch over.
-
-
-
-% Enhance explanation of why this classification and where does it come from.
-With this, we propose a classification according to the mechanisms that trigger the critical situation, which follows as:
-
-\begin{enumerate}
-    \item \textbf{Slip} 
-        \begin{enumerate}
-            \item Front wheel
-            \item Rear wheel
-        \end{enumerate}
-    \item \textbf{Pitch over}
-        \begin{enumerate}
-            \item Forward
-            \item Backward
-        \end{enumerate}
-    \item \textbf{External force (passive)}
-        \begin{enumerate}
-            \item Front frame/steering (e.g. road, kerb)
-            \item Rear frame (e.g. cross-wind)
-        \end{enumerate}
-    \item \textbf{Disengagement of the rider}
-        \begin{enumerate}
-            \item Hand
-            \item Foot
-        \end{enumerate}
-    \item \textbf{Steering} % I have doubts here, this point is open to discussion
-        \begin{enumerate}
-            \item Excessive steering angle or rate (e.g. swerve to avoid obstacle)
-            \item Steering lock (e.g. getting into a tram track)
-        \end{enumerate}
-\end{enumerate}
-
-
-After exploring the basics of bicycle dynamics and human control, it is clear that SBCs occur in scenarios where bicycle riding task goes beyond human capability.
-%
-To provide an answer to this question, the next step is to delve into human response in critial scenarios.
-%
-However, before assessing human physiology, it becomes interesting to explore what are the current approaches to these issues.
-%
-Here, ASSs play a crucial role, since they increase capability threshold in critical situations where task demand grows.
-
-
 
 \subsection{Active Safety Systems} \label{sec: assistance} 
 % See where this section can fit
