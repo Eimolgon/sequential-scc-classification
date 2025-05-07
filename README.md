@@ -25,7 +25,7 @@ Add here all commentaries that do not fit on the .tex document
 - Change slip for slide when used in colloquial context
 - Simple rules that are always beneficial -> ABS for example
 - Since the aim of the study is to analyse the dynamics of the crash, there is no substantial difference between sliding in sknow, gravel or any surface. -> To put somewhere in the mechanisms known.
-- Explain, maybe throug diagrams, that skidding or slidding occurs only when turning. -> Show high and low side crashes.
+- Explain, maybe through diagrams, that skidding or slidding occurs only when turning. -> Show high and low side crashes.
 **Difference between categorization and classification**
 [Here](https://english.stackexchange.com/questions/379039/categorization-vs-classification)
 
@@ -43,8 +43,6 @@ critical situation results in a crash
 - Gildea21a proposes a great and detailed classification but its approach to
 sliding tyres neglect the existence of high side crashes.
 
-
-- Put somewhere in the results the clarification of the name
 
 
 Final structure

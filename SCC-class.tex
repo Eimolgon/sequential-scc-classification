@@ -77,122 +77,133 @@
 
 \section{Introduction}
 
-As the cycling population increases, their exposure to crashes also increase.
-%
-Within the different crash configurations, one that stands out is the Single-Actor Bicycle Crash (SABC), due to their major share of total bicycle road accidents \cite{Weg24}.
-%
-% Jason: only true in the netherlands, you should take the results from that recent review that looks at things across many countries
-% From accident report statistics, it is known that more than 60\% of cyclist hospital admission is a consequence of SBC \citep{Sch15, Weg24}, even being underreported events \citep{Boe17, Bec19, Utr20, Sch21, Utr23}.
+% What is a SCC?
+% Why these events are important?
 
+Cycling population is on arise due to the advantages of the bicycle as a commuter vehicle.
+%
+This refers from almost free transportation and less polution to healthier lifestiles and less traffic congestion.
+%
+However, as the cycling population increases, their exposure to crashes also increase.
+%%
 
-% Ajay: Reword the way I explain the gap. Define the concept and what am I looking for.
-
-
+Regarding bicycle crashes, one configuration that stands out due to their major share on statistics are the Single-Cyclist Crashes (SCC) \cite{Weg24}.
 %
-Furthermore, in the last decade, Europe has seen a reduction in the fatality rate of total road accidents, except for bicycle crashes \citep{Sal22, Utr23, Gil24, CBS24}.
+These are events where no other road user is involved as an active perturbation, i.e. its effect does not depend on the source.
 %
-Indeed, in the Netherlands the risk of death in SBCs has not only remained constant, but increased up to 7\% \citep{Sch17}. 
+Its share ranges from 50\% to 85\% of cyclist-related hospital admissions \cite{}.
 %
-Therefore, it is clear that SBCs are a major concern among cycling safety, which needs to be assessed in order to promote the bicycle usage.
-%
-Moreover, if the attention to the necessities of cycling population is decreased, it results in a decreased bicycle usage \citep{Gu19}.
-%
-However, dynamics of SBCs are not well understood, which means a gap in the knowledge of crashing risk.
+Moreover, it is known that these events are commonly underreported \cite{Boe17, Bec19, Sch21, Utr20, Utr23}.
 %%
 
 
-Relevant challenges identified in the field are the lack of real-world data of crashes and insufficient understanding of the dynamics of human-bicycle systems in critical situations \citep{Haw13}.
+In the last decade, Europe has seen a reduction in the fatality rate of total road accidents, except for bicycle crashes \citep{CBS24, Com24, Gil24, Sal22, Utr23}.
 %
-Up to this point, most work has been done in descriptive analysis of common factors that lead to SBCs \citep{Sch11, Sch12, Sch15, Bec19, Sal22, Utr23, Gil24}.
+Indeed, in the Netherlands the risk of death in SCCs has not only remained constant, but increased up to 7\% \citep{Sch17}. 
 %
-With this statistical information, governments can proceed with policies to reduce exposure to these situations.
+Therefore, it is a matter of interest when bicycle usage is intended to be promoted and risks need to be minimised.
 %
-However, the causes that converts a critical situation into a crash are still unknown, which in fact, is the first step to detect a pre-crash scenario and then, develop safety systems.
+Furthermore, if these issues are not attended, bicycle usage can be expected to decrease \citep{Gu19}
+%
+However, the dynamics of these crashes are not well understood \cite{Haw13}. % Revise cite.
+%
+Therefore, research on the dynamics of SCCs is needed to continue developing cyclists road safety.
 %%
+
+
+
+Up to this point, most work has been done in descriptive analysis of common factors that lead to SCCs \citep{Bec19, Gil24, Her18, Sal22, Sch11, Sch12, Sch15, Utr23}.
+%
+Within these descriptive analyses we find common factors and mechanism with a major role in the crash.
+%
+However, none of these classifications take into account the particular dynamics of the bicycle.
+%
+Therefore, the aim of this article is to review current classifications and develop a bicycle dynamics based classification of SCCs.
+
+
+The importance of provide a classification based on bicycle dynamics is to highlight the challenges that are needed to overcome to continue developing the safety of the bicycles.
 
 
 
 \subsection{Key concepts}
 
-Here, we provide a short definition of the key concepts that will be used during the conceptualization of the boundaries of rider-bicycle behaviour.
+Since some concepts in this matter are not standarised, we include important definitions used in this work.
+%
+
+First, the events of interest receive different names: single-bicycle crash \cite{}, single-actor bicycle crash \cite{} and single-cyclist crash \cite{}.
+%
+On one hand, the expresion single-bicycle crash neglects the rider, making reference to a problem only oriented on the bicycle.
+%
+On the other hand, single-actor bicycle crashes assumes that there are no other actors involved in the event, which neglects indirect effects of other road users, e.g. pedestrian entering into the bike lane and triggering an avoidance manoeuvre that ends in a crash.
+%
+Therefore, for this work we adopt single-cyclist crash, due to its  reference to the rider and the bicycle as the main actors in the event and allowing other indirect actors.
 %%
 
 
-First, during this article, we will refer to the bicycle and the human coupled together in motion as a dynamical system, which is modelled by non-linear differential equations.
+Second, during this article, we will refer to the bicycle and the human coupled together in motion as a dynamical system, which is modelled by non-linear differential equations.
 %
-Assuming the rider as a controller of the system, we can identify two characteristics: \textit{controllability} and \textit{rideability}.
-%
-The former means that all system variables can be influenced by the input \citep{Sef01, Ver12}, while the latter will be assummed as the capacity of using the vehicle in its design form.
+Assuming the rider as a controller of the system, we identify the existence of \textit{controllability}, which means that all system variables can be influenced by the input \citep{Sef01, Ver12}.
 %%
 
-Second, a perturbation will be understood as any external force applied to the rider or to the bicycle, which changes the state of the system.
+
+Third, a perturbation will be understood as any external force applied to the rider or to the bicycle, which changes the state of the system.
 %
 An active perturbation is a controlled force from an external source, such as other vehicle colliding with the system.
 %
 A passive perturbation is a non-controlled force, e.g. the force excerted by road irregularities on bicycle tyres.
 %%
 
-Third, we will call a crash to any sudden and unintended event that results in a disruption of the normal and controlled motion of the human-bicycle system.
-%%
 
 % Jason: Add diagram to explain crash phases. > Contrast Park definition with this new defintion for bicycles
-
-Fourth, in the analysis of vehicular collisions, there are three phases: pre-impact motion, impact motion and post-impact motion \citep{Par01}.
+Fourth, we will call a crash to any sudden and unintended event that results in a disruption of the normal and controlled motion of the human-bicycle system.
 %
-Translating this approach to bicycle accidents, pre-crash motion encompasses the time window from the perturbation to the moment where the bicycle is no longer rideable.
+In the analysis of vehicular collisions, there are three phases: pre-impact motion, impact motion and post-impact motion \citep{Par01}.
+%
+Translating this approach to bicycle crashes, pre-crash motion encompasses the time window from the perturbation to the moment where the bicycle is no longer controllable.
 %
 Then, the crash stage begins, until the moment when the system stops its motion.
 %
-Post-crash stage results limited in SBCs, being mostly a time frame for rider movements after the bicycle stopped.
+Post-crash stage is limited in SCCs and can be assessed as the moment when the vehicle and the rider are disconnected and presenting independent motions \citep{Llo16}.
 %%
 
 
-Finally, bicycles and motorcycles share characteristics as a dynamical systems, which makes them similar for studies.
+At last, bicycles and motorcycles share characteristics as a dynamical systems, which makes them similar for studies.
 %
 In its analytical study, both are usually assumed as a four-bodies single-track vehicle \cite{Sha71, Mei07, Lot21}, with two basic degrees of freedom: roll $\varphi$ and steering $\delta$.
 %
-Both vehicles experience similar crash configurations \citep{Haw13, Ken20}, including tyre skidding, inability of control the system through the steering, excessive pitch rotation, among others later discussed in this paper.
+Both vehicles experience similar crash configurations \citep{Haw13, Ken20, Ll016}, including tyre sliding, inability of control the system through the steering, excessive pitch rotation, among others later discussed in this paper.
 %
 The main differences are the mass, the working speed range, and power input from the user, being this last what defines if the vehicle is a bicycle or a motorcycle.
 %
 Despite some modern electric bicycles include advanced suspension systems, heavy batteries and electric motors that increase overall mass, and are capable of reaching speeds up to 45 [km/h], they are still dependant on rider force for longitudinal motion.
 
 
-Why Single-Cyclist crashes and no Single-Bicycle crashes or Single-Actor bicycle crashes?
-
-    Single-bicyclce crashes inherently neglects the effect and existence of a rider.
-    Single-actor bicycle crashes sounds good and it is closer to the seek range of events but it does not fit with events like a sudden person appearing on the road causing an avoidance manoeuvre which is unsuccessful.
-    In this case, the second actor is the indirect perturbation.
-
-
-
 \subsection{Research target}
 
-The aim of this literature review is to provide a wider view at some concepts that are not completely clear regarding single-actor bicycle crash analysis.
-%
-These concepts are closely related with the following questions that shape this article:
+The questions that shape the present article are:
 
 \begin{enumerate}
     \item What are the common approaches to study and analyse human-bicycle dynamics and control in crash scenarions?
     \item Is there a classification of crashes that captures the particular behaviour of the human-bicycle system?
-    \item Is there single-actor bicycle crash data that is useful to study the dynamics of these events?
-    \item What are the standarised concepts in the field? (Name, crash sequence, ...)
+    \item Is there single-cyclist crash data that is useful to study the dynamics of these events?
 \end{enumerate}
 
 
 
-The article is structured as follows, a brief review about most important contributions in bicycle dynamics and control is presented in Section \ref{sec: bike}.
+The article is structured as follows, Section \ref{sec: results} contains the basic anatomy of a crash, explaining the required factors to occur.
 %
-The knowledge about human response in critical scenarios is reviewed in Section \ref{sec: human}.
+Additionally, we review current work on classifications and SCC characteristics, along with the main concepts on the field of bicycle dynamics.
 %
-Then, with enough background in Section \ref{sec: PNR}, we elaborate about the point of no return in critical dynamic scenarios.
+The proposed classification is developed on Section \ref{sec: newclassification}.
 %
-Finally, discussion and conclusions on the research are presented in Sections \ref{sec: discussion} and  \ref{sec: conclusion}, respectively.
-%%
+Finally, Sections \ref{sec: discussion} and \ref{sec: conclusion} present the discussion and conclusion, respectively.
 
 
 
 \section{Methods}
+
+% How are we going to create a bike-centered classification?
+
 
 The literature search was made in Google Scholar and Dimensions database in October 2024.
 *
@@ -213,7 +224,7 @@ This approach was particularly useful to cover base concepts that are not always
 The inclusion criteria for the snowballing technique was:
 
 \begin{itemize}
-    \item The study presented statistics related to single bicycle crashes.
+    \item The study presented statistics related to single-cyclist crashes.
     \item The study takes into account the dynamics of the bicycle for the crash analysis.
     \item Studies concerning human control of vehicles.
     \item Studies that explain the techniques to control a bicycle.
@@ -231,41 +242,32 @@ On the other hand, the exclusion of articles was based on the following criteria
 
 \subsubsection{Some remarks on crashes with other road users} % Is this worthy to put here?
 
-
 Bicycle crashes can be clustered in four categories like \cite{Gil24}, classifying them according to the nature of the other road user.
 %
-In these categories, we find bicycle-bicycle, bicycle-motorised vehicle, bicycle-pedestrian and single-actor bicycle crashes.
+In these categories, we find bicycle-bicycle, bicycle-motorised vehicle, bicycle-pedestrian and single-cyclist crashes.
 %
 Categories including other road users are out of the scope of this review since those perturbations act as an active, uncontrollable and unpredictable perturbation on the human-bicycle system.
 
 
-
 \section{Results}
+
+% Why a crash occurs?
+
+% What are the common factors? Here enter the classifications.
 
 
 - Schepers classification -> what does it miss?
 - Crash motions -> Gildea, Rose and Petit.
 - Mechanisms?
+% When defining motions, highlight the motion of the rider and the motion of the bicycle and their relation.
 
 
-
-
-I was riding my bicycle and I crashed.
-Why? Because I lost control.
-What does it mean? \textit{explain controllability}.
-When does it happen? \textit{when task demand surpases rider capability}.
-What increases the task demand? ... and pre-crash scenarios suppose ain exponential increase of task demand.
-So, how the 'normal' behaviour of the bicycle does look like? Naturalistic data shows that it looks like this \textit{range of non-crashing states}.
-It seems like the crash is somehow given by the human capabilities, which are constrained by human limits.
-What are those human limits?
-
-
-
-In the most basic understanding of a single-actor bicycle crash, this event is the result of the rider losing control of the vehicle.
+In the most basic understanding of a single-cyclist crash, this event is the result of the rider losing control of the vehicle.
 %
 \cite{Ful05} describes the loss of control as a relation between task demand and rider capability, when the task demand surpases the rider capability, the rider loses control and the crash occurs.
 %
-Nevertheless, before delving into the controllability and rideability of the bicycle, it is necessary to explore the phenomena that increases the task demand over rider capabilities.
+
+% Nevertheless, before delving into the controllability and rideability of the bicycle, it is necessary to explore the phenomena that increases the task demand over rider capabilities.
 %%
 
 
@@ -285,21 +287,15 @@ In general, the theory shows an almost constant driver capability balancing with
 
 
 
-\subsection{Task demand increasing factors}
 
 When the task demand increases exponentially, possibly leading to a loss of control, it is understood as a critical scenario \cite{}.
 %
 Critical scenarios and factors that contribute to them are known in the literature.
 %
+As seen in Table \ref{tab: results}, the most repeated events are sliding, low speed riding, braking, loss of control, collision with an object and interactions with tram tracks.
 
 
 
-
-
-
-
-Bicycle riding task from human perspective encompasses maintaining balance, stabilise the vehicle, and then following a desired trajectory.
-%
 \begin{center}
     \begin{sidewaystable}
         \begin{threeparttable}
@@ -332,7 +328,8 @@ Bicycle riding task from human perspective encompasses maintaining balance, stab
                 \item [5] Of fatal bicycle crashes.
             \end{tablenotes}
         \end{threeparttable}
-        \caption{Literature with statistics about single-actor bicycle crashes.}
+        \caption{Literature with statistics about single-cyclist crashes.}
+        \label{tab: results}
     \end{sidewaystable}
 \end{center}
 
@@ -363,10 +360,21 @@ Bicycle riding task from human perspective encompasses maintaining balance, stab
 %\end{sidewaystable}
 
 
+\subsection{Single-cyclist crash classifications}
+
+- Schepers classify them according to the causes.
+- Put notes here
 
 
 
-\section{The Bicycle} \label{sec: bike}
+
+
+
+\subsection{Bicycle dynamics} \label{sec: bike}
+
+% Why are necessary to take into account the bicycle in a different way than cars or walking humans?
+
+% Bicycles are self-stable on a certain range of speed \cite{Mei07, Koo11}, and rely on human control to maintain balance outside of this range \cite{}.
 
 
 % Rewrite this thinking in a non-bike person can understand.
@@ -473,10 +481,14 @@ Bicycle malfunction such as chain slip can lead to rider disengagement.
 %
 At last, avoidance manoeuvres initially occurs in a open-loop control action \citep{Nug19}, which leads to excessive roll and steering rates, or in a few cases, it leads to pitch over.
 
+
+% Here goes the diagram
+    % Present the already known factors and questions
+    % Show the missing links
+
+
 \subsection{Active Safety Systems} \label{sec: assistance} 
 % See where this section can fit
-
-
 %\citep{Dub17} develops a bicycle that is safer to ride for old people, lower stability limits, more comfort, enhanced pedal assistance.
 
 The interest of including current active safety systems in the present review is to analyse the way they detect a critical scenario and what is the response provided to minimise risks.
@@ -687,11 +699,8 @@ In the case of external perturbations, it will be necessary to analyse the maxim
 
 \section{Discussion} \label{sec: discussion}
 
-% \section{Limitations} Is it worthy to put a limitations section? Talking about the frame rate of CCTV compared with the time window of an accident, or the test subject variability on the pitch over experiment for example.
-
-\subsection{Limitations}
-
-
+% What is the added value of this classification?
+    % Highlight gaps that will be future work.
 
 \section{Conclusion} \label{sec: conclusion}
 
