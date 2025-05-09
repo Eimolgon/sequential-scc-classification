@@ -17,6 +17,7 @@
 \usepackage{xcolor}
 \usepackage{rotating}
 \usepackage{threeparttable}
+\usepackage{lscape}
 \usetikzlibrary{shapes.rectangle, arrows.meta, positioning, fit, backgrounds}
 
 
@@ -77,8 +78,6 @@
 
 \section{Introduction}
 
-% What is a SCC?
-% Why these events are important?
 
 Cycling population is on arise due to the advantages of the bicycle as a commuter vehicle.
 %
@@ -87,7 +86,7 @@ This refers from almost free transportation and less polution to healthier lifes
 However, as the cycling population increases, their exposure to crashes also increase.
 %%
 
-Regarding bicycle crashes, one configuration that stands out due to their major share on statistics are the Single-Cyclist Crashes (SCC) \cite{Weg24}.
+Regarding bicycle crashes, one configuration that stands out due to their major share on statistics are the Single-Cyclist Crashes (SCC) \citep{Weg24}.
 %
 These are events where no other road user is involved as an active perturbation, i.e. its effect does not depend on the source.
 %
@@ -122,21 +121,22 @@ Therefore, the aim of this article is to review current classifications and deve
 
 
 The importance of provide a classification based on bicycle dynamics is to highlight the challenges that are needed to overcome to continue developing the safety of the bicycles.
-
-
+Also to better understand what are the key factors that casuse bicycle crashes and propose more effective countermeasures.
 
 \subsection{Key concepts}
 
 Since some concepts in this matter are not standarised, we include important definitions used in this work.
 %
 
-First, the events of interest receive different names: single-bicycle crash \cite{}, single-actor bicycle crash \cite{} and single-cyclist crash \cite{}.
+First, the events of interest receive different names: single-bicycle crash, single-actor bicycle crash, single-cyclist crash, among others (see Table \ref{tab: results}).
 %
 On one hand, the expresion single-bicycle crash neglects the rider, making reference to a problem only oriented on the bicycle.
 %
 On the other hand, single-actor bicycle crashes assumes that there are no other actors involved in the event, which neglects indirect effects of other road users, e.g. pedestrian entering into the bike lane and triggering an avoidance manoeuvre that ends in a crash.
 %
-Therefore, for this work we adopt single-cyclist crash, due to its  reference to the rider and the bicycle as the main actors in the event and allowing other indirect actors.
+In addition, any other denomination that includes the word `accident' is not appropiate due to the preventable nature of these events \citep{Dav01}.
+%
+Therefore, for this work we adopt single-cyclist crash, due to its  reference to the rider and the bicycle as the main actors in the event, allowing other indirect actors.
 %%
 
 
@@ -146,7 +146,7 @@ Assuming the rider as a controller of the system, we identify the existence of \
 %%
 
 
-Third, a perturbation will be understood as any external force applied to the rider or to the bicycle, which changes the state of the system.
+Third, a perturbation will be understood by its dictionary definition as any variation in the system that causes it to change its regular movement \citep{Cam25}.
 %
 An active perturbation is a controlled force from an external source, such as other vehicle colliding with the system.
 %
@@ -211,7 +211,8 @@ The interest relied on studies that analysed the dynamics of single-track vehicl
 %
 Therefore, the initial query for the broad range search on October 2024 was:
 
-    (bicycle OR bike OR two-wheel* OR single-track OR "two wheel*" OR "single track") AND (crash OR collision OR accident OR fall).
+
+    (bicycle OR bike OR two-wheel* OR single-track OR ``two wheel*'' OR ``single track'') AND (crash OR collision OR accident OR fall).
 
 
 The results of the search provided the main articles in the field, however, we used `snowballing' methodology to complement the search.
@@ -273,7 +274,7 @@ In the most basic understanding of a single-cyclist crash, this event is the res
 
 \cite{Ful05} presents the task-capability model for car drivers, which can be extrapolated to bicycle riders.
 %
-This model consider physical characteristics and knowledge of the driver on what to do under determined circumstances to define the boundaries its capability.
+This model considers physical characteristics and knowledge of the driver on what to do under determined circumstances to define the boundaries its capability.
 %
 However, this capacity is also affected by other factors related to the circumstance, such as awareness, emotion, fatigue, among others.
 %
@@ -281,7 +282,7 @@ On the other hand, task demanding elements encompass travelling speed, environme
 %
 Of these factors, the driver has direct control of the travelling speed, achieving balance between driver capacity and its awareness to the task.
 %
-While car drivers can reduce task demand by decreasing speed, this is not always the case for bicycle riders, due to the increase of user stabilisation requirements at low speeds \cite{}.
+While car drivers can reduce task demand by decreasing speed, this is not always the case for bicycle riders, due to the increase of user stabilisation requirements at low speeds \cite{Koo11, Sch13, Vla15}.
 %
 In general, the theory shows an almost constant driver capability balancing with changing task demands, which should not surpass the capability threshold.
 
@@ -297,26 +298,27 @@ As seen in Table \ref{tab: results}, the most repeated events are sliding, low s
 
 
 \begin{center}
-    \begin{sidewaystable}
+    %\begin{sidewaystable}
+    \begin{landscape}
         \begin{threeparttable}
-            \begin{tabular}{c|c|c|c|c|c}
-                \textbf{Author} & \textbf{Country} & \textbf{Data origin} & \textbf{Share of SABC}\tnote{1} & \textbf{Classification} & \textbf{Main type (\%)} \\
+            \begin{tabular}{c|c|c|c|c|c|c}
+                \textbf{Author} & \textbf{Country} & \textbf{Data origin} & \textbf{Share of SABC}\tnote{1} & \textbf{Classification} & \textbf{Main type (\%)} & \textbf{Name} \\
                 \hline \hline
-                {\small \cite{Alg22}}   & Sweden        & -                & 48 - 95\%\tnote{2} & Crash characteristics     & Skidding (26\%) \\
-                {\small\cite{Bec19}}    & Australia     & Hospital data                 & 48\%      & Mechanisms                & Avoidance braking \\
-                {\small\cite{Boe17}}    & Netherlands   & Ambulance and police reports  & 80\%      & Crash type                & Object collision \\
-                {\small\cite{Bou13}} & -  & Hospital and police data   & \textgreater 50\%\tnote{2} & Collision/No-collision & Loss of control (80\%) \\
-                {\small\cite{Gil21a}}   & Ireland       & Self-made survey              & 29\%      & Causes and factors        & Slippery roads \\
-                {\small\cite{Her18}}    & Switzerland   & Survey                        & -         & Mechanisms and factors    & Skidding (31\%) \\
-                {\small\cite{Meu20}}    & -             & Hospital data                 & 39\%      & -                         & - \\
-                {\small\cite{Sch12}}    & Netherlands   & -                   & -         & Mechanisms                & Riding off the road (21\%) \\
-                {\small\cite{Sch15}}    & International & -                             & 60 - 95\%\tnote{2} & -                         & - \\
-                {\small\cite{Sch17}}    & Netherlands   & Police report                 & -         & -                         & - \\
-                {\small\cite{Sch18}}    & Netherlands   & -                             & 68\%\tnote{3} / 77\%\tnote{4} & -                      & - \\
-                {\small\cite{Utr20}}    & Finland       & Insurance data                & -         & Mechanisms                & Skidding (47\%) \\
-                {\small\cite{Utr23a}}   & -             & -                   & 52 - 85\% & -                         & Loss of control or skidding \\
-                {\small\cite{Utr23b}}   & Finland & Crash institute data     & 35.2\%\tnote{5}  & Factors and mechanisms    & Riding off the road (71.9\%) \\
-                {\small\cite{Van16}}    & -     & Insurance data        & 31\%      & Human factors             & Riding off the road (21\%)
+                {\small \cite{Alg22}}   & Sweden        & -                & 48 - 95\%\tnote{2} & Crash characteristics     & Skidding (26\%) & SBC\tnote{6}\\
+                {\small\cite{Bec19}}    & Australia     & Hospital data                 & 48\%      & Mechanisms                & Avoidance braking & SCO\tnote{7} \\
+                {\small\cite{Boe17}}    & Netherlands   & Ambulance and police reports  & 80\%      & Crash type                & Object collision & SBC\\
+                {\small\cite{Bou13}} & -  & Hospital and police data   & \textgreater 50\%\tnote{2} & Collision/No-collision & Loss of control (80\%) &  SVBC\tnote{8}\\
+                {\small\cite{Gil21a}}   & Ireland       & Self-made survey              & 29\%      & Causes and factors        & Slippery roads & SCC\tnote{9}\\
+                {\small\cite{Her18}}    & Switzerland   & Survey                        & -         & Mechanisms and factors    & Skidding (31\%) & SVC\tnote{10}\\
+                {\small\cite{Meu20}}    & -             & Hospital data                 & 39\%      & -                         & - & SCC \\
+                {\small\cite{Sch12}}    & Netherlands   & -                   & -         & Mechanisms                & Riding off the road (21\%) & SBC\tnote{6}\\
+                {\small\cite{Sch15}}    & International & -                             & 60 - 95\%\tnote{2} & -                         & -  & SBC\\
+                {\small\cite{Sch17}}    & Netherlands   & Police report                 & -         & -                         & -  & SBC\\
+                {\small\cite{Sch18}}    & Netherlands   & -                             & 68\%\tnote{3} / 77\%\tnote{4} & -     & -  & SBC\\
+                {\small\cite{Utr20}}    & Finland       & Insurance data                & -         & Mechanisms                & Skidding (47\%)  & SBC\\
+                {\small\cite{Utr23a}}   & -             & -                   & 52 - 85\% & -                         & Loss of control or skidding & SBC \\
+                {\small\cite{Utr23b}}   & Finland & Crash institute data     & 35.2\%\tnote{5}  & Factors and mechanisms    & Riding off the road (71.9\%) & SBC\\
+                {\small\cite{Van16}}    & -     & Insurance data        & 31\%      & Human factors             & Riding off the road (21\%) & SBC
             \end{tabular}
             \vspace{10mm}
             \begin{tablenotes}
@@ -326,11 +328,17 @@ As seen in Table \ref{tab: results}, the most repeated events are sliding, low s
                 \item [3] Normal bicycles.
                 \item [4] Electric bicycles.
                 \item [5] Of fatal bicycle crashes.
+                \item [6] Single-Bicycle Crash.
+                \item [7] Single-Cyclist Only.
+                \item [8] Single-Vehicle Bicycle Crash.
+                \item [9] Single-Cyclist Crash.
+                \item [10] Single-Vehicle Crash.
             \end{tablenotes}
         \end{threeparttable}
         \caption{Literature with statistics about single-cyclist crashes.}
         \label{tab: results}
-    \end{sidewaystable}
+    \end{landscape}
+    %\end{sidewaystable}
 \end{center}
 
 

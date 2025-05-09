@@ -44,6 +44,7 @@ critical situation results in a crash
 sliding tyres neglect the existence of high side crashes.
 
 
+- Use Beck2004 to explain pitch over crashes.
 
 Final structure
 
