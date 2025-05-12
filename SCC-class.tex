@@ -17,7 +17,7 @@
 \usepackage{xcolor}
 \usepackage{rotating}
 \usepackage{threeparttable}
-\usepackage{lscape}
+\usepackage{pdflscape}
 \usetikzlibrary{shapes.rectangle, arrows.meta, positioning, fit, backgrounds}
 
 
@@ -311,7 +311,7 @@ As seen in Table \ref{tab: results}, the most repeated events are sliding, low s
                 {\small\cite{Gil21a}}   & Ireland       & Self-made survey              & 29\%      & Causes and factors        & Slippery roads & SCC\tnote{9}\\
                 {\small\cite{Her18}}    & Switzerland   & Survey                        & -         & Mechanisms and factors    & Skidding (31\%) & SVC\tnote{10}\\
                 {\small\cite{Meu20}}    & -             & Hospital data                 & 39\%      & -                         & - & SCC \\
-                {\small\cite{Sch12}}    & Netherlands   & -                   & -         & Mechanisms                & Riding off the road (21\%) & SBC\tnote{6}\\
+                {\small\cite{Sch12}}    & Netherlands   & -                   & -         & Mechanisms                & Riding off the road (21\%) & SBC\\
                 {\small\cite{Sch15}}    & International & -                             & 60 - 95\%\tnote{2} & -                         & -  & SBC\\
                 {\small\cite{Sch17}}    & Netherlands   & Police report                 & -         & -                         & -  & SBC\\
                 {\small\cite{Sch18}}    & Netherlands   & -                             & 68\%\tnote{3} / 77\%\tnote{4} & -     & -  & SBC\\
@@ -340,6 +340,8 @@ As seen in Table \ref{tab: results}, the most repeated events are sliding, low s
     \end{landscape}
     %\end{sidewaystable}
 \end{center}
+% Note that using only landscape the table does not have number.
+
 
 
 %\begin{sidewaystable}
@@ -370,11 +372,24 @@ As seen in Table \ref{tab: results}, the most repeated events are sliding, low s
 
 \subsection{Single-cyclist crash classifications}
 
-- Schepers classify them according to the causes.
-- Put notes here
+- On the literature we find 3 main classifications: Schepers, Gildea and Schnee.
+
+    - Schepers considers infrastructure, rider, bicycle and other factors with their respective subclassifications.
+        - This approach is good but lack of information required for reconstruction and analysis.
+        - Seems to be centered in the factors more than in the real mechanisms.
+            - Puts bag on the handlebar as rider fault, when it should be assumed as an external perturbation.
+    - In accordance between both researchers that did the publication.
 
 
+    - Gildea uses the multilayer approach.
 
+
+    - Schnee focuses it on detecting crashes through IMUs
+        - Parameters: State of riding, collision, ground hit and tipping over.
+        - This needs definitions for the sub classes.
+
+
+Read comments on Daily/20w25 for more criteria here.
 
 
 
@@ -386,6 +401,9 @@ As seen in Table \ref{tab: results}, the most repeated events are sliding, low s
 
 
 % Rewrite this thinking in a non-bike person can understand.
+Bicycles fit into the category of single-track vehicles due to their 
+
+
 A bicycle is a \textcolor{red}{human-powered single-track vehicle}, which behaviour has been a matter of scientific interest for more than 100 years.
 %
 The now classical approach for its study considers the bicycle as a dynamical system composed of four rigid bodies: rear frame, front frame, and two wheels.
