@@ -26,8 +26,6 @@ Add here all commentaries that do not fit on the .tex document
 - Simple rules that are always beneficial -> ABS for example
 - Since the aim of the study is to analyse the dynamics of the crash, there is no substantial difference between sliding in sknow, gravel or any surface. -> To put somewhere in the mechanisms known.
 - Explain, maybe through diagrams, that skidding or slidding occurs only when turning. -> Show high and low side crashes.
-**Difference between categorization and classification**
-[Here](https://english.stackexchange.com/questions/379039/categorization-vs-classification)
 
 
 - The available literature tries to capture the characteristics of single actor-
@@ -59,6 +57,10 @@ Discussion -> What's the advantage of this approach
 Conclusion
 
 
+- I think that using the term 'Loss of control' or 'Other/Unknown' is not good,
+since all SCC are loss of control.
+
+- Put somewhere: Real-world crash data, also known as naturalistic data \cite{}
 
 ### Jason:
 

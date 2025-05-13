@@ -167,6 +167,12 @@ Post-crash stage is limited in SCCs and can be assessed as the moment when the v
 %%
 
 
+Fifth, as we are dividing the events based on objective and defined criteria, the result is a classification.
+%
+Although both concepts are used as synonyms, categorization is used for more creative and flexible divisions \cite{Jac04}.
+
+
+
 At last, bicycles and motorcycles share characteristics as a dynamical systems, which makes them similar for studies.
 %
 In its analytical study, both are usually assumed as a four-bodies single-track vehicle \cite{Sha71, Mei07, Lot21}, with two basic degrees of freedom: roll $\varphi$ and steering $\delta$.
@@ -302,22 +308,23 @@ As seen in Table \ref{tab: results}, the most repeated events are sliding, low s
     \begin{landscape}
         \begin{threeparttable}
             \begin{tabular}{c|c|c|c|c|c|c}
-                \textbf{Author} & \textbf{Country} & \textbf{Data origin} & \textbf{Share of SABC}\tnote{1} & \textbf{Classification} & \textbf{Main type (\%)} & \textbf{Name} \\
+                \textbf{Author} & \textbf{Country} & \textbf{Data origin} & \textbf{Share of SCC}\tnote{1} & \textbf{Classification} & \textbf{Main type (\%)} & \textbf{Name} \\
                 \hline \hline
-                {\small \cite{Alg22}}   & Sweden        & -                & 48 - 95\%\tnote{2} & Crash characteristics     & Skidding (26\%) & SBC\tnote{6}\\
-                {\small\cite{Bec19}}    & Australia     & Hospital data                 & 48\%      & Mechanisms                & Avoidance braking & SCO\tnote{7} \\
+                {\small \cite{Alg22}}   & Sweden        & -                & 48 - 95\%\tnote{2} & Crash characteristics     & Skidding (26\%) & SBC\tnote{7}\\
+                {\small\cite{Bec19}}    & Australia     & Hospital data                 & 48\%      & Mechanisms                & Avoidance braking & SCO\tnote{8} \\
                 {\small\cite{Boe17}}    & Netherlands   & Ambulance and police reports  & 80\%      & Crash type                & Object collision & SBC\\
-                {\small\cite{Bou13}} & -  & Hospital and police data   & \textgreater 50\%\tnote{2} & Collision/No-collision & Loss of control (80\%) &  SVBC\tnote{8}\\
-                {\small\cite{Gil21a}}   & Ireland       & Self-made survey              & 29\%      & Causes and factors        & Slippery roads & SCC\tnote{9}\\
-                {\small\cite{Her18}}    & Switzerland   & Survey                        & -         & Mechanisms and factors    & Skidding (31\%) & SVC\tnote{10}\\
+                {\small\cite{Bou13}} & -  & Hospital and police data   & \textgreater 50\%\tnote{2} & Collision/No-collision & Loss of control (80\%) &  SVBC\tnote{9}\\
+                {\small\cite{Gil21a}}   & Ireland       & Self-made survey              & 29\%      & Causes and factors        & Slippery roads & SCC\tnote{10}\\
+                {\small\cite{Her18}}    & Switzerland   & Survey                        & -         & Mechanisms and factors    & Skidding (31\%) & SVC\tnote{11}\\
                 {\small\cite{Meu20}}    & -             & Hospital data                 & 39\%      & -                         & - & SCC \\
+                {\small\cite{Ohl19}}    & Sweden        & Traffic database & 68\%\tnote{3} & Characteristics & Skidding (14\%) & SBC \\
                 {\small\cite{Sch12}}    & Netherlands   & -                   & -         & Mechanisms                & Riding off the road (21\%) & SBC\\
                 {\small\cite{Sch15}}    & International & -                             & 60 - 95\%\tnote{2} & -                         & -  & SBC\\
                 {\small\cite{Sch17}}    & Netherlands   & Police report                 & -         & -                         & -  & SBC\\
-                {\small\cite{Sch18}}    & Netherlands   & -                             & 68\%\tnote{3} / 77\%\tnote{4} & -     & -  & SBC\\
+                {\small\cite{Sch18}}    & Netherlands   & -                             & 68\%\tnote{4} / 77\%\tnote{5} & -     & -  & SBC\\
                 {\small\cite{Utr20}}    & Finland       & Insurance data                & -         & Mechanisms                & Skidding (47\%)  & SBC\\
                 {\small\cite{Utr23a}}   & -             & -                   & 52 - 85\% & -                         & Loss of control or skidding & SBC \\
-                {\small\cite{Utr23b}}   & Finland & Crash institute data     & 35.2\%\tnote{5}  & Factors and mechanisms    & Riding off the road (71.9\%) & SBC\\
+                {\small\cite{Utr23b}}   & Finland & Crash institute data     & 35.2\%\tnote{6}  & Factors and mechanisms    & Riding off the road (71.9\%) & SBC\\
                 {\small\cite{Van16}}    & -     & Insurance data        & 31\%      & Human factors             & Riding off the road (21\%) & SBC
             \end{tabular}
             \vspace{10mm}
@@ -325,14 +332,15 @@ As seen in Table \ref{tab: results}, the most repeated events are sliding, low s
                 \small
                 \item [1] Of total bicycle crashes.
                 \item [2] Of total cyclist hospital admission.
-                \item [3] Normal bicycles.
-                \item [4] Electric bicycles.
-                \item [5] Of fatal bicycle crashes.
-                \item [6] Single-Bicycle Crash.
-                \item [7] Single-Cyclist Only.
-                \item [8] Single-Vehicle Bicycle Crash.
-                \item [9] Single-Cyclist Crash.
-                \item [10] Single-Vehicle Crash.
+                \item {3} Of traffic crash database.
+                \item [4] Normal bicycles.
+                \item [5] Electric bicycles.
+                \item [6] Of fatal bicycle crashes.
+                \item [7] Single-Bicycle Crash.
+                \item [8] Single-Cyclist Only.
+                \item [9] Single-Vehicle Bicycle Crash.
+                \item [10] Single-Cyclist Crash.
+                \item [11] Single-Vehicle Crash.
             \end{tablenotes}
         \end{threeparttable}
         \caption{Literature with statistics about single-cyclist crashes.}
@@ -393,71 +401,6 @@ Read comments on Daily/20w25 for more criteria here.
 
 
 
-\subsection{Bicycle dynamics} \label{sec: bike}
-
-% Why are necessary to take into account the bicycle in a different way than cars or walking humans?
-
-% Bicycles are self-stable on a certain range of speed \cite{Mei07, Koo11}, and rely on human control to maintain balance outside of this range \cite{}.
-
-
-% Rewrite this thinking in a non-bike person can understand.
-Bicycles fit into the category of single-track vehicles due to their 
-
-
-A bicycle is a \textcolor{red}{human-powered single-track vehicle}, which behaviour has been a matter of scientific interest for more than 100 years.
-%
-The now classical approach for its study considers the bicycle as a dynamical system composed of four rigid bodies: rear frame, front frame, and two wheels.
-%
-
-% Ajay: Extend introduction to clarify the question and move this to the results to explain how bicycles behave.
-
-Assuming a rider rigidly attached to the bicycle, \cite{Mei07} presents the linearised equations of motion for the three degree of freedom model.
-%
-From these linear equations, the stability of the system is studied, showing two main modes of vibration: Weave and Capsize, which are the particular interest due to its danger to the rider when unstable.
-%
-Where weave is an oscillatory motion, from roll and steering, while capsize is a non-oscillatory inverted pendulum-like motion.
-%
-Thus, the linearised bicycle model was shown to be stable in the range of ~ 4.3 to 6.0 [\unit{\m\per\s}].
-%
-Furthermore, if tyre parameters are included, wobble mode arises \citep{Sha71, Sch13}, which is an oscillatory motion of the steering, also danger when unstable.
-%%
-
-\citep{Koo11} demonstrated that the basis of bicycles' self-stability relies on mass distribution and steering coupled to lean angle.
-%
-These results showed that self-stability is more than angular momentum of the wheels and geometric trail distance as was commonly assumed.
-%%
-
-
-Once understood the basic behaviour of the bicycle itself as a dynamical system, the intuitive next step is the control of the bicycle: How do we ride a bicycle?
-%
-The task of riding a bicycle can be simplified to maintaining system stability and following a desired trajectory.
-%
-% Ajay: redundant
-On the other hand, maintaining system stability has been assessed to understand how bicycles are controlled.
-%
-% Explain this in detail in the results section.
-In this field, it is known that most control actions come from the steering, and at low speeds knees start to play a role in the control task \citep{Koo09}.
-%
-
-
-% Extremely generic -> Switch to explain how these control models work and how they help to understand this loss of control.
-Then, research has focused in developing a human controller to model rider behaviour \citep{Sch13, Koo13}.
-%
-An aircraft pilot control simplified model was presented by \cite{Hes12}.
-%
-Additionally, \cite{Wan20} develops a controller which takes into account time delays of human body and compared the results with experimental data. 
-%
-Equally, \cite{Dia23} takes into account steering torque feedback and sensory delays to develop his rider model.
-
-
-
-The next step, after understandig the basics of human control, is to assess the handling of the bicycle.
-% This definition does not come from Jules
-In particular, \cite{Ron24} defines it as `\textit{...the ease and precision with which a human can perform a given control task}'.
-%
-With this approach, the analysis enters into the concept of Task Demand (TD) and Rider Capability (RC) \citep{Ful05}.
-%
-As a result, when TD increases over RC, the rider loses control of the system and enters in the crash scenario. 
 
 
 
@@ -508,9 +451,79 @@ Bicycle malfunction such as chain slip can lead to rider disengagement.
 At last, avoidance manoeuvres initially occurs in a open-loop control action \citep{Nug19}, which leads to excessive roll and steering rates, or in a few cases, it leads to pitch over.
 
 
-% Here goes the diagram
-    % Present the already known factors and questions
-    % Show the missing links
+
+
+\subsection{Bicycle dynamics} \label{sec: bike}
+
+% Why are necessary to take into account the bicycle in a different way than cars or walking humans?
+
+% Bicycles are self-stable on a certain range of speed \cite{Mei07, Koo11}, and rely on human control to maintain balance outside of this range \cite{}.
+
+% Explain in this section weave and wobble.
+
+% Rewrite this thinking in a non-bike person can understand.
+Bicycles fit into the category of single-track vehicles due to their 
+
+
+A bicycle is a \textcolor{red}{human-powered single-track vehicle}, which behaviour has been a matter of scientific interest for more than 100 years.
+%
+The now classical approach for its study considers the bicycle as a dynamical system composed of four rigid bodies: rear frame, front frame, and two wheels.
+%
+
+% Ajay: Extend introduction to clarify the question and move this to the results to explain how bicycles behave.
+
+Assuming a rider rigidly attached to the bicycle, \cite{Mei07} presents the linearised equations of motion for the three degree of freedom model.
+%
+From these linear equations, the stability of the system is studied, showing two main modes of vibration: Weave and Capsize, which are the particular interest due to its danger to the rider when unstable.
+%
+Where weave is an oscillatory motion, from roll and steering, while capsize is a non-oscillatory inverted pendulum-like motion.
+%
+Thus, the linearised bicycle model was shown to be stable in the range of ~ 4.3 to 6.0 [\unit{\m\per\s}].
+%
+Furthermore, if tyre parameters are included, wobble mode arises \citep{Sha71, Sch13}, which is an oscillatory motion of the steering, also danger when unstable.
+%%
+
+\citep{Koo11} demonstrated that the basis of bicycles' self-stability relies on mass distribution and steering coupled to lean angle.
+%
+These results showed that self-stability is more than angular momentum of the wheels and geometric trail distance as was commonly assumed.
+%%
+
+
+Once understood the basic behaviour of the bicycle itself as a dynamical system, the intuitive next step is the control of the bicycle: How do we ride a bicycle?
+%
+The task of riding a bicycle can be simplified to maintaining system stability and following a desired trajectory.
+%
+% Ajay: redundant
+On the other hand, maintaining system stability has been assessed to understand how bicycles are controlled.
+%
+% Explain this in detail in the results section.
+In this field, it is known that most control actions come from the steering, and at low speeds knees start to play a role in the control task \citep{Koo09}.
+%
+
+
+% Explain human control inputs to the bicycle: Steering, Power, Brakes, Hip/Saddle, position (cite Firenze to this).
+
+
+
+% Extremely generic -> Switch to explain how these control models work and how they help to understand this loss of control.
+Then, research has focused in developing a human controller to model rider behaviour \citep{Sch13, Koo13}.
+%
+An aircraft pilot control simplified model was presented by \cite{Hes12}.
+%
+Additionally, \cite{Wan20} develops a controller which takes into account time delays of human body and compared the results with experimental data. 
+%
+Equally, \cite{Dia23} takes into account steering torque feedback and sensory delays to develop his rider model.
+
+
+
+The next step, after understandig the basics of human control, is to assess the handling of the bicycle.
+% This definition does not come from Jules
+In particular, \cite{Ron24} defines it as `\textit{...the ease and precision with which a human can perform a given control task}'.
+%
+With this approach, the analysis enters into the concept of Task Demand (TD) and Rider Capability (RC) \citep{Ful05}.
+%
+As a result, when TD increases over RC, the rider loses control of the system and enters in the crash scenario. 
+
 
 
 \subsection{Active Safety Systems} \label{sec: assistance} 
@@ -532,195 +545,135 @@ It was discovered that motorcycles with ABS system reduce in more than 20\% on a
 Similarly, \citep{Teo22} found a 22\% reduction of fatal crashes per year with ABS motorcycles.
 
 
-\subsubsection{Stability Control (SC)}
 
-Stability control, in simple terms, is the evolution of ABS, additionally processing steering input to evaluate if the current trajectory matches with driver's objective \citep{Fer07}.
+\section{Bicycle dynamics-based crash classification}
+
+
+\begin{sidewaysfigure}[h]
+    \centering
+    \includegraphics[scale=1.0]{class-mindmap-v5.png}
+    \caption{Multi-layer single-cyclist crash classification. Solid lines represent already identified and known concepts in the field. Dashed lines represent gaps that are currently not discussed in the literature.}
+    \label{fig: flowchart}
+\end{sidewaysfigure}
+
+
+Linear crash causality models are widely available and already used, however, towards the aim of Zero fatalities, new models are required that consider different combination of factors to provide a more integral analysis \cite{Zha22}.
+
+
+The proposed classification is a multi-layer classification, which allows to combine the influence of different factors on the outcome of the event.
 %
-When the system detects a mismatch between desired and actual behaviour, possible control actions to counteract it are independent wheel braking, differential locking or throttle reduction.
+The classification consists of four main layers and three sub-layers, as seen in Figure \ref{fig: flowchart}.
 %
-This system have been implemented in high-end automobiles for more than 20 years, however, nowadays is a more common feature among mid-range cars.
+The main layers are made of already known concepts in the field, such as manoeuvres, excitation of the system, mechanisms of crash, and motion of the system during the crash.
 %
-The reduction of fatal rollover crashes is estimated about 70 - 90\% \citep{Fer07}
+On the other hand, sub-layers are composed of found gaps in the literature, such as human control in crash or pre-crash scenarios, characteristics of the excitation of the system and the location of the mechanism.
+
+
+The multi-layer approach allows to classify the crash event with different depth levels according to the available information.
 %
-Moreover, its impact has shown to reduce risk of single-vehicle accidents by 31\% \citep{Lyc15}.
-%%
+Thus, this gives a flexible base that can be applied in different fields, depending on the objective sought.
 
-% Reference for the first sentence.
-The possibility of developing a system like this for single-track vehicles have been scarcely explored \cite{}.
+
+The way of understanding the diagram on Figure \ref{fig: flowchart} goes:
 %
-An attempt to stabilise roll rate in critical situations evaluated the possibilities of active suspension, concluding that this method was unable to stabilise capsize \citep{Sei09}.
+The rider is executing a manoeuvre, the human-bicycle system experiences a excitation that leads to a critial situation.
 %
-Then, \cite{Sei12} talks about stabilising first the roll angle and then the yaw movement, but concluding that active stabilisation for motorcycles may not be possible with today's technology.
+Depending on the human control and the characteristics of the signal, the task demand increases above rider capability limit and a crash mechanism acts.
 %
-However, Bosch\textsuperscript{TM} developed a towards-rotation centre thrust system that prevents falls from front wheel slip \citep{And18, Tsa18}, which provides new perspectives on active safety systems.
+From the crash mechanisms, we can identify its main location, which leads to one of the characteristic motions, to finally end in a crash.
 
 
-\subsubsection{Steering Assistance}
+\subsection{Manoeuvre}
 
-% This is unnecessary if results are clear.
-\textcolor{red}{The closest implementation of stability control on bicycles that we found, is the steering assistance.}
+The first layer consists on the manoeuvre that the rider is executing at the moment of entering to the critical scenario.
 %
-\cite{Mat12} develops a steering assitance system focused on improving manoeuvrability of bicycles with child restraint seats.
+Here we understand straight-running as the action of riding a straight path, maintaining balance through minor steering adjustements and no major variations on the states of the system.
 %
-Similarly, \citep{Ali22, Ali23} present a steering assisted bicycle, which has enhanced low-speed stability and reduced lateral motion under external disturbances.
-
-
-
-\section{The Human} \label{sec: human}
-
-In the aim of characterise the PNR, we look for Rider Physiological Limits (RPLs), which are defined by \cite{Sch13} as:
+Longitudinal acceleration manoeuvres refer to braking and acceleration, both performed by the user.
 %
-`\textit{...human limitations such as the time required to sense a change in a state (time delay), the maximum force a rider can apply, the maximum speed a limb can move and its maximum acceleration.}'
-
-
-To know what are the RPLs, it is necessary to delve into human biomechanics of already analysed situations such as fall or slip in gait.
-
-
-
-\cite{The96} performed experiments to measure the time required to develop 15 [\unit{\N\m}] of torque in ankles, comparing between males and females, young and old adults.
+Steady and planned cornering refers to the situation where the rider is performing a controlled turning.
 %
-His experiments used a visual cue to trigger the response, which had a delay of 157 [\unit{\m\s}] for young males (YM) and 141 [\unit{\m\s}] for young females (YF).
+Low speed makes reference mainly to start and stop riding, where users require major balance actions to maintain the bicycle in upright position.
 %
-The time to develop 15 [Nm] was of 74 and 95 [ms] for YM and YF, respectively.
-%%
+Unplanned turning or avoidance manoeuvre is when the rider executes a suden evasive turn to avoid an obstacle.
 
 
-Likewise, in forward fall accidents, recovery step has been proved to occur at an average constant time of 293 [ms] \citep{Do99}.
-%
-However, the first reaction detected takes place around 85.4 and 100.2 [ms], which corresponds to reflex response to the fall \citep{Do82}.
+Closing paragraph
 
 
+\subsection{Excitation of the system}
 
-A different approach to forward fall accidents can be found in \citep{Van02}, where the threshold for a fall is given by tilt angle.
+Due to the complexity of the human-bicycle system, it is subjected to several excitations:
 %
-The working model was based in a rigid inverted pendulum, which suppose a limitation to results due to its simplicity compared to real biomechanics.
-%
-After all, his work concludes that the maximum angles where a recovery is possible are between 23\textdegree and 26\textdegree.
-%
-Additionally, it was found an increase of 77\% in safe walking by reducing response time from 267 to 175 [ms]. 
-
-
-
-The boundaries of slipping accidents have been studied by \cite{Str81}, where it was found that slip motion starts on average 0.05 [\unit{\s}] after heel contact in low-grip surfaces.
-%
-The maximum slip distance where the result was not a fall was 0.1 [m], along with a slip velocity of 0.5 [\unit{\m\per\s}].
-%
-With these conclusions, Strandberg indicates that the friction properties of shoe-floor interface are most important for speeds below 0.5 [\unit{\m\per\s}].
-%%
+\begin{itemize}
+    \item \textbf{Intrinsic (Int):} Makes reference to any excitation that occurs due to the behaviour of the bicycle itself.
+        %
+        Mainly composed of the modes of vibration.
+    \item \textbf{Rider (Rid):} Rider excitations are linked to rider control inputs, if they are incorrect, it leads to a failure mechanism.
+    \item \textbf{External (Ext):} This refers to any perturbation, force or change of state exerted by the environment to the system.
+\end{itemize}
 
 
-These results are consistent with findings provided by \cite{Cha02a} in his experiments of foot slip on leaned ramps.
-%
-On the one hand, it is concluded that slip distances over 14 [cm] and slip velocities above 0.8 [\unit{\m\per\s}] will end in a fall.
-%
-On the other hand, it was found a time delay between 100 and 150 [ms] before the first reaction to maintain balance.
-%
-Besides, \cite{Cha02} found a reduced slip potential by modifying lower extremity joint moments when test subjects were aware of an incoming slippery surface.
-%%
+Closing paragraph
+
+\subsection{Mechanisms of crash}
 
 
-\cite{Hau11} explored the possibilities of detecting driver intention before action using electroencephalography (EEG) and electromyography (EMG).
+Currently on the literature, we find several known mechanisnms of crashes, normally clustered as skidding, collision with obstacle, falls, braking, drifting off the road, among others.
 %
-His research focused on emergency braking, were results demonstrated that a system based on EEG and EMG detected emergency braking 130 [ms] earlier than pedal action-based systems.
+However, these `boxes' do not fit the broad spectrum of mechanisms, nor capture the dynamics involved in the events.
 %
-Similarly, \cite{Gre00} found an average time to action the brake pedal of 0.70 - 0.75 [s], with a 0.3 [s] movement time.
-%%
-
-
-Knowing that the main control input from the rider is the steering, \cite{Nug19} explored the reaction time in motorcycles in pre-collision scenarios.
-%
-He examined the relation between time to collision (TTC) and success rate in avoiding the crash, in this case, against a car obstructing the way.
-%
-With TTC = 1 [s] avoidance success was a low 6\%, however, setting TTC = 1.5 [s] probability of avoding a collision increased to 45\%.
-%
-Concerning response times, the median steer response time was 570 [ms], while the range for successful manoeuvres was between 370 and 770 [ms].
-%
-Alternatively, \cite{Sav12} talks about a maximum possible delay of 280 [ms] to success in an avoidance manoeuvre.
-%
-% Missing citation here
-Besides, it is talked \citep{} that under emergency steering, it occurs in open-loop control during initial 250 [ms] on average.
-%
-% Explain better. 
-Finally, Nugent recalls over simulators' limitations, where system delays can increase time of open-loop control up to 820 [ms]
-%%
-
-
-
-
-At last, one of the closest works to human analysis in bicycle crashes is presented by \cite{Gil24}.
-%
-This work relies on deep-learning based pose estimation and inverse kinematics to analyse kinematic forms and impact patterns on bicycle falls, specially from getting into tram tracks. 
-% What's the take away of this?
-
-
-
-% To put somewhere, vestibular sense is faster than kinesthetic sense \citep{van70, Koo13, Sch13, Wan20}.
-
-\section{Characterization of the point of no return} \label{sec: PNR}
-
-As stated in the previous section, the average response time for different accidents is around 200 - 300 [\unit{\m\s}], which gives us the first characteristic for the PNR: the time window.
-%
-In other words, the time boundary of human response is at 200 [\unit{\m\s}], which will be called the Response Threshold (RT).
-%
-If the combination of states that are outside of rideability of the bicycle occurs before of 200 [\unit{\m\s}] since the start of the motion, the system is outside of its control boundaries.
-%%
-
-
-Then, taking into account the findings from \cite{Str81} and \cite{Cha02a}, both results are consistent with the time window.
-%
-Considering the 200 [\unit{\m\s}] time, at 0.5 [\unit{\m\per\s}], the slipped distance is 0.1 [m], which is in accordance with conclusions of \cite{Str81}.
-%
-Similarly, in same time, at 0.8 [\unit{\m\s}], the slipped distance results in 0.16 [m], which would result in a fall according to \cite{Cha02a}.
-%
-Therefore, the most basic characterisation of PNR for human falls from slipping is 0.14 [m] and 0.8 [\unit{\m\per\s}] within 200 [\unit{\m\s}] since slipping starts.
-%
-When any of these states is reached before the RT, the system surpases the PNR, since any response will continue outside of the boundaries for human standing.
-%%
-
-
-Regarding forward falls, the maximum angle is 26\textdegree \citep{Van02}, while applying the RT, the maximum angular velocity results in 2.27 [\unit{\radian\per\s}].
-%%
-
-
-Concerning bicycle crashes, we could not find literature where crash beahaviour is mathematically described, the closest approach is \cite{Bre10}, where pitch-over crashes are analysed.
-%
-Britten analyses the changes in the dynamics of pitch-over accidents for different causes, comparing excessive front braking, front wheel lock by an object, and frontal crash.
-%
-Surprisingly, one of the findings was that in these kind of accidents, the front wheel lifts off before the Centre of Mass (CoM) reaches the vertical position with respect to its contact point.
-%
-The two possible reasons hypothesised are: potential energy stored in the elements of the system during the deceleration phase and inertia of the bodies in the rotation phase.
-%
-For the objective of the present article, we can highlight that, in this case, the PNR is more related to kinetic energy than to a state of the system such as pitch angle.
-%
-In other words, the PNR shows to be the moment where the front wheel loses contact with the ground.
-
-
-
-Additionally, from \cite{Lot21}, we know that the maximum possible deceleration to avoid pitch-over motion is given by the equation
-%
-\begin{equation}
-    |a_x| < \frac{(w-b)g}{h},
-\end{equation}
-%
-where $h$ and $b$ are the vertical and longitudinal CoM position, while $w$ is the wheelbase and $g$ is the gravitational acceleration.
-%
-Using the parameters from \cite{Mei07}, the maximum deceleration is 7.722 [\unit{\m\per\s\squared}] = 0.787$g$, similar to the 0.7$g$ found by \cite{Bre10}.
-%
-Therefore, we can define a boundary of bicycle longitudinal deceleration in 6,87 [\unit{\m\per\s\squared}].
+For this reason, we propose the following mechanisms based on the literature and observation from a dataset of publicly available videos \cite{}.
 %
 
 
-A braking manoeuvre over 0.7$g$ will trigger a critical situation where rear wheel lifts from the ground, thus, the time to counteract the effect will be limited to the moment when the CoM is vertically aligned with the front wheel contact point.
-
-
-
-With analogous analysis, we could explore the maximum roll rate that the rider is capable to handle and the maximum slipping related to the roll rate.
+Since the aim of this classification is to capture the behaviour of the bicycle, there is no difference between the reason why tyre friction reaches its saturation limit.
 %
-For slipping and starting accidents.
+Thus, sliding on wet road, wet leaves, ice or gravel can be simply clustered into tyre friction failure.
+
+
+\begin{itemize}
+    \item \textbf{Modes of vibration:} Oscillatory modes of vibration of the bicycle: weave and wobble.
+    \item \textbf{Rider-bicycle joint:} The rider is `attached' to the bicycle in 5 points: handlebar (both hands), pedals and seat.
+        %
+        When one or more of these deataches, the rider loses a control input to the system.
+    \item \textbf{Balance control:} This makes reference to the ability of the human of balancing the bicycle as an inverted pendulum, moving the steering to control its equilibrium.
+        %
+        When the control action is not correct, the rider reaches a point where is not possible to maintain the balance.
+        %
+        An edge-case example are bags hanging on the handlebar, these affect the steering leading to a failure on the balance control.
+    \item \textbf{Load transfer:} Longitudinal accelerations generate longitudinal load transfer, which remains unnoticed for most casual riders.
+        %
+        However, under large accelerations, this load transfer exceeds the maximum tolerable values for maintaining the bicycle in a stable configuratiopn.
+    \item \textbf{Tyre friction:} The only connection between the bicycle and the environment is on the tyre-ground contact interface.
+        %
+        Tyres have a saturation limit for the grip offered, when this limit is reached, they start to slide and the rider loses control of the vehicle.
+    \item \textbf{Contact forces:} This makes reference to any collision or force excerted on the bicycle, such as collision with an object, or steering perturbations due to uneven road surfaces.
+    \item \textbf{Aerodynamic forces:} Aerodynamics can play an imporatnt role when large wind gusts strike the rider by the side, generating a major lateral force, which can destabilise the system.
+\end{itemize}
+
+On the literature, these mechanisms and their approaches are treated as absolutes, with no distinction on the application point.
 %
-In the case of external perturbations, it will be necessary to analyse the maximum steering angle that the rider can handle.
+For this reason, we include front or rear, along with longitudinal or lateral features to complement the mechanism.
 
 
+
+Closing paragraph.
+
+
+\subsection{Characteristic motion}
+
+Currently on the literature we find three characteristic motions for two-wheeled single-track vehicle crashes \cite{Rose}, see Figure \ref{fig: crashes} for schematic representation of the motions. 
+
+\begin{itemize}
+    \item \textbf{Pitch-over:} The main characteristic of this motion is one of the wheels lifting from the ground, following a trajectory that finishes with the front wheel behind the rear wheel.
+    \item \textbf{Low-side:} The human-bicycle system follows an excessive roll rate in the same direction as at the beginning.
+    \item \textbf{High-side:} Characterised for a sudden deceleration of the wheel while in lateral motion, which leads to a violent negative roll rate with respect to the direction of the initial motion.
+\end{itemize}
+
+However, it is possible that the crash scenario does not provide a characteristic motion of the bicycle.
+%
+In those cases, it is possible to assess it from the characteristic motion of the rider on the event.
 
 
 \section{Discussion} \label{sec: discussion}
@@ -728,12 +681,15 @@ In the case of external perturbations, it will be necessary to analyse the maxim
 % What is the added value of this classification?
     % Highlight gaps that will be future work.
 
+% Mention here that rider factors on these events are a major gap on the literature.
+
+% Discuss the lack of informationa about the type of signal that should be the link between the excitation and the mechanism.
+
 \section{Conclusion} \label{sec: conclusion}
 
 \section*{Acknowledgement}
 
 
-% \bibliography{references.bib}
 \bibliography{Benjamin-Reads.bib}
 
 
