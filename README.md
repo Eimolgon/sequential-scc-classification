@@ -16,13 +16,8 @@ Add here all commentaries that do not fit on the .tex document
 - Hajdu 2016 talks about the stability radius 10.1109/TNSRE.2016.2541083
 - We identify that crash analyses do not assess properly the dynamics of the bicycles.
 
-- Table to summarise statistics
-
-|   Paper   |   Main crash type |   Frequency of SBC    | Country   |   Classifications used    |
-|-----------|-------------------|-----------------------|-----------|---------------------------|
 
 
-- Change slip for slide when used in colloquial context
 - Simple rules that are always beneficial -> ABS for example
 - Since the aim of the study is to analyse the dynamics of the crash, there is no substantial difference between sliding in sknow, gravel or any surface. -> To put somewhere in the mechanisms known.
 - Explain, maybe through diagrams, that skidding or slidding occurs only when turning. -> Show high and low side crashes.
@@ -44,23 +39,21 @@ sliding tyres neglect the existence of high side crashes.
 
 - Use Beck2004 to explain pitch over crashes.
 
-Final structure
-
----
-
-Introduction
-Methods
-Literature (Table)
-Bicycle dynamics
-Classification (Flowchart)
-Discussion -> What's the advantage of this approach
-Conclusion
-
-
 - I think that using the term 'Loss of control' or 'Other/Unknown' is not good,
 since all SCC are loss of control.
 
 - Put somewhere: Real-world crash data, also known as naturalistic data \cite{}
+
+- Can we discuss about the rate of injuries per kilometre travelled?
+If yes, I would invite to use injuries per hour travelled.
+
+
+- Urt23-Crash also put in the results the name used for SCCs, however, does not
+discuss about its meaning.
+
+- To put somewhere: Since all crashes occur due to loss of control \cite{}, 
+classifying a crash as 'loss of control' is incorrect and neglects the real cause.
+
 
 ### Jason:
 

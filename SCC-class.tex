@@ -77,14 +77,22 @@
 
 \clearpage
 
+\section{Abstract} \small
+
+
+
+
+
+
+\normalsize
 \section{Introduction}
 
 
 Cycling population is on arise due to the advantages of the bicycle as a commuter vehicle.
 %
-This refers from almost free transportation and less polution to healthier lifestiles and less traffic congestion.
+This refers from almost free transportation and less polution to healthier lifestyles and less traffic congestion.
 %
-However, as the cycling population increases, their exposure to crashes also increase \citep{}. 
+However, as the cycling population increases, their exposure to crashes also increase \citep{Com24, Utr23}. 
 %%
 
 
@@ -190,6 +198,16 @@ On the other hand, the exclusion of articles was based on the following criteria
     \item Analyses of crashes of bicycles with other road users.
     \item Articles in a language different than English.
 \end{itemize}
+
+
+\subsection{Classification}
+
+The authors created a dataset of SCCs from onlne video sources such as YouTube.
+%
+These videos were classified according to the proposed criteria, and also asked other experts on the field to classify them only using the information given in Section \ref{sec: classification}.
+%
+This resulted in a --\% agreement.
+
 
 
 \subsubsection{Some remarks on crashes with other road users} % Is this worthy to put here?
@@ -374,7 +392,7 @@ Then, we find a four-layer approach from \cite{Gil21a}, using direct causes and 
 %
 This classification is based on the direct causes, the crash scenario, common factors and the fall type.
 %
-Direct causes are the same than \cite{Sch12} and \cite{Utr20}, which create the crash scenario depending if it is composed on only or two direct causes.
+Direct causes are the same than \cite{Sch12} and \cite{Utr20}, which create the crash scenario depending if it is composed on one or two direct causes.
 %
 Then, Gildea takes into account the common factors found on the literature.
 %
@@ -399,6 +417,7 @@ Nevertheless, this classification does not provide detailed description of the c
 For this reason, he uses the proposed categorisation of \cite{Gil21a} and identifies the extent of the loss of control.
 %
 With this, a new level of category is created: minor, substantial and complete loss of control.
+%
 
 
 
@@ -409,6 +428,9 @@ His research found that when police analyse crash data, the common conclusion is
 On the other hand, when data is analysed by road engineers, they concluded that road defects contributed to 76\& of crashes.
 %
 Therefore, the classification and analysis is closely related to the intention of the study.
+
+
+
 
 
 
@@ -453,8 +475,6 @@ At last, avoidance manoeuvres initially occurs in a open-loop control action \ci
 
 % Why are necessary to take into account the bicycle in a different way than cars or walking humans?
 
-% Bicycles are self-stable on a certain range of speed \cite{Mei07, Koo11}, and rely on human control to maintain balance outside of this range \cite{}.
-
 % Explain in this section weave and wobble.
 
 % Rewrite this thinking in a non-bike person can understand.
@@ -475,26 +495,66 @@ Furthermore, if components compliance is included, wobble mode arises \citep{Sha
 %%
 
 
+Bicycles are self-stable on a certain range of speed \cite{Mei07, Koo11}, and rely on human control to maintain balance outside of this range \cite{}.
+%
+\citep{Koo11} demonstrated that the basis of bicycles' self-stability relies on mass distribution and steering coupled to lean angle, contrary to the common asumption of wheels' angular momentum main role.
+%
+Similarly, it is known that most control actions come from the steering, and at low speeds knees start to play a role in the control task \citep{Koo09}.
+%
+However, the steering is not the only control input, the rider makes use of the handlebar to control the steering, the pedals to transfer power for longitudinal motion, the saddle for roll control and brakes for deceleration.
 
-\citep{Koo11} demonstrated that the basis of bicycles' self-stability relies on mass distribution and steering coupled to lean angle.
-%
-These results showed that self-stability is more than angular momentum of the wheels and geometric trail distance as was commonly assumed.
-%%
 
 
-Once understood the basic behaviour of the bicycle itself as a dynamical system, the intuitive next step is the control of the bicycle: How do we ride a bicycle?
-%
-The task of riding a bicycle can be simplified to maintaining system stability and following a desired trajectory.
-%
-% Ajay: redundant
-On the other hand, maintaining system stability has been assessed to understand how bicycles are controlled.
-%
-% Explain this in detail in the results section.
-In this field, it is known that most control actions come from the steering, and at low speeds knees start to play a role in the control task \citep{Koo09}.
-%
+Different studies aim to understand the human control of the bicycle.
 
+These studies show that the task of riding a bicycle consists in first maintaining balance and then following a desired trajectory.
+
+The interest task here is maintaining balance, which is achieved by steering inputs ruled by the feedback on the human.
+% Explain feedback loop Jason
+
+
+In the aim of understangding human control of the bicycle, 
+
+
+Therefore, disturbances on the steering negatively affect rider's ability to maintain balance and control the bicycle.
+
+Moreover, if the steering gets locked, the main balance control input disapears, losing the \textit{controllability} of the bicycle \cite{Koo11}.
 
 % Explain human control inputs to the bicycle: Steering, Power, Brakes, Hip/Saddle, position (cite Firenze to this).
+
+
+
+Additionally, bicycles are sensitive to aerodynamic forces, which usually are studied as the resultant force on the Centre of Pressure.
+
+These forces mainly act on the lateral plane of the bicycle, exerting a force on the whole system when exposed to cross winds, and affecting steering when it acts on the front wheel \cite{}. % Search paper that Jason shared about 30% increase on steering torque with carbon wheels.
+
+
+
+
+Concerning bicycles under longitudinal acceleration, their limitation relies mainly on load transfer and tyre grip.
+
+The equations that describe acceleration and braking limit are: ...
+
+On commuter riding conditions, acceleration limit is far to be reached, different to braking limit, which for most bicycles is around 0.5g \cite{}.
+
+This deceleration can be reached through brake action or collisions on the front wheel, where both cases result in so called `pitch-over' crashes.
+
+
+
+Lastly, bicycles in cornering have a particular behaviour that have been also a matter of interest on its own.
+
+Bicycles (and motorcycles) lean into the corner to maintain the equilibrium of forces, see Figure \ref{fig: cornering}.
+
+This manoeuvres generate large lateral forces on the tyres, which is maintained by rubber adherence to the ground.
+
+It is known that tyre behaviour exhibits a saturation limit on a force threshold.
+
+The adherence depends on tyre material and road conditions, when the road is wet, the chemical adherence vanishes and grip relies only on mechanical fricion of the tyre-ground interface.
+
+Therefore, cornering bicycles are prone to experience grip loss and verse off the road or fall out of control.
+
+Furthermore, this last phenomena is the particular interest for SCC, since the crash motion will depend on the loss of grip, if it is total or partial with sudden recovery, as explained in Section \ref{sec: crash-motion.}
+
 
 
 
@@ -506,18 +566,6 @@ An aircraft pilot control simplified model was presented by \cite{Hes12}.
 Additionally, \cite{Wan20} develops a controller which takes into account time delays of human body and compared the results with experimental data. 
 %
 Equally, \cite{Dia23} takes into account steering torque feedback and sensory delays to develop his rider model.
-
-
-
-The next step, after understandig the basics of human control, is to assess the handling of the bicycle.
-% This definition does not come from Jules
-In particular, \cite{Ron24} defines it as `\textit{...the ease and precision with which a human can perform a given control task}'.
-%
-With this approach, the analysis enters into the concept of Task Demand (TD) and Rider Capability (RC) \citep{Ful05}.
-%
-As a result, when TD increases over RC, the rider loses control of the system and enters in the crash scenario. 
-
-
 
 
 
@@ -543,23 +591,27 @@ The proposed classification is a multi-layer classification, which allows to com
 %
 The classification consists of four main layers and three sub-layers, as seen in Figure \ref{fig: flowchart}.
 %
-The main layers are made of already known concepts in the field, such as manoeuvres, excitation of the system, mechanisms of crash, and motion of the system during the crash.
+The main layers are composed by already known concepts in the field, such as manoeuvres, excitation of the system, mechanisms of crash, and motion of the system during the crash.
 %
-On the other hand, sub-layers are composed of found gaps in the literature, such as human control in crash or pre-crash scenarios, characteristics of the excitation of the system and the location of the mechanism.
+On the other hand, sub-layers expose gaps found in the literature, such as human control in crash or pre-crash scenarios, characteristics of the excitation of the system and the location of the mechanism.
 
 
 The multi-layer approach allows to classify the crash event with different depth levels according to the available information.
 %
 Thus, this gives a flexible base that can be applied in different fields, depending on the objective sought.
+%
+
+
 
 
 The way of understanding the diagram on Figure \ref{fig: flowchart} goes:
 %
-The rider is executing a manoeuvre, the human-bicycle system experiences a excitation that leads to a critial situation.
+The rider is executing a manoeuvre, then, the system experiences an excitation that leads to a critial situation.
 %
 Depending on the human control and the characteristics of the signal, the task demand increases above rider capability limit and one or more crash mechanisms appear.
 %
 From the crash mechanisms, we can identify its main location, which leads to one of the characteristic motions, to finally end in a crash.
+
 
 
 \subsection{Manoeuvre}
@@ -574,7 +626,7 @@ Steady and planned cornering refers to the situation where the rider is performi
 %
 Low speed makes reference mainly to start and stop riding, where users require major balance actions to maintain the bicycle in upright position.
 %
-Unplanned turning or avoidance manoeuvre is when the rider executes a suden evasive turn to avoid an obstacle.
+Unplanned turning or avoidance manoeuvre is when the rider executes a sudden evasive turn to avoid an obstacle.
 
 
 Closing paragraph
@@ -592,6 +644,8 @@ Due to the complexity of the human-bicycle system, it is subjected to several ex
     \item \textbf{External (Ext):} This refers to any perturbation, force or change of state exerted by the environment to the system.
 \end{itemize}
 
+
+On the literature, these factors are commonly called as `bicycle', `rider' and `environmental/infrastructure', respectively.
 
 Closing paragraph
 
@@ -613,7 +667,7 @@ Thus, skidding on wet road, wet leaves, ice or gravel can be simply clustered in
 
 \begin{itemize}
     \item \textbf{Modes of vibration:} Oscillatory modes of vibration of the bicycle: weave and wobble.
-    \item \textbf{Rider-bicycle joint:} The rider is `attached' to the bicycle in 5 points: handlebar (both hands), pedals and seat.
+    \item \textbf{Rider-bicycle joint:} The rider is `attached' to the bicycle in 5 points: handlebar (both hands), pedals and saddle.
         %
         When one or more of these deataches, the rider loses a control input to the system.
     \item \textbf{Balance control:} This makes reference to the ability of the human of balancing the bicycle as an inverted pendulum, moving the steering to control its equilibrium.
