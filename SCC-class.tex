@@ -81,9 +81,6 @@
 
 
 
-
-
-
 \normalsize
 \section{Introduction}
 
@@ -114,7 +111,7 @@ Therefore, it is a matter of interest when bicycle usage is intended to be promo
 %
 Furthermore, if these issues are not attended, bicycle usage can be expected to decrease \citep{Gu19}
 %
-However, the dynamics of these crashes are not well understood \citep{Haw13}. % Revise cite.
+However, the dynamics of these crashes are not well understood and more detailed crash information is needed \citep{Haw13, Mol19}. % Revise cite Haw.
 %
 Therefore, research on the dynamics of SCCs is needed to continue developing cyclists road safety.
 %%
@@ -423,13 +420,13 @@ With this, a new level of category is created: minor, substantial and complete l
 
 \cite{Shi19} discusses how crash analysis can vary from different authors regarding what is their main focus.
 %
+\textit{`Crash cause is similar to beauty: it is in the eye of the beholder.'}
+%
 His research found that when police analyse crash data, the common conclusion is an operator fault, due to their focus on law enforcement.
 %
-On the other hand, when data is analysed by road engineers, they concluded that road defects contributed to 76\& of crashes.
+Alternatively, when data is analysed by road engineers, they concluded that road defects contributed to 76\& of crashes.
 %
 Therefore, the classification and analysis is closely related to the intention of the study.
-
-
 
 
 
@@ -479,54 +476,61 @@ At last, avoidance manoeuvres initially occurs in a open-loop control action \ci
 
 % Rewrite this thinking in a non-bike person can understand.
 
-Bicycles are human-powered two-wheeled vehicles that require lateral balance control to maintain upright position, which have been a matter of scientific interest for more than 100 years \citep{}.
+Bicycles are human-powered two-wheeled vehicles that require lateral balance control to maintain upright position, which have been a matter of scientific interest for more than 100 years \citep{Car99, Whi99}.
 %
 The now classical approach for its study considers the bicycle as a dynamical system composed of four rigid bodies: rear frame, front frame, and two wheels.
 %
 Assuming a rider rigidly attached to the bicycle, \cite{Mei07} presents the linearised equations of motion for the three degree of freedom model.
 %
-From these linear equations, the stability of the system is studied, showing two main modes of vibration: Weave and Capsize, which are the particular interest due to its danger to the rider when unstable.
+From these linear equations, the stability of the system is studied, showing two main modes of vibration: weave and capsize, which are the particular interest due to its danger to the rider when unstable.
 %
-Where weave is an oscillatory motion, from roll and steering, while capsize is a non-oscillatory inverted pendulum-like motion.
+Weave is a low-frequency oscillatory motion, from roll and steering, while capsize is a non-oscillatory inverted pendulum-like motion.
 %
-Thus, the linearised bicycle model was shown to be stable in the range of ~ 4.3 to 6.0 [\unit{\m\per\s}].
+Thus, the linearised bicycle model was shown to be stable in the range of ${\sim}4.3$ to $6.0 $[\unit{\m\per\s}].
 %
 Furthermore, if components compliance is included, wobble mode arises \citep{Sha71, Sch13}, which is an oscillatory motion of the steering, also danger when unstable.
 %%
 
 
-Bicycles are self-stable on a certain range of speed \cite{Mei07, Koo11}, and rely on human control to maintain balance outside of this range \cite{}.
+Bicycles are self-stable on a certain range of speed \cite{Mei07, Koo11}, and rely on human control to maintain balance outside of this range \cite{Koo13}.
 %
 \citep{Koo11} demonstrated that the basis of bicycles' self-stability relies on mass distribution and steering coupled to lean angle, contrary to the common assumption of wheels' angular momentum main role.
 %
 Similarly, it is known that most control actions come from the steering, and at low speeds knees start to play a role in the control task \citep{Koo09}.
 %
-However, the steering is not the only control input, the rider makes use of the handlebar to control the steering, the pedals to transfer power for longitudinal motion, the saddle for roll control and brakes for deceleration.
+However, the steering is not the only control input, the rider makes use of the pedals to transfer power for longitudinal motion, the saddle for roll control through hip torque and brakes for deceleration \citep{Moo10}. % check this one
 
 
 
 Different studies aim to understand the human control of the bicycle.
 
-These studies show that the task of riding a bicycle consists in first maintaining balance and then following a desired trajectory.
+These studies show that the task of riding a bicycle consists in first maintaining balance and then following a desired trajectory \citep{Koo13}.
 
 The interest task here is maintaining balance, which is achieved by steering inputs ruled by the feedback on the human.
 % Explain feedback loop Jason
 
 
-In the aim of understanding human control of the bicycle, 
+In the aim of understanding human control of the bicycle, \cite{Moo09} analyses it as a closed loop, where...
+
+
+
 
 
 Therefore, disturbances on the steering negatively affect rider's ability to maintain balance and control the bicycle.
-
+%
 Moreover, if the steering gets locked, the main balance control input disappears, losing the \textit{controllability} of the bicycle \cite{Koo11}.
+%
+
 
 % Explain human control inputs to the bicycle: Steering, Power, Brakes, Hip/Saddle, position (cite Firenze to this).
 
 
 
 Additionally, bicycles are sensitive to aerodynamic forces, which usually are studied as the resultant force on the Centre of Pressure.
-
-These forces mainly act on the lateral plane of the bicycle, exerting a force on the whole system when exposed to cross winds, and affecting steering when it acts on the front wheel \cite{}. % Search paper that Jason shared about 30% increase on steering torque with carbon wheels.
+%
+The longitudinal force on the centre of pressure pointing in opposition to bicycle motion is known as aerodynamic drag.
+%
+Forces acting on the lateral plane of the bicycle, such as cross winds, can affect the steering generating up to 30-times difference steering torque depending on front wheel aerodynamics \cite{Mao25}. 
 
 
 
@@ -549,7 +553,7 @@ This manoeuvres generate large lateral forces on the tyres, which is maintained 
 
 It is known that tyre behaviour exhibits a saturation limit on a force threshold.
 
-The adherence depends on tyre material and road conditions, when the road is wet, the chemical adherence vanishes and grip relies only on mechanical friction of the tyre-ground interface.
+The adherence depends on tyre material and road conditions, when the road is wet, the chemical adherence vanishes and grip relies only on mechanical friction of the tyre-ground interface. \citep{Han03}
 
 Therefore, cornering bicycles are prone to experience grip loss and verse off the road or fall out of control.
 
