@@ -78,7 +78,26 @@
 
 \clearpage
 
-\section{Abstract} \small
+\small
+\section{Abstract} 
+
+\textbf{
+Bicycle usage increases every year and the measures taken to reduce the number of crashes have not been able to accomplish their goal.
+%
+To prevent and minimise single-cyclist crash (SCC) risk, it is vital to understand how and why these events occur.
+%
+Currently, the common factors among these events have been discussed and studied, but the dynamics of the bicycle in a crash scenario are still unclear.
+%
+In order to promote the seek for this data, it is required a classification of SCCs that highlight the required information.
+%
+Therefore, the aim of this work is to develop a single-cyclist crash classification based on bicycle dynamics.
+%
+The proposed classification works under the multi-layer principle, allowing combination of factors to respond to modern crash model requirements.
+%
+Based on a dataset of 100 videos, the scope of the categories proposed is wide enough to capture all seen events without labelling them as `other/unknown'.
+}
+
+
 
 
 
@@ -90,7 +109,7 @@ Cycling population is on arise due to the advantages of the bicycle as a commute
 %
 This refers from almost free transportation and less polution to healthier lifestyles and less traffic congestion.
 %
-However, as the cycling population increases, their exposure to crashes also increase \citep{Com24, Utr23}. 
+However, as the cycling population increases, their exposure to crashes also increase \citep{Eur24, Utr23}. 
 %%
 
 
@@ -98,13 +117,13 @@ Regarding bicycle crashes, one configuration that stands out due to their major 
 %
 These are events where no other road user is involved as an active perturbation, i.e. its effect does not depend on the source.
 %
-Its share ranges from 50\% to 85\% of cyclist-related hospital admissions \cite{Alg22, Bec19}.
+Its share ranges from 50\% to 85\% of cyclist-related hospital admissions \citep{Alg22, Bec19}.
 %
-Moreover, it is known that these events are commonly underreported \cite{Boe17, Bec19, Sch21, Utr20, Utr23}.
+Moreover, it is known that these events are commonly underreported \citep{Boe17, Bec19, Sch21, Utr20, Utr23}.
 %%
 
 
-In the last decade, Europe has seen a reduction in the fatality rate of total road accidents, except for bicycle crashes \citep{CBS24, Com24, Gil24, Sal22, Utr23}.
+In the last decade, Europe has seen a reduction in the fatality rate of total road accidents, except for bicycle crashes \citep{CBS24, Eur24, Gil24, Sal22, Utr23}.
 %
 Indeed, in the Netherlands the risk of death in SCCs has not only remained constant, but increased up to 7\% \citep{Sch17}. 
 %
@@ -112,7 +131,7 @@ Hence, it is a matter of interest when bicycle usage is intended to be promoted 
 %
 Furthermore, if these issues are not attended, bicycle usage can be expected to decrease \citep{Gu19}
 %
-However, the dynamics of these crashes are not well understood and more detailed crash information is needed \citep{Haw13, Mol19}. % Revise cite Haw.
+However, the dynamics of these crashes are not well understood and more detailed crash information is needed \citep{Haw13, Mol21}. % Revise cite Haw.
 %
 Therefore, research on the dynamics of SCCs is needed to continue developing cyclists road safety.
 %%
@@ -139,7 +158,7 @@ To this end, it is necessary to understand the dynamics of the human-bicycle sys
 
 
 
-Up to this point, most work has been done in descriptive analysis of common factors that lead to SCCs \citep{Bec19, Gil24, Her18, Sal22, Sch11, Sch12, Sch15, Utr23}.
+Up to this point, most work has been done in descriptive analysis of common factors that lead to SCCs \citep{Bec19, Gil24, Her18, Sal22, Sch12b, Sch15, Utr23}.
 %
 Within these descriptive analyses we find common factors and hypothesised mechanisms with a major role in the crash.
 %
@@ -309,9 +328,9 @@ Additionally, its dictionary definition refers to it as a term specific for desc
 
 At last, bicycles and motorcycles share the main characteristics as dynamical systems, which makes them similar for studies \citep{Lim06}.
 %
-In its analytical study, both are usually assumed as four-bodies single-track vehicles \cite{Sha71, Mei07, Lot21}, with two basic degrees of freedom: roll $\varphi$ and steering $\delta$.
+In its analytical study, both are usually assumed as four-bodies single-track vehicles \cite{Sha71a, Mei07a, Lot21}, with two basic degrees of freedom: roll $\varphi$ and steering $\delta$.
 %
-Both vehicles experience similar crash configurations \citep{Haw13, Ken20, Ll016}, including tyre skidding, inability of control the system through the steering, excessive pitch rotation, among others later discussed in this paper.
+Both vehicles experience similar crash configurations \citep{Haw13, Ken22, Llo16}, including tyre skidding, inability of control the system through the steering, excessive pitch rotation, among others later discussed in this paper.
 %
 The main differences are the mass, the working speed range, and power input from the user, being this last what we use to define if the vehicle is a bicycle or a motorcycle.
 %
@@ -334,7 +353,7 @@ On the other hand, task demanding elements encompass travelling speed, environme
 %
 Of these factors, the driver has direct control of the travelling speed, achieving balance between driver capacity and its awareness to the task.
 %
-While car drivers can reduce task demand by decreasing speed, this is not always the case for bicycle riders, due to the increase of user stabilisation requirements at low speeds \cite{Koo11, Sch13, Vla15}.
+While car drivers can reduce task demand by decreasing speed, this is not always the case for bicycle riders, due to the increase of user stabilisation requirements at low speeds \citep{Koo11a, Sch13b, Vla15}.
 %
 In general, the theory shows an almost constant driver capability balancing with changing task demands, which should not surpass the capability threshold.
 
@@ -360,17 +379,17 @@ As seen in Table \ref{tab: results}, the most repeated events are skidding, low 
                 {\small\cite{Bec19}}    & Australia     & Hospital data                 & 48\%      & Mechanisms                & Avoidance braking & SCO\tnote{8} \\
                 {\small\cite{Boe17}}    & Netherlands   & Ambulance and police reports  & 80\%      & Crash type                & Object collision & SBC\\
                 {\small\cite{Bou13}}    & -  & Hospital and police data   & \textgreater 50\%\tnote{2} & Collision/No-collision & Loss of control (80\%) &  SVBC\tnote{9}\\
-                {\small\cite{deR14}}    & Australia     & Self-made survey              & 52\%      & Type and characteristics  & Collision & SBOC\tnote{10}\\
+                {\small\cite{De14}}    & Australia     & Self-made survey              & 52\%      & Type and characteristics  & Collision & SBOC\tnote{10}\\
                 {\small\cite{Gil21a}}   & Ireland       & Self-made survey              & 29\%      & Causes and factors        & Slippery roads & SCC\tnote{11}\\
                 {\small\cite{Her18}}    & Switzerland   & Survey                        & -         & Mechanisms and factors    & Skidding (31\%) & SVC\tnote{12}\\
                 {\small\cite{Meu20}}    & -             & Hospital data                 & 39\%      & -                         & - & SCC \\
                 {\small\cite{Ohl19}}    & Sweden        & Traffic database & 68\%\tnote{3} & Characteristics & Skidding (14\%) & SBC \\
-                {\small\cite{Sch12}}    & Netherlands   & -                   & -         & Mechanisms                & Riding off the road (21\%) & SBC\\
+                {\small\cite{Sch12b}}    & Netherlands   & -                   & -         & Mechanisms                & Riding off the road (21\%) & SBC\\
                 {\small\cite{Sch15}}    & International & -                             & 60 - 95\%\tnote{2} & -                         & -  & SBC\\
                 {\small\cite{Sch17}}    & Netherlands   & Police report                 & -         & -                         & -  & SBC\\
-                {\small\cite{Sch18}}    & Netherlands   & -                             & 68\%\tnote{4} / 77\%\tnote{5} & -     & -  & SBC\\
+                {\small\cite{Sch18b}}    & Netherlands   & -                             & 68\%\tnote{4} / 77\%\tnote{5} & -     & -  & SBC\\
                 {\small\cite{Utr20}}    & Finland       & Insurance data                & -         & Mechanisms                & Skidding (47\%)  & SBC\\
-                {\small\cite{Utr23a}}   & -             & -                   & 52 - 85\% & -                         & Loss of control or skidding & SBC \\
+                {\small\cite{Utr23a}}   & -             & -                   & 52 - 85\% & -                         & Loss of control or skidding & SBC \\ % Check these two.
                 {\small\cite{Utr23b}}   & Finland & Crash institute data     & 35.2\%\tnote{6}  & Factors and mechanisms    & Riding off the road (71.9\%) & SBC\\
                 {\small\cite{Van16}}    & Belgium     & Insurance data        & 31\%      & Causes             & Riding off the road (21\%) & SBC
             \end{tabular}
@@ -409,13 +428,13 @@ For statistics analyses, this does not represent an issue, however, in the aim o
 
 Currently, studies on single-cyclist crashes are based on the available data, which is mainly descriptive from written reports, see Table \ref{tab: results}.
 %
-Within these studies, the main one that presents a classification comes from \cite{Sch12}, where we find the three components needed for a crash: rider, bicycle and environment, analogous to the analysis for car crashes made by \cite{Fel76}.
+Within these studies, the main one that presents a classification comes from \cite{Sch12b}, where we find the three components needed for a crash: rider, bicycle and environment, analogous to the analysis for car crashes made by \cite{Fel76}.
 %
 This approach is useful to visualise the common factors on the events and develop statistics.
 %
 Although Schepers took into account the dynamics of the bicycle in his work, these factors do not accurately capture the mechanisms that occur, maintaining the gap on the data needed to understand the dynamics of the event.
 %
-For example, \cite{Sche12} classifies the effect of a bag on the handlebar as a rider fault, when it can be simplified to a steering perturbation which affects the lateral balance control of the bicycle. % Maybe this fits better into discussion section.
+For example, \cite{Sch12b} classifies the effect of a bag on the handlebar as a rider fault, when it can be simplified to a steering perturbation which affects the lateral balance control of the bicycle. % Maybe this fits better into discussion section.
 
 
 
@@ -423,7 +442,7 @@ Then, we find a four-layer approach from \cite{Gil21a}, using direct causes and 
 %
 This classification is based on the direct causes, the crash scenario, common factors and the fall type.
 %
-Direct causes are the same than \cite{Sch12} and \cite{Utr20}, which create the crash scenario depending if it is composed on one or two direct causes.
+Direct causes are the same than \cite{Sch12b} and \cite{Utr20}, which create the crash scenario depending if it is composed on one or two direct causes.
 %
 Then, Gildea takes into account the common factors found on the literature.
 %
@@ -462,7 +481,7 @@ Finally, complete loss of control refers to the events where the rider falls to 
 
 In this point, we encounter the lack of information about the dynamics of the accidents \citep{}.
 %
-Across the studies, the conclusion is that the most frequent causes of SCCs are skidding, loss of control by braking or steering manoeuvres, and external perturbations such as hitting a kerb \citep{Sch12, Her18, Utr20, Alg22}.
+Across the studies, the conclusion is that the most frequent causes of SCCs are skidding, loss of control by braking or steering manoeuvres, and external perturbations such as hitting a kerb \citep{Sch12b, Her18, Utr20, Alg22}.
 %
 Moreover, the way of interaction with the environment can increase the risk, e.g. the angle of crossing a tram line \citep{Gil23}.
 %
@@ -477,7 +496,7 @@ From the factors mentioned, it is possible to identify the main mechanisms that 
 When the front wheel slips, the main control input from the rider disappears, reducing the system to an inverted pendulum without user input.
 % Here the model of cart pendulum could fit to explain the lack of controllability.
 %
-Events such as getting into tram tracks, lock the steering, first eliminating one of the intrinsic characteristics of bicycle's self-stability \citep{Koo11} and then, the rider is unable to input any control action.
+Events such as getting into tram tracks, lock the steering, first eliminating one of the intrinsic characteristics of bicycle's self-stability \citep{Koo11a} and then, the rider is unable to input any control action.
 %
 Collisions in the front assembly (front wheel, fork and handlebar) generate a sudden steering input.
 %
@@ -518,7 +537,7 @@ Bicycles are human-powered two-wheeled vehicles that require lateral balance con
 %
 The now classical approach for its study considers the bicycle as a dynamical system composed of four rigid bodies: rear frame, front frame, and two wheels.
 %
-Assuming a rider rigidly attached to the bicycle, \cite{Mei07} presents the linearised equations of motion for the three degree of freedom model.
+Assuming a rider rigidly attached to the bicycle, \cite{Mei07a} presents the linearised equations of motion for the three degree of freedom model.
 %
 From these linear equations, the stability of the system is studied, showing two main modes of vibration: weave and capsize, which are the particular interest due to its danger to the rider when unstable.
 %
@@ -526,25 +545,25 @@ Weave is a low-frequency oscillatory motion, from roll and steering, while capsi
 %
 Thus, the linearised bicycle model was shown to be stable in the range of ${\sim}4.3$ to $6.0 $[\unit{\m\per\s}].
 %
-Furthermore, if components compliance is included, wobble mode arises \citep{Sha71, Sch13}, which is an oscillatory motion of the steering, also danger when unstable \citep{Lim06}.
+Furthermore, if components compliance is included, wobble mode arises \citep{Sha71a, Sch13b}, which is an oscillatory motion of the steering, also danger when unstable \citep{Lim06}.
 %%
 
 
-Out of its self-stability speed range, human-bicycle systems rely on human control to maintain balance \citep{Koo13}.
+Out of its self-stability speed range, bicycles rely on human control to maintain balance \citep{Koo13a}.
 %
-\cite{Koo11} demonstrated that the basis of bicycles' self-stability relies on mass distribution and steering coupled to lean angle, contrary to the common assumption of wheels' angular momentum main role.
+\cite{Koo11a} demonstrated that the basis of bicycles' self-stability relies on mass distribution and steering coupled to lean angle, contrary to the common assumption of wheels' angular momentum main role.
 %
-Similarly, it is known that most control actions come from the steering, and at low speeds knees start to play a role in the control task \citep{Koo09}.
+Similarly, it is known that most control actions come from the steering, and at low speeds knees start to play a role in the control task \citep{Koo09a}.
 %
 However, the steering is not the only control input, the rider makes use of the pedals and brakes to control longitudinal acceleration and deceleration, respectively.
 
 
 
-Thus, the task of riding a bicycle consists in first maintaining balance and then following a desired trajectory \citep{Koo13}.
+Thus, the task of riding a bicycle consists in first maintaining balance and then following a desired trajectory \citep{Koo13a}.
 %
 For crashes where we hypothesise that the rider loses control on the vehicle, the interest is on the former, which is achieved by controlling the roll angle of the bicycle through steering inputs.
 %
-\cite{Hes12} explains this task with a human controller model, where the rider receives feedback from the bicycle through the proprioceptive, vestibular and visual systems.
+\cite{Hes12a} explains this task with a human controller model, where the rider receives feedback from the bicycle through the proprioceptive, vestibular and visual systems.
 %
 Here, the proprioceptive loop refers to the information received from the body, such as the position of the limbs, and the vestibular system provides information about the orientation of the head and body in space.
 %
@@ -556,9 +575,9 @@ With this information, the rider is capable of controlling the balance of the sy
 
 
 
-Being the steering the main control input and the fastest loop on the model \citep{Hes12}, its role is crucial for riding a bicycle.
+Being the steering the main control input and the fastest loop on the model \citep{Hes12a}, its role is crucial for riding a bicycle.
 %
-Hence, if the steering gets locked, the main balance control input disappears, losing the \textit{controllability} of the system \cite{Koo11}.
+Hence, if the steering gets locked, the main balance control input disappears, losing the \textit{controllability} of the system \cite{Koo11a}.
 %
 Consequently, disturbances on the steering negatively affect rider's ability to control the bicycle.
 
@@ -745,7 +764,7 @@ Closing paragraph.
 
 \subsection{Characteristic motion}
 
-Currently on the literature we find three characteristic motions for two-wheeled single-track vehicle crashes \cite{Rose}, see Figure \ref{fig: crashes} for schematic representation of the motions. 
+Currently on the literature we find three characteristic motions for two-wheeled single-track vehicle crashes \cite{Ros17}, see Figure \ref{fig: crashes} for schematic representation of the motions. 
 
 \begin{itemize}
     \item \textbf{Pitch-over:} The main characteristic of this motion is one of the wheels lifting from the ground, following a trajectory that finishes with the front wheel behind the rear wheel.
@@ -790,6 +809,9 @@ Similarities:
 three categories
 similar mechanisms > compare mechanisms
 
+The proposed approach of defining mechanisms is more focused on the result than in the source, therefore, all actions that cause a longitudinal acceleration, will be clustered together in the longitudinal load transfer mechanism.
+%
+In this category we find excessive acceleration, sudden braking, front collisions, and objects locking the wheel.
 
 
 Gildea's classification introduces the fall type, which is 
@@ -831,6 +853,8 @@ Therefore, the classification and analysis is closely related to the intention o
 
 
 \section{Conclusion} \label{sec: conclusion}
+
+
 
 \section*{Acknowledgement}
 
