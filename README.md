@@ -2,6 +2,9 @@
 
 Add here all commentaries that do not fit on the .tex document
 
+## To-Do
+- [ ] Update high-side crash
+- [ ] Update low-side crash
 
 ### Benjamin:
 
@@ -57,7 +60,7 @@ classifying a crash as 'loss of control' is incorrect and neglects the real caus
 
 ### Jason:
 
-- [ ] slide for colloquial, slip for tyre dynamics
-- [ ] Add figures
+- [x] slide for colloquial, slip for tyre dynamics
+- [x] Add figures
 
 ### Ajay:
