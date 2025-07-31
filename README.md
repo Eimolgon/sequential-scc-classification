@@ -5,6 +5,10 @@ Add here all commentaries that do not fit on the .tex document
 ## To-Do
 - [ ] Update high-side crash
 - [ ] Update low-side crash
+- [ ] Update figure (bike dof) for rear wheel rotation \omega_r
+- [x] Revise citation Mendoza 2017 > Include other authors
+- [ ] Create rider-bicycle figure
+- [x] Diagram Lot p24 fig 1.14
 
 ### Benjamin:
 
@@ -57,6 +61,25 @@ discuss about its meaning.
 - To put somewhere: Since all crashes occur due to loss of control \cite{}, 
 classifying a crash as 'loss of control' is incorrect and neglects the real cause.
 
+
+- Safety in numbers (Jacobsen 2015) states that the likelihood of being struck
+by a motorised vehicle as a pedestrian or cyclist, reduces according to the
+amount of walking or cycling, respectively/.
+    - This is different than saying that more biking == less risk, it is just
+    for collisions.
+
+- Safety in numbers states a non-linear and non-proportional increase on
+crashes/accidents with respect to the amount of users. [Elvik2017](https://doi.org/10.1016/j.ssci.2015.07.017)
+    - This is different than saying more biking = less risk, just it is not
+    proportional.
+
+- Riding with only one hand attached means more or less control?
+
+- How could I describe crash dynamics?
+
+- Possible title:
+How much do we actually know about the relation between bicycle dynamics and
+its crash mechanisms?
 
 ### Jason:
 
