@@ -12,7 +12,7 @@ Add here all commentaries that do not fit on the .tex document
 
 ### Benjamin:
 
-- New question to include somewhere, how much time is available in a slipping scenario?
+- New question to include somewhere, how much time is available in a skidding scenario?
 - If we know the response time of the human controlling the bicycle in a critical situation, and we know the time span between the beginning and the point of no return, we can determine if an active assistance is crucial or merely beneficial.
 - Unavoidable Accident Scenario (UAS) limited by system capacities, which are limited by the PNR? Is there a real relation here? 10.1109/TITS.2016.2520084 talks about inevitable collision states (ICS)
 
@@ -21,17 +21,13 @@ Add here all commentaries that do not fit on the .tex document
 
 - Robinovitch 2002 talks about 'static recovery limits' and 'dynamic recovery limits'.
 - Hajdu 2016 talks about the stability radius 10.1109/TNSRE.2016.2541083
-- We identify that crash analyses do not assess properly the dynamics of the bicycles.
-
 
 
 - Simple rules that are always beneficial -> ABS for example
-- Since the aim of the study is to analyse the dynamics of the crash, there is no substantial difference between sliding in sknow, gravel or any surface. -> To put somewhere in the mechanisms known.
-- Explain, maybe through diagrams, that skidding or slidding occurs only when turning. -> Show high and low side crashes.
 
 
-- The available literature tries to capture the characteristics of single actor-
-bicycle crashes that allow to cluster them by some simmilarities. However, these
+- The available literature tries to capture the characteristics of single
+cyclist crashes that allow to cluster them by some simmilarities. However, these
 approaches neglect the neuro-physiological factors of the rider, which are
 expected to play a decisive role in the outcome of the critical situation.
 
@@ -40,23 +36,8 @@ rider factors that will be studied in the future to understand how and why a
 critical situation results in a crash
 
 
-- Gildea21a proposes a great and detailed classification but its approach to
-sliding tyres neglect the existence of high side crashes.
-
-
 - Use Beck2004 to explain pitch over crashes.
 
-- I think that using the term 'Loss of control' or 'Other/Unknown' is not good,
-since all SCC are loss of control.
-
-- Put somewhere: Real-world crash data, also known as naturalistic data \cite{}
-
-- Can we discuss about the rate of injuries per kilometre travelled?
-If yes, I would invite to use injuries per hour travelled.
-
-
-- Urt23-Crash also put in the results the name used for SCCs, however, does not
-discuss about its meaning.
 
 - To put somewhere: Since all crashes occur due to loss of control \cite{}, 
 classifying a crash as 'loss of control' is incorrect and neglects the real cause.
@@ -75,11 +56,11 @@ crashes/accidents with respect to the amount of users. [Elvik2017](https://doi.o
 
 - Riding with only one hand attached means more or less control?
 
-- How could I describe crash dynamics?
-
 - Possible title:
 How much do we actually know about the relation between bicycle dynamics and
 its crash mechanisms?
+
+- Change the name of the images for submission
 
 ### Jason:
 

@@ -125,6 +125,21 @@
 
 
 \small
+
+\section*{Keywords}
+
+Single-bicycle crash;
+%
+Classification;
+%
+Bicycle dynamics;
+%
+Crash mechanisms;
+%
+
+%%
+
+
 \section*{Abstract} 
 
 \textbf{
@@ -254,71 +269,6 @@ With this, we highlight the lack of information required to understand the dynam
 %     \item What information does a classification need to capture to understand the failure mechanism on the human-bicycle system?
 % \end{enumerate}
 
-
-
-The article is structured as follows, Section \ref{sec: methods} describes the methodology including the questionnaire, and the terminology used in this work (\ref{subsec: keyconcepts}).
-%
-Section \ref{sec: bike} covers the basics of bicycle dynamics theory required to discuss crash mechanisms.
-%
-Then, the proposed classification is developed and explained on Section \ref{sec: newclassification}.
-%
-Finally, Sections \ref{sec: discussion} and \ref{sec: conclusion} present the discussion and conclusion, respectively.
-
-
-
-\section{Methods} \label{sec: methods}
-
-- The development of the present classification was made by contrasting discussed mechanisms with bicycle dynamics theory.
-- Existing articles with mechanisms, causes, factors and classifications were reviewed.
-
-\subsection{Video dataset}
-
-- Inclusion exclusion criteria
-- Average duration
-- Format
-- Video quality
-- Availability
-
-
-
-- To test the classification, it was required a source of crashes, therefore, we created a dataset ...
-- Then, the questionnaire was spread out 
-
-
-% The literature search was made in Google Scholar and Dimensions database in October 2024.
-% %
-% The interest relied on studies that analysed the dynamics of single-track vehicle crashes, which include bicycles, motorcycles and scooters.
-% %
-% Therefore, the initial query for the broad range search on October 2024 was:
-
-% \begin{center}
-%     (bicycle OR bike OR two-wheel* OR single-track OR ``two wheel*'' OR ``single track'') AND (crash OR collision OR accident OR fall).
-% \end{center}
-
-% The results of the search provided the main articles in the field, however, we used `snowballing' methodology to complement the search.
-% %
-% This approach was particularly useful to cover base concepts that are not always clarified.
-% %
-% In addition, this methodology lead us to articles with no direct relation, such as vehicular crash analysis and requirements.
-
-
-
-
-% \subsection{Classification}
-
-% To evaluate the effectiveness of the proposed classification, we created a dataset of single-cyclist crashes from publicly online video sources such as YouTube.
-% %
-% The dataset is composed by a list of 100 videos, with the link to the source, and the time stamp of the crash.
-% %
-% On average, all videos last three to five seconds, in low resolution since most of them were recorded with dash cameras on other vehicles.
-% %
-% The videos were classified according to the proposed criteria, then, we asked other researchers on the field of bicycle dynamics to classify them only using the information given in Section \ref{sec: newclassification}.
-% %
-% The responses of the researchers were collected through a Google Form, which included the option `Other' in all categories and an open text field for comments.
-
-
-
-
 \subsection{Terminology} \label{subsec: keyconcepts}
 
 In the literature of single-cyclist crashes, several of the commonly used concepts are not properly defined.
@@ -381,7 +331,7 @@ Therefore, in a crash scenario, the bicycle-rider system will lose its rideabili
 
 
 
-A \texit{perturbation} will be understood by its dictionary definition as any variation in the system that causes it to change its regular movement \citep{Cam25}.
+A \textit{perturbation} will be understood by its dictionary definition as any variation in the system that causes it to change its regular movement \citep{Cam25}.
 %
 An active perturbation is a controlled force from an external source, such as other vehicle colliding with the system.
 %
@@ -416,7 +366,69 @@ Both vehicles experience similar crash configurations \citep{Haw13, Ken22, Llo16
 The main differences are the mass, the working speed range, and the main power source.
 %
 According to the European regulations, pedal cycles with pedal assistance of less than or equal to 250 [W], and that cut off before 25 [km/h] are not considered as motorcycles \citep{Eur13}.
+%%
+
+
+The article is structured as follows, Section \ref{sec: methods} describes the methodology including the questionnaire, and the terminology used in this work (\ref{subsec: keyconcepts}).
 %
+Section \ref{sec: bike} covers the basics of bicycle dynamics theory required to discuss crash mechanisms.
+%
+Then, the proposed classification is developed and explained on Section \ref{sec: newclassification}.
+%
+Finally, Sections \ref{sec: discussion} and \ref{sec: conclusion} present the discussion and conclusion, respectively.
+
+
+
+\section{Methods} \label{sec: methods}
+
+
+The development of the present classification was done by a comparative analysis between documented crash mechanisms and bicycle dynamics theory.
+%
+First, key concepts 
+%
+This approach ensured that the proposed categories were physically coherent with the dynamical behaviour of bicycles.
+%
+Thus, existing single-cyclist crash classifications were revised and discussed.
+%
+Additionally, 
+%%
+
+
+
+\subsection{Video dataset}
+
+To test the proposed classification, a set of single-cyclist crashes was collected.
+%
+The objective was to ask people from different backgrounds to classify the observed crashes.
+%%
+
+
+The dataset is composed by publicly available videos from web sources such as YouTube, TikTok, Instagram, Twitter, Reddit, and Facebook.
+%
+Selected videos contain bicycle crashes where no other road user is involved, or if there is another user, its participation effect is assumed as negligible.
+%
+The list counts 100 videos with an average duration of three seconds, along with their time stamp on the source.
+%
+Since most videos come from surveillance and dashboard cameras, the video quality is rather low.
+%
+This implies an average frame rate of 30 frames per second, with no established resolution.
+%
+
+
+
+\subsection{Questionnaire}
+
+Following the dataset construction, a structured questionnaire was developed to verify the classification.
+%
+The questionnaire was distributed among people from different fields to gather feedback on the possible misconceptions.
+%
+Responses were anonymous with an open field answer to indicate the knowledge field of the participant.
+%
+For each video the participants were requested to indicate the manoeuvre the cyclist was performing, the nature of the excitation of the system, the observed mechanisms, and the crash motion.
+%
+For all the categories there was an open field text box for any comments or description that was not an option.
+%%
+
 
 
 
@@ -470,22 +482,8 @@ For this goal, \cite{Hes12} considers a neuromuscular model for the rider's arms
 In Hess' model, the rider receives feedback from the proprioceptive, vestibular and visual systems.
 %
 The proprioceptive loop refers to the information received from the body, such as the position of the limbs, and the vestibular system provides information about the orientation of the head and body in space.
+%%
 
-
-%
-Thus, the task of riding a bicycle consists in first maintaining balance and then following a desired trajectory.
-%
-For crashes where we hypothesise that the rider loses control on the vehicle, the interest is on the former, which is achieved by controlling the roll angle of the bicycle through steering inputs.
-%
-\cite{Hes12} work considers a neuromuscular model for the rider's arms, with bandwidth limitations and gain selection that results in a controller with similar limits in control authority as a real rider.
-%
-\cite{Hes12} explains this task with a human controller model, where the rider receives feedback from the bicycle through the proprioceptive, vestibular and visual systems.
-%
-Here, the proprioceptive loop refers to the information received from the body, such as the position of the limbs, and the vestibular system provides information about the orientation of the head and body in space.
-%
-Hence, the proprioceptive feedback comes from steering angle, the vestibular comes from roll rate and visual feedback comes from roll angle.
-%
-With this information, the rider is capable of controlling the balance of the system and perform the task of following a trajectory at the same time.
 
 % Insert image here from Hess
 
@@ -562,7 +560,7 @@ The extent of loss of grip will lead to different crash configurations, as expla
 Therefore, cornering and tyre dynamics are fundamental to understand bicycle crashes.
 
 
-
+% [Ben]: Maybe change this figure.
 \begin{figure}
     \centering
     \includegraphics[width=0.5\linewidth]{Images/cossalter_cornering.png}
@@ -585,79 +583,64 @@ Thus, the bicycle-rider system is a complex dynamical system that requires a dee
 
 % Jason: Add diagram to explain crash phases. > Contrast Park definition with this new defintion for bicycles
 
-We will define a \textit{crash} to be sudden and unintended event that results in a loss of the normal and controlled motion of the human-bicycle system \citep{Wie18}.
+Crash dynamics is the study of the forces, energy transfer, and motion during the loss of control in the rider-bicycle system.
 %
-In the analysis of vehicular collisions, there are three phases: pre, during, and post-impact motion \citep{Par01}.
+It encompasses the analysis of how the vehicle and its occupant respond to impacts, considering factors like speed, mass, and direction.
 %
-Translating this approach to bicycle crashes, pre-crash motion encompasses the time window from the perturbation to the moment where rideability is lost
+Thus, a crash is defined as a sudden and unintended event that disrupts the normal and controlled motion of the rider-vehicle system \citep{Wie18}.
 %
-Then, the crash stage occurs, encompassing the first failure mechanism.
+The analysis of crash dynamics is typically divided into three distinct phases: pre-crash, crash, and post-crash motion \citep{Par01}.
+%%
+
+
+The pre-crash phase begins with a perturbation and ends when the system loses its rideability.
 %
-Post-crash stage is limited in single-cyclist crashes and can be assessed as the moment when the vehicle touches the ground with parts other than the wheels \citep{Llo16}.
+During this phase, the system's kinetic and potential energy, along with rider control, determine the trajectory of the bicycle.
 %
-Figures \ref{fig: highside}, \ref{fig: lowside} and \ref{fig: pitchover} show the schematics of the main crash configurations in these three phases.
-
-
-The study of
-
-
-Along, to properly understand the phenomena, it is required to know the main pieces of crash dynamics.
+The crash phase starts with the first failure mechanism, such as a sudden loss of tyre grip or steering lock.
 %
-1. Physics
-2. Type of crash
-3. Vehicle
-4. Human kinematics
-5. Biomechanics of injury
-6. Simulation
+In this stage, energy is rapidly redistributed through impact forces, often resulting in ejection or abrupt deceleration of the rider.
+%%
 
 
-The rider-bicycle system is moving in the space, which can be understood through kinetic and potential energy in its simplest assumptions.
+The post-crash phase is typically brief in single-cyclist crashes and is characterised by the final configuration of the system.
 %
-When the system reaches a failure mechanism, this energy translates into unexpected forces that lead to a crash.
+This phase is defined by the moment the bicycle contacts the ground with components other than the wheels \citep{Llo16}.
 %
-According to the crash type, the forces act on the system in different ways.
+Figures \ref{fig: highside}, \ref{fig: lowside}, and \ref{fig: pitchover} illustrate the main crash configurations in these three phases.
+%%
+
+
+Consequently, understanding crash dynamics involves six key components: physics, crash typology, vehicle dynamics, human kinematics, injury biomechanics and simulation.
 %
-
-
-Crash dynamics is the study of the physics of collisions, focusing on the forces, energy transfer, and motion involved when vehicles or objects impact each other. It encompasses the analysis of how vehicles and their occupants respond to impacts, considering factors like speed, mass, and direction. Understanding crash dynamics is essential for improving vehicle safety, designing effective restraint systems, and understanding accident reconstruction. Crash dynamics is the study of the physics of collisions, focusing on the forces, energy transfer, and motion involved when vehicles or objects impact each other. It encompasses the analysis of how vehicles and their occupants respond to impacts, considering factors like speed, mass, and direction. Understanding crash dynamics is essential for improving vehicle safety, designing effective restraint systems, and understanding accident reconstruction. 
-
-
-Crash dynamics analyses the forces and energy of the system prior, during and at the end of an accident. 
-
-Prior the crash relates to the kinetic and potential energy, forces acting on the system and the neuromuscular control from the rider.
-During crash, we look for the forces acting on the system that closely relates and/or explain the failure mechanisms (e.g. sudden decrease in tyre grip), and also the ejection mechanisms.
-After crash, we look into the fall configuration, injury patterns and mechanisms.
-
-This implies how system's energy releases when a mechanism fails.
-
-\href{https://saferide4kids.com/blog/car-crash-dynamics-car-seats-seat-belts-important/}
-In crash scenarios, we expect around 0.6 [s] of duration in the event. 
-
-
-
-
-\textit{Crash dynamics} refers to the study and analysis of forces and energy in the system during an accident.
+The rider-bicycle system can be simulated through physical models, which allow to understand how the energy releases when a mechanism fails and results in unpredictable system motions.
 %
-This involves the dynamics of the vehicle in the time stamp previous to the crash, the energy transfer in the crash motion and in the rest position of the system after.
+For this reason, bicycle dynamics matter, since different crash types are the result of distinct force actuation and create different injury patterns.
+%%
+
+
+% The crash event usually lasts approximately 0.6 [s]
+% \href{https://saferide4kids.com/blog/car-crash-dynamics-car-seats-seat-belts-important/}
 
 
 
 \subsection{Single-cyclist crash anatomy} \label{subsec: crash anatomy}
 
-
-In the most basic understanding of a single-cyclist crash, this event is the result of the rider losing control of the vehicle, this is, not being able to maintain stability or follow the desired trajectory.
+As previously defined, a single-cyclist crash is the result of the rider losing control of the vehicle, which is not being able to maintain stability or follow the desired trajectory.
 %
-\cite{Ful05} describes in his model the loss of control as a relation between task demand and rider capability, when the task demand surpasses rider capability, the rider loses control and the crash occurs.
+\cite{Ful05} describes in his model the loss of control as a relation between task demand and rider capability.
 %
-This model considers physical characteristics and knowledge of the driver on what to do under determined circumstances to define the boundaries its capability.
+When the task demand surpasses the rider's capability, the rider loses control and the crash occurs.
 %
-However, this capacity is also affected by other factors related to the circumstance, such as awareness, emotion, fatigue, among others.
+This model considers physical characteristics and knowledge of the driver on what to do under determined circumstances to define the boundaries of its capability.
 %
-On the other hand, task demanding elements encompass travelling speed, environmental factors, such as road characteristics and other road users.
+However, this capacity is also affected by other factors related to the circumstance, such as awareness, emotion, and fatigue, among others.
 %
-Of these factors, the driver has direct control of the travelling speed, achieving balance between driver capacity and its awareness to the task.
+On the other hand, task-demanding elements encompass travelling speed, environmental factors, such as road characteristics and other road users.
 %
-However, a major difference between car drivers and bicycle riders is that this last has an extra task: lateral balance.
+Of these factors, the driver has direct control of the travelling speed, achieving a balance between driver capacity and their awareness of the task.
+%
+However, a major difference between car drivers and bicycle riders is that the latter has an extra task: lateral balance.
 %
 While car drivers can reduce task demand by decreasing speed, for bicycle riders, decreasing the speed can increase stabilisation requirements, and therefore, task demand increases \citep{Koo11, Sch13, Vla15}.
 %
@@ -666,14 +649,15 @@ In general, the theory shows an almost constant driver capability balancing with
 
 
 
-Now, when task demands surpasses rider's capability, a critical scenario is triggered, which translates into a loss of control and a possible crash, depending on the extent of the loss of control \citep{Gil23}.
+Now, when task demands surpass the rider's capability, a critical scenario is triggered, which translates into a loss of control and a possible crash, depending on the extent of the loss of control \citep{Gil23}.
 %
 Factors that increase task demand and contribute to critical scenarios are known in the literature.
 %
 As seen in Table \ref{tab: results}, the most repeated events are skidding, low speed riding, braking, `loss of control', and collision with an object.
 %
-These events require a precise and quick response from the rider, which is can be assumed as a high-demand task in Fullner's model.
+These events require a precise and quick response from the rider, which can be assumed as a high-demand task in Fullner's model.
 %%
+
 
 \subsection{Known mechanisms}
 
@@ -734,53 +718,53 @@ Every description presents below the authors that discuss the mechanism.
 \end{enumerate}
 
 
-\begin{center}
-    %\begin{sidewaystable}
-    % \begin{landscape}
-        {\footnotesize
-        \begin{threeparttable}
-            % \begin{tabular}{c|c|c|c|c|c|c}
-            \begin{tabularx}{\textwidth}{s|m|m|m|m|s|m}
-                \toprule
-                \textbf{Author} & \textbf{Country} & \textbf{Data origin} & \textbf{Share of SCC}\tnote{1} & \textbf{Classification} & \textbf{Main type (\%)} & \textbf{Name} \\
-                % \hline \hline
-                \midrule
-                {\small\cite{Sch12}}    & {\small Netherlands}   & Survey to hospital attendees  & -         & Mechanisms                & Riding off the road (21\%) & Single-bicycle crash \\
-                {\small\cite{Bou13}}    & {\small Australia}     & Hospital and police data      & \textgreater 50\%\tnote{2} & Collision/No-collision & Loss of control (80\%) &   Single-vehicle bicycle crash \\
-                {\small\cite{De14}}     & {\small Australia}     & Self-made survey              & 52\%             & Type and characteristics  & Collision & Single-bicycle only crash \\
-                {\small\cite{Sch15}}    & {\small International} & -                             & 60 - 95\%\tnote{2} & -                         & -  & Single-bicycle crash\\
-                {\small\cite{Van16}}    & {\small Belgium}       & Insurance data                & 31\%             & Causes             & Riding off the road (21\%) & Single-bicycle crash \\
-                {\small\cite{Boe17}}    & {\small Netherlands}   & Ambulance and police reports  & 80\%             & Crash type                & Object collision & Single-bicycle crash\\
-                {\small\cite{Sch17}}    & {\small Netherlands}   & Police report                 & -                & -                         & -  & Single-bicycle crash\\
-                {\small\cite{Her18}}    & {\small Switzerland}   & Survey                        & -                & Mechanisms and factors    & Skidding (31\%) & Single-vehicle crash\\
-                {\small\cite{Sch18}}    & {\small Netherlands}   & -                             & 68\%\tnote{3} / 77\%\tnote{4} & -     & -  & Single-bicycle crash\\
-                {\small\cite{Bec19}}    & {\small Australia}     & Hospital data                 & 48\%             & Mechanisms                & Avoidance braking & Single-cyclist only \\
-                {\small\cite{Ohl19}}    & {\small Sweden}        & Traffic database              & 68\%\tnote{5}    & Characteristics & Skidding (14\%) & Single-bicycle crash \\
-                {\small\cite{Meu20}}    & {\small Australia}     & Hospital data                 & 39\%             & -                         & - & Single-cyclist crash \\
-                {\small\cite{Utr20}}    & {\small Finland}       & Insurance data                & -                & Mechanisms                & Skidding (47\%)  & Single-bicycle crash\\
-                {\small\cite{Gil21}}    & {\small Ireland}       & Self-made survey              & 29\%             & Causes and factors        & Slippery roads & Single-cyclist crash \\
-                {\small\cite{Alg22}}    & {\small Sweden}        & -                             & 48 - 95\%\tnote{2} & Crash characteristics     & Skidding (26\%) & Single-bicycle crash\\
-                {\small\cite{Utr23}}    & -             & -                             & 52 - 85\% & -                         & Loss of control or skidding & Single-bicycle crash \\ % Check these two.
-                {\small\cite{Utr23a}}   & {\small Finland}       & Crash institute data          & 35.2\%\tnote{6}  & Factors and mechanisms    & Riding off the road (71.9\%) & Single-bicycle crash \\
-                \bottomrule
-            \end{tabularx}
-            % \end{tabular}
-            \caption{Literature with statistics about single-cyclist crashes.}
-            \vspace{10mm}
-            \begin{tablenotes}
-                \small
-                \item [1] Of total bicycle crashes.
-                \item [2] Of total cyclist hospital admission.
-                \item [3] Normal bicycles.
-                \item [4] Electric bicycles.
-                \item [5] Of traffic crash database.
-                \item [6] Of fatal bicycle crashes.
-            \end{tablenotes}
-        \end{threeparttable}}
-        \label{tab: results}
-    % \end{landscape}
-    %\end{sidewaystable}
-\end{center}
+% \begin{center}
+%     %\begin{sidewaystable}
+%     % \begin{landscape}
+%         {\footnotesize
+%         \begin{threeparttable}
+%             % \begin{tabular}{c|c|c|c|c|c|c}
+%             \begin{tabularx}{\textwidth}{s|m|m|m|m|s|m}
+%                 \toprule
+%                 \textbf{Author} & \textbf{Country} & \textbf{Data origin} & \textbf{Share of SCC}\tnote{1} & \textbf{Classification} & \textbf{Main type (\%)} & \textbf{Name} \\
+%                 % \hline \hline
+%                 \midrule
+%                 {\small\cite{Sch12}}    & {\small Netherlands}   & Survey to hospital attendees  & -         & Mechanisms                & Riding off the road (21\%) & Single-bicycle crash \\
+%                 {\small\cite{Bou13}}    & {\small Australia}     & Hospital and police data      & \textgreater 50\%\tnote{2} & Collision/No-collision & Loss of control (80\%) &   Single-vehicle bicycle crash \\
+%                 {\small\cite{De14}}     & {\small Australia}     & Self-made survey              & 52\%             & Type and characteristics  & Collision & Single-bicycle only crash \\
+%                 {\small\cite{Sch15}}    & {\small International} & -                             & 60 - 95\%\tnote{2} & -                         & -  & Single-bicycle crash\\
+%                 {\small\cite{Van16}}    & {\small Belgium}       & Insurance data                & 31\%             & Causes             & Riding off the road (21\%) & Single-bicycle crash \\
+%                 {\small\cite{Boe17}}    & {\small Netherlands}   & Ambulance and police reports  & 80\%             & Crash type                & Object collision & Single-bicycle crash\\
+%                 {\small\cite{Sch17}}    & {\small Netherlands}   & Police report                 & -                & -                         & -  & Single-bicycle crash\\
+%                 {\small\cite{Her18}}    & {\small Switzerland}   & Survey                        & -                & Mechanisms and factors    & Skidding (31\%) & Single-vehicle crash\\
+%                 {\small\cite{Sch18}}    & {\small Netherlands}   & -                             & 68\%\tnote{3} / 77\%\tnote{4} & -     & -  & Single-bicycle crash\\
+%                 {\small\cite{Bec19}}    & {\small Australia}     & Hospital data                 & 48\%             & Mechanisms                & Avoidance braking & Single-cyclist only \\
+%                 {\small\cite{Ohl19}}    & {\small Sweden}        & Traffic database              & 68\%\tnote{5}    & Characteristics & Skidding (14\%) & Single-bicycle crash \\
+%                 {\small\cite{Meu20}}    & {\small Australia}     & Hospital data                 & 39\%             & -                         & - & Single-cyclist crash \\
+%                 {\small\cite{Utr20}}    & {\small Finland}       & Insurance data                & -                & Mechanisms                & Skidding (47\%)  & Single-bicycle crash\\
+%                 {\small\cite{Gil21}}    & {\small Ireland}       & Self-made survey              & 29\%             & Causes and factors        & Slippery roads & Single-cyclist crash \\
+%                 {\small\cite{Alg22}}    & {\small Sweden}        & -                             & 48 - 95\%\tnote{2} & Crash characteristics     & Skidding (26\%) & Single-bicycle crash\\
+%                 {\small\cite{Utr23}}    & -             & -                             & 52 - 85\% & -                         & Loss of control or skidding & Single-bicycle crash \\ % Check these two.
+%                 {\small\cite{Utr23a}}   & {\small Finland}       & Crash institute data          & 35.2\%\tnote{6}  & Factors and mechanisms    & Riding off the road (71.9\%) & Single-bicycle crash \\
+%                 \bottomrule
+%             \end{tabularx}
+%             % \end{tabular}
+%             \caption{Literature with statistics about single-cyclist crashes.}
+%             \vspace{10mm}
+%             \begin{tablenotes}
+%                 \small
+%                 \item [1] Of total bicycle crashes.
+%                 \item [2] Of total cyclist hospital admission.
+%                 \item [3] Normal bicycles.
+%                 \item [4] Electric bicycles.
+%                 \item [5] Of traffic crash database.
+%                 \item [6] Of fatal bicycle crashes.
+%             \end{tablenotes}
+%         \end{threeparttable}}
+%         \label{tab: results}
+%     % \end{landscape}
+%     %\end{sidewaystable}
+% \end{center}
 % Note that using only landscape the table does not have number.
 
 \normalsize
@@ -1323,6 +1307,25 @@ Future work could delve into the limits of human control of the bicycle in criti
 
 
 \section*{Acknowledgement}
+
+Funding: This project has been made possible in part by grant number 2022-252796 from the Chan Zuckerberg Initiative DAF, an advised fund of Silicon Valley Community Foundation.
+
+% \section*{Declaration of generative AI and AI-assisted technologies in the writing process}
+
+% During the preparation of this work the authors used Grammarly in order to revise the writing in the text. After using this tool/service, the authors reviewed and edited the content as needed and takes full responsibility for the content of the published article.
+
+\section*{CRediT}
+
+\textbf{Benjamín González:} Investigation, writing - original draft, 
+%
+\textbf{Ajay Seth:} Supervision,
+%
+\textbf{Alfred Schouten:} Supervision,
+%
+\textbf{Jason K. Moore:} Supervision
+
+% https://www-elsevier-com.tudelft.idm.oclc.org/researcher/author/policies-and-guidelines/credit-author-statement
+
 
 \small
 \bibliography{Benjamin-Reads.bib}
