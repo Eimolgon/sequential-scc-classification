@@ -62,6 +62,16 @@ its crash mechanisms?
 
 - Change the name of the images for submission
 
+- Include participant requirements, such as dynamics basics to understand
+modes of vibration for example.
+
+- Curbs can be similar to grooves or longitudinal tracks where
+the wheel gets caught and it is not capable of climbing, losing
+steering input and balance control.
+
+
+
+
 ### Jason:
 
 - [x] slide for colloquial, slip for tyre dynamics

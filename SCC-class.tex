@@ -184,17 +184,18 @@ Although the absolute number of bicycle fatalities has reduced, its share has in
 %
 From \cite{CBS24} we know that the average of car fatalities decreased by 17\% from 2013 to 2023, while cyclist fatalities increased by 22\% in the same period.
 %
-Furthermore, one configuration of bicycle crashes that stands out due to its major share on statistics from the Netherlands is the Single-Cyclist Crashes (SCCs) \citep{Weg24}.
+Furthermore, one configuration of bicycle crashes that stands out due to its major share on statistics from the Netherlands is the Single-Cyclist Crash (SCC) \citep{Weg24}.
 %
 These are events where no other road user is involved as an active perturbation, i.e. its effect does not depend on the source.
 %
-Similarly, single-cyclist crashes account for 50\% to 85\% of cyclist-related hospital admissions in Finland \citep{Utr23}.
+Specifically, single-cyclist crashes account for 80\% of cyclist-related hospital admissions in the Netherlands \citep{Utr23}.
 %
-Moreover, these numbers repeat the trend in other countries: 80\% in the Netherlands \citep{Boe17}, 68\% in Sweden \citep{Ohl19}, \textgreater50\% in Australia \citep{Bou13}, 31\% in Belgium \citep{Van16}, and 29\% in Ireland \citep{Gil21a}.
+Moreover, these numbers repeat the trend in other countries: 50\% to 85\% in Finland \citep{Boe17}, 68\% in Sweden \citep{Ohl19}, \textgreater50\% in Australia \citep{Bou13}, 31\% in Belgium \citep{Van16}, and 29\% in Ireland \citep{Gil21a}.
 %
-It is important to note that in this context, we do not differentiate if the outcomes are fatalities and injuries; the focus is on the occurrence of crashes.
+It is important to note that in this context, we do not differentiate if the outcomes are fatalities or injuries; the focus is on the occurrence of crashes.
 %%
 
+% [Jason]: There were Dutch statistics that showed 50k bicycle injury hospital visits in 2023. Please investigate such numbers as that + deaths shows the scale of the issue. It would be interesting to know the financial cost to society for all these injuries. Also, is this injury rate low or high relative to how much cycling there is?
 
 
 Indeed, in the Netherlands, the risk of death in single-cyclist crashes has not only remained constant, but increased up to 7\% in the period from 1996 to 2014 \citep{Sch17}. 
@@ -429,6 +430,13 @@ For each video the participants were requested to indicate the manoeuvre the cyc
 For all the categories there was an open field text box for any comments or description that was not an option.
 %%
 
+
+% Requirements for the person who answers the questionnaire
+
+% [Jason]: if you include these questionaire results i think you need to address:
+% 1. participants should be shown videos different than the ones used to design the classification (i.e. you watched all videos, made classification to fit those videos, and then show the participants the same videos)
+% 2. you need to show the methods, questionairee deisgn, sample videos
+% 3. relevant subject characteristics are needed? general population? engineering competent?
 
 
 
@@ -843,6 +851,7 @@ Finally, complete loss of control refers to the events where the rider falls to 
 
 
 In this point, we encounter the lack of information about the dynamics of the bicycle prior and leading to the crash.
+% [Jason]: this isn't obvious to me given there is no definition of "dynamics" that distinguishes it from what Kevin did
 %
 Across the studies, the conclusion is that the most frequent causes of single-cyclist crashes are skidding, loss of control by braking or steering manoeuvres, and external perturbations such as hitting a kerb \citep{Sch12, Her18, Utr20, Alg22}.
 %
@@ -995,6 +1004,11 @@ However, these `boxes' do not fit the broad spectrum of mechanisms, nor capture 
 %
 For this reason, we propose the following mechanisms based on the literature and observation from the video dataset:
 %
+
+% [Jason]: techically you can take the current bicycle-rider state and if you have a linear model of that system you can  find the contribution of each mode of motion to the total motion, but this only works if you have a model of the closed loop system that includes the rider, because the modes of motion of the closed loop system are not the same as the modes of motion of the open loop system
+
+% so given a real system in a state, you need to explain why it is valid to take the vehicle modes as a classifer versus the vehicle-rider modes either open or closed loop, remember there are open loop bicycle modes, open loop bicycle-rider modes, and closed loop bicycle-rider modes
+
 \begin{itemize}
     \item \textbf{Modes of vibration:} Oscillatory modes of vibration of the bicycle: weave and wobble, creating an unpredictable trajectory of the bicycle.
     %
@@ -1161,6 +1175,14 @@ Note that we reference motorcycle crash analyses to explain this crash motions s
     \item \textbf{No characteristic motion:} This sub-class refers to crashes where the final motion is not clear, or the main event is a collision that stops the motion.
 \end{itemize}
 
+% [Jason]: what about a wheelie (falling backwards)?
+% hitting a wall straight on may not cause the bike to pitch but the rider may fly off
+% does a low side include front wheel sliding out?
+% how does toppling over at slow or standstill fit into low or high side (as there is no turning motion)?
+% where does the dygert crash fit into these three? i don't see it
+% my feeling is that these three are not all encompassing
+
+
 \subsection{Questionnaire}
 
 The scope of the classification was tested through a questionnaire given to colleagues with background on dynamics.
@@ -1179,6 +1201,9 @@ Furthermore, the main result was that 90\% of them agreed on the mechanisms pres
 \section{Discussion} \label{sec: discussion}
 
 % Context
+
+% [Jason]: it seems like you classification is the three categories listed just above
+% but what about your huge figure 3, i thought that was your classification system? which has so much more
 
 In this work, we reviewed the literature on single-cyclist crash classifications, factors, and mechanisms.
 %
@@ -1270,6 +1295,7 @@ Therefore, the classification and analysis are closely related to the intention 
 %
 Especially if crashes are being classified from low quality videos that do not provide clear details.
 %
+
 
 % Added value
 
