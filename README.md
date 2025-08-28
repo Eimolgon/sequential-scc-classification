@@ -9,6 +9,13 @@ Add here all commentaries that do not fit on the .tex document
 - [x] Revise citation Mendoza 2017 > Include other authors
 - [ ] Create rider-bicycle figure
 - [x] Diagram Lot p24 fig 1.14
+- [x] Add affiliation
+- [ ] Check CBS full name
+- [ ] Check SWOV full name
+- [x] Check Dictionary 2025 referencee
+- [ ] Check Union 2023 reference
+- [x] Move Figure 2 closer to the text (bicycle dynamics).
+
 
 ### Benjamin:
 
