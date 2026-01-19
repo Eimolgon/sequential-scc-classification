@@ -18,6 +18,7 @@ Add here all commentaries that do not fit on the .tex document
 - [ ] Change figure names for submission to the format `fig_x_label.png`
 - [ ] Expand terminology to description
 - [ ] Include notes and definitions from Leveson
+- [ ] New figure 2 (cornering forces) > Change Cossalter's one
 
 
 ### Benjamin:
@@ -68,6 +69,8 @@ steering input and balance control.
 - By encompassing crashes with similar dynamics, the measures can be developed towards
 avoiding the scenarios that lead to those dynamics. Or write something like that.
 
+- Fullner 2005 talks about 'boundary of capability'
+
 
 ## Jason
 
@@ -81,7 +84,7 @@ Some overall comments:
 - Order the paper that shows how you build/construct (methods) your classification (results).
 - Demonstrate how your classification works where prior ones fail. If you can show yours handles all cases and all prior ones fail on some cases, then you have a more universal classification.
 - Use more prose, fewer sections, maybe fewer tables. It feels broken into very small chunks right now, instead of a flowing story.
-- The "unknown blocks" need more explanation, they seem present but not really explained. Maybe just leave them with big question marks instead of proposing something inside them.
+- [x] The "unknown blocks" need more explanation, they seem present but not really explained. Maybe just leave them with big question marks instead of proposing something inside them.
 
 You have a good concept and I think it builds well on the prior art and improves it. It is a bit hard to see this because it isn't always obvious how you arrived at the fig 3 and where all pieces come from in the prior literature.
 

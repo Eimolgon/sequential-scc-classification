@@ -34,7 +34,7 @@
 
 \renewcommand{\arraystretch}{1.3}
 
-\title{A new sequential accident model to classify single-cyclist crashes}
+\title{A new sequential accident model to classify single-cyclist crashes based on known mechanisms explained through physics}
 
 
 \author[1]{Benjamín E. González T.}
@@ -67,7 +67,7 @@
 \small
 
 \section*{Keywords}
-
+%
 Single-bicycle crash;
 %
 Crash configurations;
@@ -81,7 +81,7 @@ Crash mechanisms;
 
 
 \section*{Abstract} 
-
+%
 \textbf{
 Single-cyclist crashes are one of the main issues in the cycling safety field; however, the physics underlying the causes is still unclear.
 %
@@ -109,8 +109,7 @@ This classification serves as a base for classifying single-cyclist crashes thro
 
 \normalsize
 \section{Introduction} \label{sec: introduction}
-
-
+%
 Cycling is on the rise due to the advantages of the bicycle as a commuter vehicle.
 %
 The low cost of transportation and maintenance, together with less pollution, healthier lifestyles and less traffic congestion, all contribute to the advantages.
@@ -218,8 +217,7 @@ Finally, Section \ref{sec: discussion} presents the discussion. %and \ref{sec: c
 
 
 \section{Methods} \label{sec: methods}
-
-
+%
 The development of the present classification was done by a comparative analysis between documented crash mechanisms, and single-track vehicle dynamics theory.
 %
 First, scientific articles where bicycle or motorcycle crashes are classified and defined were revised.
@@ -230,7 +228,7 @@ This approach ensured that the proposed categories were physically coherent with
 %%
 
 \subsection{Video dataset}
-
+%
 To test the proposed classification, we collected a set of single-cyclist crashes.
 %
 The dataset is composed of publicly available videos from web sources such as YouTube and social media.
@@ -244,9 +242,9 @@ Since most videos come from surveillance and dashboard cameras, the video qualit
 
 
 \subsection{Questionnaire}
-
+%
 \subsubsection{Design}
-
+%
 Following TU Delft's Human Research Ethics Committee guidelines, we surveyed 10 participants, who received an informed consent which details the procedure of the experience, regarding data privacy, and participation.
 %
 No personal or identifiable data were collected, and responses were anonymized.
@@ -270,7 +268,7 @@ Additionally, after every question there was an open text field for comments in 
 
 
 \subsubsection{Platform and Distribution}
-
+%
 The questionnaire was created using Google Forms, due to the flexibility available to make the questions.
 %
 It was openly distributed in the single-track vehicles Google group.
@@ -282,16 +280,17 @@ There was no requisite about the knowledge background.
 
 
 \subsection{Terminology} \label{subsec: keyconcepts}
-
-In the literature of single-cyclist crashes, several of the commonly used concepts are not properly defined.
+%
+In the literature of single-cyclist crashes, there is no clear agreement on the terminology used for similar concepts.
 %
 For this reason, in this section, we define the terminology used in this work.
 %%
 
+
 \begin{description}
     \item [Single-Vehicle Crash] events where no other road user is involved in a collision or crash.
     %
-    However, other road users can still indirectly influence the rider since the human senses its environment through vision, contact, smell and audition.
+    However, other road users can still indirectly influence the rider since the human senses its environment through vision, contact, smell and hearing.
     %
     For example, a cyclist sees a pedestrian and needs to swerve to avoid it, resulting in a crash by running off the road.
     %
@@ -310,7 +309,7 @@ For this reason, in this section, we define the terminology used in this work.
 
 Bicycle crashes that do not involve multiple entities are given a variety of names in the literature: single-bicycle crash, single-actor bicycle crash \citep{Ali23}, single-cyclist crash, among others.
 %
-On one hand, the expression single-bicycle crash, even being the most common, neglects the rider, making reference to a problem only oriented on the bicycle.
+On the one hand, the expression `single-bicycle crash', even being the most common, neglects the rider, making reference to a problem only oriented on the bicycle.
 %
 On the other hand, single-actor bicycle crashes assume that there are no other actors involved in the event, which neglects the indirect effects of other road users.
 %
@@ -330,11 +329,17 @@ They are coupled together through the control interfaces, such as pedals, saddle
 %
 Thus, the rider controls the lateral balance of the bicycle mainly through the steering, and also with the contribution of hips, pedal pressure balance, and legs.
 %
-Similarly, for longitudinal control, the rider relies on pedal power input and brakes.
+Similarly, for longitudinal control, the rider relies on pedaling and brakes.
 %%
 
 
-When the bicycle is modelled as a linear system, has the property of \textit{controllability}, defined in control theory as the ability to modify the system's states from control actions in a finite time interval \citep{Sef01, Ron24}.
+
+Vehicle dynamicists create multibody dynamics models of the bicycle subsystem from physics first principles.
+%
+Due to the nature of a bicycle being balanced about an equilibrium, these models are often described with linear ordinary differential equations, opening up the opportunity for linear systems theory-based analysis.
+
+
+When the bicycle is modelled as a linear system, has the property of \textit{controllability}, defined in control theory as the ability to modify the system's state from control actions in a finite time interval \citep{Sef01, Ron24}.
 %
 In a subset of the states of the bicycle, it is rideable, i.e. the rider can balance it and follow a trajectory.
 %
@@ -379,9 +384,9 @@ According to the European regulations, pedal cycles with pedal assistance of les
 
 
 \section{Results} \label{sec: bike}
-
+%
 \subsection{Bicycle dynamics}
-
+%
 \begin{figure}
     \centering
     \includegraphics[width=0.5\linewidth]{Images/bike-dof-v0102.png}
@@ -465,7 +470,7 @@ Deceleration limit can be reached through brake actuation or collisions on the f
 %
 If tyre friction limit is reached, the rotational dynamics of the wheels change and the control of the vehicle becomes limited.
 %
-Therefore, accelerations of the system are a key indicator to assess the probability of a crash.
+Therefore, acceleration of the system are a key indicator to assess the probability of a crash.
 %%
 
 
@@ -485,11 +490,11 @@ Therefore, when there is an external agent on this interface, such as water, dus
 %%
 
 
-Tyre friction exposes a non-linear behaviour on lateral and longitudinal loads, which has a saturation limit at a given force.
+Tyre friction is a non-linear behaviour on lateral and longitudinal loads, which has a saturation limit at a given force.
 %
 Within the operating range of a tyre, the angle between the direction of the motion of the wheel and the ground is known as `slip angle'.
 %
-Depending on the slip angle of the front and read axle, the vehicle can present an understeering, neutral, or oversteering behaviour \citep{Cos06}.
+Depending on the slip angle of the front and rear axle, the vehicle can present an understeering, neutral, or oversteering behaviour \citep{Cos06}.
 %
 Understeering occurs when front side-slip is larger than rear, therefore, the vehicle turns less than expected.
 %
@@ -501,7 +506,7 @@ Thus, the cornering behaviour of the bicycle will influence the crash configurat
 %%
 
 
-Consequently, when the saturation limit is reached, the tyre loses grip and starts to exhibit a phenomenon called `skidding'. 
+Consequently, when the saturation limit is reached, the tyre starts to exhibit a phenomenon called `skidding'. 
 %
 The extent of loss of grip will lead to different crash configurations, as explained in Section \ref{subsec: crash motion}, which is particularly interesting to understand single-cyclist crashes.
 %
@@ -527,10 +532,10 @@ Thus, the bicycle-rider system is a complex dynamical system that requires a dee
 
 
 \subsection{Single-cyclist crash anatomy} \label{subsec: crash anatomy}
-
-A single-cyclist crash is the result of the rider losing control of the bicycle, which is not being able to maintain stability or follow the desired trajectory.
 %
-\cite{Ful05} describes in his car-crash model the loss of control as a relation between task demand and rider capability.
+A single-cyclist crash is the result of the rider losing control of the bicycle, which is the inability of the user to manoeuvre the vehicle to a desired state.
+%
+\cite{Ful05} describes, in his task-capability interface model, the loss of control as a relation between task demand and rider capability.
 %
 When the task demand surpasses rider's capability, the rider loses control and the crash occurs.
 %
@@ -546,20 +551,26 @@ However, a major difference between car drivers and bicycle riders is that the l
 %
 While car drivers can reduce task demand by decreasing speed, for bicycle riders, decreasing the speed can increase stabilisation requirements, and therefore, task demand increases \citep{Koo11, Sch13, Vla15}.
 %
-In general, the theory shows an almost constant gap between driver capability and changing task demands, which should not surpass the capability threshold.
+In general, the theory shows an almost constant gap between driver capability and changing task demands, which should not surpass the critical threshold.
 %%
 
 
-Now, when task demands surpasses rider's capability, a critical scenario is triggered, which translates into a loss of control and a possible crash, depending on the extent of the loss of control \citep{Gil23}.
+Now, when task demands surpass the rider's capability, a critical scenario is triggered.
 %
-Factors that increase task demand and contribute to critical scenarios are known in the literature; the most repeated events are skidding, low-speed riding, braking, `loss of control', and collision with an object.
+This scenario becomes a loss of control and a possible crash, depending on the extent of the loss of control \citep{Gil23}.
+%
+Factors that increase task demand in critical scenarios are known in the literature; the most repeated are skidding, low-speed riding, braking, `loss of control', and collision with an object.
 %
 These events require a precise and quick response from the rider, which can be assumed as a high-demand task in Fullner's model.
+%
+It is important to note that in a high-demand task, the user can still have control over the vehicle.
+%
+However, the user is unable to complete the task, which is, for example, avoiding an obstacle.
 %%
 
 
 \subsubsection{Crash dynamics} \label{subsec: crash dynamics}
-
+%
 Crash dynamics is the study of the forces, energy transfer, and motion during the loss of control in the rider-bicycle system.
 %
 It encompasses the analysis of how the vehicle and its occupant respond to impacts, considering factors like speed, mass, and direction.
@@ -580,7 +591,7 @@ In this stage, energy is rapidly and uncontrolledly redistributed, modifying the
 
 Then, the crash phase is composed of the uncontrolled motions as a result of the failure mechanisms, together with protective responses from the rider.
 %
-As previously shown, bicycle's rotations in a three-dimensional space are fundamental to explain crash motions.
+As previously shown, bicycle's motion in a three-dimensional space are fundamental to explain crash motions.
 %
 The literature about bicycles discusses three types of characteristic crash motions: pitch-over \citep{Bre10}, roll-over \citep{Sch21} and skid-out \citep{Gil21a}.
 %
@@ -598,14 +609,14 @@ This phase is defined by the moment the bicycle contacts the ground with compone
 
 
 \subsection{Single-cyclist crash classifications} \label{subsec: classifications}
-
+%
 Currently, studies on single-cyclist crashes are based on the available data, which is mainly descriptive from hospital, police, and insurance reports.
 %
 Within these studies, \cite{Sch12} presents a classification by reviewing the existent description of single-cyclist crashes, along with the basic concepts to understand bicycle dynamics.
 %
 Then, he divides the three components needed for a crash: rider, bicycle, environment, and includes the category `other', analogous to the analysis for car crashes made by \cite{Fel76}.
 %
-He revises the known crash circumstances and factors, such as age, amount of bicycle usage, road surface, type of bicycle, speed, among others.
+They revises the known crash circumstances and factors, such as age, amount of bicycle usage, road surface, type of bicycle, speed, among others.
 %
 The data collected came from surveys sent to people who attended to the hospital due to a bicycle crash within the two prior months.
 %
@@ -619,7 +630,7 @@ Then, we find a four-layer approach from \cite{Gil21a}, using direct causes and 
 %
 Direct causes are based on \cite{Sch12} and \cite{Utr20}, which create the crash scenario depending if it is composed on one or two direct causes.
 %
-Then, Gildea takes into account the common factors found on the literature, such as the mentioned in Table \ref{tab: known mechanisms}.
+Then, Gildea takes into account the common factors found on the literature, such as the mentioned in Table~\ref{tab: known mechanisms}.
 %
 At last, he distinguishes between three fall types: pitch-over, topple-over, and skid-out.
 %
@@ -631,7 +642,7 @@ Using this methodology, it is possible to cluster the events and compare them wi
 %%
 
 
-\cite{Sch21} aims to develop a crash detection system, which uses measured accelerations on the bicycle to detect the events.
+\cite{Sch21} aimed to develop a crash detection system, which uses measured accelerations on the bicycle to detect the events.
 %
 To identify events where a crash occurs, he develops a hierarchy based on his definition of stages in a crash, defining four classes: riding state, collision, ground hit and tipping over.
 %
@@ -639,7 +650,7 @@ All of them have sub-states, which combined result in 60 possible events, where 
 %
 Interestingly, the last layer of this method distinguishes between nose over (pitch-over), tip over (roll-over), and upright bicycle.
 %
-Nevertheless, this classification does not provide a detailed description of the crashes, which constitutes part of the future work discussed.
+Nevertheless, this classification does not provide a detailed description of the crashes, which constitutes part of the future work they discussed.
 %%
 
 
@@ -671,7 +682,7 @@ However, there is no information about which one of the wheels slips, longitudin
 
 
 \subsubsection{Known mechanisms}
-
+%
 \begin{landscape}
 \sloppy 
 
@@ -683,12 +694,12 @@ However, there is no information about which one of the wheels slips, longitudin
 
 
 \toprule
-\textbf{Mechanism} & \textbf{Description} & \textbf{Discussed in} \\
+\textbf{Type} & \textbf{Description} & \textbf{Discussed in} \\
 \midrule
 \endfirsthead
 
 \toprule
-\textbf{Mechanism} & \textbf{Description} & \textbf{Discussed in} \\
+\textbf{Type} & \textbf{Description} & \textbf{Discussed in} \\
 \midrule
 \endhead
 
@@ -701,31 +712,31 @@ However, there is no information about which one of the wheels slips, longitudin
 \bottomrule
 \endlastfoot
 
-Braking mistakes & brake over-actuation can produce wheel lock, which can end in a pitch-over crash or losing grip in one of the tyres. & \cite{Alg22, Gil21, Her18, Ohl19, Sch12} \\
-Caught in track & refers to one of the wheels falling on the gap of tram tracks, which locks the steering if the front wheel is locked. & \cite{Alg22} \\
-Collision & collision with objects on the road, these can be objects temporarily or permanently placed there. & \cite{Bec19, De14, Gil21, Her18} \\
-Crossing a threshold & the wheel hits a threshold and produces a mechanisms similar to tram track interaction or pothole striking. & \cite{Her18} \\
-Evasive manoeuvre & the rider executes a manoeuvre to avoid an obstacle and loses control. & \cite{Alg22, De14, Gil21, Her18, Ohl19, Sch12, Utr20} \\
-Fall & no further definition on the literature. & \cite{Utr20} \\
-Front wheel hit & the front wheel hits the curb or an object collides with it in on the lateral plane. & \cite{Gil21, Sch12, Utr20} \\
-Getting on/off the bicycle & users starting the ride or stopping, this involves the manoeuvre from standing to sit on the bicycle at low speeds, which increases balance task demand and the rider places its weight mainly on the pedals. & \cite{Alg22, Boe17, Ohl19, Utr20} \\
-Kerb hit & when the bicycle reaches the edge of the road, the wheels collide with the kerb, exerting an unexpected force on the system. & \cite{Boe17, Gil21, Sch12, Utr20} \\
-Loss of control on a descent & no further definition on the literature. & \cite{Bec19} \\
-Low speed loss of balance & at low speeds, bicycles have higher balance requirements from the user, thus, if the rider is not capable of controlling the steering properly, it produces a crash. & \cite{Ohl19, Sch12} \\
-Mechanical malfunction & any mechanical failure from the bicycle, non working brakes, broken chain, among others. & \cite{Alg22, Bec19, Gil21, Ohl19, Sch12} \\
-Object on the road & discussed as a type of collision. & \cite{Alg22, Bec19, Boe17, Gil21, Her18, Sch12} \\
-Other perturbations & external forces that can not be attributed to infrastructure or rider factors. & \cite{Sch12} \\
-Riding off the road & the rider is unable to maintain the desired trajectory on the road, which results with the bicycle reaching the edge and colliding with the kerb or falling on the non-road area. & \cite{Gil21, Her18, Sch12, Utr20} \\
-Road surface conditions & uneven roads or slippery surfaces such as wet leaves, gravel, ice, or water on the road. & \cite{Gil21, Her18} \\
-Skidding & one or both tyres suddenly loss grip. & \cite{Alg22, Bec19, Her18, Ohl19, Sch12, Utr20} \\
-Slipping off pedals & when the rider is exerting a high-power input into the system, if the foot-pedal joint fails, the rider suddenly changes its load distribution and the contact points with the bicycle. & \cite{Her18, Utr20} \\
-Something caught on the wheel & objects getting into one of the wheels suddenly locking it. & \cite{Alg22, Ohl19} \\
-Striking pothole & when the wheel strikes a pothole, the contact point changes, diminishing the available grip, or causing an excessive deceleration. & \cite{Bec19} \\
-Stunt & refers to doing stunts where the standard riding configuration changes, such as one of the wheels lifts from the ground, or riding without one or both hands. & \cite{Gil21, Sch12} \\
-Tram track interaction & the two mechanisms discussed for tram track interaction are one of the wheels getting locked, or losing grip due to the lower available friction of track surfaces. & \cite{Bec19, Her18, Ohl19} \\
-Turning mistake & no further description on the literature. & \cite{Gil21} \\
-Unable to keep balance & the rider is not capable of maintaining the bicycle in upright position. & \cite{Her18} \\
-Uneven road & uneven road surfaces such as cobblestones or improperly maintained roads, cause the wheels to loose contact with the ground. & \cite{Alg22, Gil21, Sch12} \\
+Braking mistakes & brake over-actuation can produce wheel lock, which can end in a pitch-over crash or losing grip in one or both of the tyres & \cite{Alg22, Gil21, Her18, Ohl19, Sch12} \\
+Caught in track & refers to one of the wheels falling on the gap of tram tracks, which locks the steering if the front wheel is locked & \cite{Alg22} \\
+Collision & collision with objects on the road, these can be objects temporarily or permanently placed there & \cite{Bec19, De14, Gil21, Her18} \\
+Crossing a threshold & the wheel hits a threshold and produces a mechanisms similar to tram track interaction or pothole striking & \cite{Her18} \\
+Evasive manoeuvre & the rider executes a manoeuvre to avoid an obstacle and loses control & \cite{Alg22, De14, Gil21, Her18, Ohl19, Sch12, Utr20} \\
+Fall & no further definition on the literature & \cite{Utr20} \\
+Front wheel hit & the front wheel hits the curb or an object collides with it in on the lateral plane & \cite{Gil21, Sch12, Utr20} \\
+Getting on/off the bicycle & users starting the ride or stopping, this involves the manoeuvre from standing to sit on the bicycle at low speeds, which increases balance task demand and the rider places its weight mainly on the pedals & \cite{Alg22, Boe17, Ohl19, Utr20} \\
+Kerb hit & when the bicycle reaches the edge of the road, the wheels collide with the kerb, exerting an unexpected force on the system & \cite{Boe17, Gil21, Sch12, Utr20} \\
+Loss of control on a descent & no further definition on the literature & \cite{Bec19} \\
+Low speed loss of balance & at low speeds, bicycles have higher balance requirements from the user, thus, if the rider is not capable of controlling the steering properly, it produces a crash & \cite{Ohl19, Sch12} \\
+Mechanical malfunction & any mechanical failure from the bicycle, non working brakes, broken chain, among others & \cite{Alg22, Bec19, Gil21, Ohl19, Sch12} \\
+Object on the road & discussed as a type of collision & \cite{Alg22, Bec19, Boe17, Gil21, Her18, Sch12} \\
+Other perturbations & external forces that can not be attributed to infrastructure or induced rider perturbations & \cite{Sch12} \\
+Riding off the road & the rider is unable to maintain the desired trajectory on the road, which results with the bicycle reaching the edge and colliding with the kerb or falling on the non-road area & \cite{Gil21, Her18, Sch12, Utr20} \\
+Road surface conditions & uneven roads or slippery surfaces such as wet leaves, gravel, ice, or water on the road & \cite{Gil21, Her18} \\
+Skidding & one or both tyres suddenly lose grip & \cite{Alg22, Bec19, Her18, Ohl19, Sch12, Utr20} \\
+Slipping off pedals & when the rider is exerting a high-power input into the system, if the foot-pedal joint fails, the rider suddenly changes its load distribution and the contact points with the bicycle & \cite{Her18, Utr20} \\
+Something caught on the wheel & objects getting into one of the wheels suddenly locking it & \cite{Alg22, Ohl19} \\
+Striking pothole & when the wheel strikes a pothole, the contact point changes, diminishing the available grip, or causing an excessive deceleration & \cite{Bec19} \\
+Stunt & refers to doing stunts where the standard riding configuration changes, such as one of the wheels lifts from the ground, or riding without one or both hands & \cite{Gil21, Sch12} \\
+Tram track interaction & the two mechanisms discussed for tram track interaction are one of the wheels getting locked, or losing grip due to the lower available friction of track surfaces & \cite{Bec19, Her18, Ohl19} \\
+Turning mistake & no further description on the literature & \cite{Gil21} \\
+Unable to keep balance & the rider is not capable of maintaining the bicycle in upright position & \cite{Her18} \\
+Uneven road & uneven road surfaces such as cobblestones or improperly maintained roads, cause the wheels to loose contact with the ground & \cite{Alg22, Gil21, Sch12} \\
 \end{longtable}
 \end{landscape}
 
@@ -733,16 +744,7 @@ Uneven road & uneven road surfaces such as cobblestones or improperly maintained
 
 
 \subsection{Bicycle dynamics-based crash classification} \label{subsec: newclassification}
-
-\begin{landscape}
-  \begin{figure}[p]
-    \centering
-    \includegraphics[width=1.5\textwidth, height=\textheight, keepaspectratio]{Images/class-mindmap-v10.png}
-    \caption{Multi-layer single-cyclist crash classification. Solid line boxes represent already identified and known concepts in the field. Dashed line boxes represent gaps that are currently not discussed in the literature. Arrows indicate the sequence of the layers. Bold arrows should be understood as `cause'.}
-    \label{fig: flowchart}
-  \end{figure}
-\end{landscape}
-
+%
 \begin{figure}
     \begin{subfigure}[t]{.45\textwidth}
         \centering
@@ -818,19 +820,23 @@ Uneven road & uneven road surfaces such as cobblestones or improperly maintained
 \end{figure}
 
 
-When the cause of accidents is assessed as a series of discrete events in a specific time, it is called `Linear chain-of-failure event model'.
+When the cause of accidents is assessed as a series of discrete events in a specific time, it is called `Linear chain-of-failure event model' \citep{Lev20}.
 %
-These models graphically show the series of events that lead to a crash, however, they often ignore secondary potential factors \citep{Zha22}.
+% These models graphically show the series of events that lead to a crash, however, they often ignore secondary potential factors \citep{Zha22}.
 %
-Therefore, towards the aim of `zero fatalities' \citep{Men17}, new models are required, which allow the combination of factors to provide a more integral analysis \citep{Zha22}.
+% Therefore, towards the aim of `zero fatalities' \citep{Men17}, new models are required, which allow the combination of factors to provide a more integral analysis \citep{Zha22}.
 %
-Aligned with this idea, we propose a multi-layer classification, which allows to combine the influence of different factors on the outcome of the event.
+Aligned with this idea, we propose a multi-layer sequential classification, which allows to combine the influence of different factors on the outcome of the event.
 %
 The classification consists of four main layers and three sub-layers, as seen in Figure \ref{fig: flowchart}.
 %
-The main layers are composed of already known concepts in the field, such as manoeuvres, excitation of the system, mechanisms of crash, and motion of the system during the crash.
+The main layers are composed of already known concepts in the field, such as manoeuvres (Table~\ref{tab: manoeuvre}), excitation of the system (Table~\ref{tab: excitation description}), mechanisms of crash (Table~\ref{tab: mechanism description}), and motion of the system during the crash (Table~\ref{tab: motion}).
 %
-On the other hand, sub-layers expose gaps found in the literature, such as human control in crash or pre-crash scenarios, characteristics of the excitation of the system, and the location of the mechanism.
+On the other hand, sub-layers expose gaps found in the literature, such as human control in crash or pre-crash scenarios, characteristics of the excitation of the system, and the spatial location of the mechanisms.
+%
+This is, include information on whether they act on the front or rear wheel, or if the perturbation, if it exists, acts longitudinally, laterally, or vertically on the system.
+%
+The intention here is not to fill those gaps but to give some cues for future research to address them.
 %%
 
 
@@ -840,30 +846,12 @@ Thus, this gives a flexible base that can be applied in different fields, depend
 %%
 
 
-The way of understanding the diagram on Figure \ref{fig: flowchart} goes:
-%
-The rider is executing a manoeuvre, then, the system experiences an excitation that leads to a critical situation.
-%
-Depending on the human control and the characteristics of the signal, the task demand increases above rider capability limit, which causes one or more crash mechanisms to appear.
-%
-From the crash mechanisms, it is possible to identify its location, which causes one of the characteristic motions, finally ending in a crash.
-%%
-
-
-For example, Figure \ref{fig: lowside}, the rider is doing a normal-speed turn to the right at $\sim 5$[m/s] (planned cornering).
-%
-Then, the front wheel steps on a low-grip zone of the road surface (external excitation), which causes the failure mechanism of tyre friction.
-%
-As the front wheel loses grip, the rotational dynamics change and it produces an understeering behaviour, from which the rider can not retake control of the balance through steering inputs, leading to an excessive roll rate (low-side crash).
-%
-Here, would be interesting to know what is the available time between grip decrease and the first response from the rider, or how the loss of grip acts on the system as a signal.
-%%
 
 
 % Closing paragraph
 
 \subsubsection{Manoeuvre}
-
+%
 The first layer consists of the manoeuvre that the rider is executing at the moment of entering the critical scenario, see Table \ref{tab: manoeuvre}.
 %
 \begin{table}[!h]
@@ -876,12 +864,12 @@ The first layer consists of the manoeuvre that the rider is executing at the mom
 \toprule
 Manoeuvre & Description \\
 \midrule
-Longitudinal acceleration & refers to braking and acceleration, both performed by the user. \\
-Low speed riding & mainly referred to start and stop riding, where users require major balance actions to maintain the bicycle in an upright position. \\
-Stunting & any action that is not intended for riding, such as riding with one hand, no hands, or standing on the pedals, which changes and limits the control of the rider on the bicycle. \\
-Steady and planned cornering & situations where the rider is performing a controlled turn, with a clear trajectory in mind. \\
-Straight-running & the action of following a straight path, maintaining balance through minor steering adjustments and no major variations on the states of the system. \\
-\multirow{2}{=}{Unplanned turning/ \\ Avoidance manoeuvre} & the rider executes a sudden evasive turn to avoid an obstacle. \\
+Longitudinal acceleration & refers to braking and acceleration, both performed by the user \\
+Low speed riding & mainly referred to start and stop riding, where users require major balance actions to maintain the bicycle in an upright position. Speed ranges between 0.8 and 2.8 [m/s] \\
+Steady and planned cornering & situations where the rider is performing a controlled turn, with a clear trajectory in mind \\
+Straight-running & the action of following a straight path, maintaining balance through minor steering adjustments and no major variations on the states of the system \\
+Stunting & any action that is not intended for riding, such as riding with one hand, no hands, riding in one wheel, or simply getting on purpose in a challenging-to-control state, which changes and limits the control of the rider on the bicycle \\
+\multirow{2}{=}{Unplanned turning/ \\ Avoidance manoeuvre} & the rider executes a sudden evasive turn to avoid an obstacle \\
  & \\[-1.2ex]
 \bottomrule
 \end{tabularx}
@@ -892,7 +880,7 @@ Straight-running & the action of following a straight path, maintaining balance 
 
 
 \subsubsection{Excitation of the system}
-
+%
 Due to the complexity of the human-bicycle system, it is subjected to several excitations, here collected in three classes.
 %
 These classes are aligned with \cite{Fel76}, and \citep{Sch12}, where the latter refers to them as direct causes of the crash.
@@ -902,7 +890,7 @@ Furthermore, a schematic representation of the interplay between the classes is 
 In this work, they are referred as rider, intrinsic, and external, respectively.
 %
 The description for each of them is given in Table \ref{tab: excitation description}.
-
+%
 \begin{table}[h!]
 \centering
 \renewcommand{\arraystretch}{1.3} % Adjust row height
@@ -910,9 +898,9 @@ The description for each of them is given in Table \ref{tab: excitation descript
 \toprule
 Excitation & \textbf{Description} \\
 \midrule
-Intrinsic & makes reference to any excitation that occurs due to the behaviour of the bicycle itself. This encompasses the modes of vibration and bicycle malfunctions. \\
-Rider & refers when the major excitation of the system comes from a control action from the rider. \\
-External & this refers to any perturbation, force, change of state, or influence exerted by the environment on the system. \\
+Intrinsic & makes reference to any excitation that occurs due to the behaviour of the bicycle itself. This encompasses the modes of vibration and bicycle malfunctions \\
+Rider & refers when the major excitation of the system comes from a control action from the rider \\
+External & this refers to any perturbation, force, change of state, or influence exerted by the environment on the system \\
 \bottomrule
 \end{tabularx}
 \caption{Types of excitation and their descriptions.}
@@ -929,14 +917,13 @@ External & this refers to any perturbation, force, change of state, or influence
 
 
 \subsubsection{Mechanisms of crash}
-
+%
 In the literature, there are several known mechanisms of crashes, normally clustered as skidding, collisions, falls, among others, as seen in Table \ref{tab: known mechanisms}
 %
 However, these `boxes' do not fit the broad spectrum of mechanisms, nor capture the dynamics involved in the events.
 %
 For this reason, we propose the following mechanisms based on the literature, see Table \ref{tab: mechanism description}.
 %%
-
 \begin{table}[h!]
 \centering
 \renewcommand{\arraystretch}{1.3} % Adjust row height
@@ -947,11 +934,11 @@ For this reason, we propose the following mechanisms based on the literature, se
 \toprule
 Mechanism & Description \\
 \midrule
-Balance control & this makes reference to the ability of the human to balance the bicycle as an inverted pendulum, moving the steering to control its equilibrium. \\
-Contact forces & this makes reference to any collision or force exerted on the bicycle, such as collision with an object, or steering perturbations. \\
-Load transfer & longitudinal accelerations generate longitudinal load transfer, which remains unnoticed for most casual riders. However, under large accelerations, these load transfer can easily exceed the maximum tolerable values for maintaining the bicycle in a longitudinally stable configuration. Therefore, due to the inertia of the system, a rotational motion is produced, which changes the states of the system out of its boundaries of human control. \\
-Rider-bicycle joint & the rider is ‘attached’ to the bicycle in five points: handlebar (both hands), pedals and saddle. When one or more of these detaches, the control from the rider changes and it is prone to fail. \\
-Tyre friction & the only constant connection between the bicycle and the environment is on the tyre-ground contact interface. Tyres have a saturation limit for the grip available, when this limit is reached, they start to skid and the rider loses control of the vehicle. Depending on which of the tyres loses grip, the dynamics will change, causing under- or over-steering behaviour. \\
+Balance control & this makes reference to the ability of the human to balance the bicycle as an inverted pendulum, moving the steering to control its equilibrium \\
+Contact forces & this makes reference to any collision or force exerted on the bicycle, such as collision with an object, or perturbations \\
+Load transfer & longitudinal accelerations generate longitudinal load transfer, which remains unnoticed for most casual riders. However, under large accelerations, these load transfer can easily exceed the maximum tolerable values for maintaining the bicycle in a longitudinally stable configuration. Therefore, due to the inertia of the system, a rotational motion is produced, which changes the states of the system out of its boundaries of human control \\
+Rider-bicycle joint & the rider interfaces with the bicycle in five points: handlebar (both hands), pedals and saddle. The loss of one or more of these interfaces reduces the control authority \\
+Tyre friction & the only constant connection between the bicycle and the environment is on the tyre-ground contact interface. Tyres have a saturation limit for the grip available, when this limit is reached, they start to skid and the rider loses control of the vehicle. Depending on which of the tyres loses grip, the dynamics will change, causing under- or over-steering behaviour \\
 \bottomrule
 \end{tabularx}
 \caption{Crash mechanisms and their descriptions.}
@@ -965,11 +952,16 @@ For this reason, we include front or rear, along with longitudinal, lateral or v
 
 
 \subsubsection{Characteristic motion} \label{subsec: crash motion}
-
-Currently on the literature we find three characteristic motions for two-wheeled single-track vehicle crashes \citep{Bed16, Ros17}, see Figures \ref{fig: highside}, \ref{fig: lowside} and \ref{fig: pitchover} for schematic representation of the motions. 
 %
-Note that motorcycle crash analyses are referenced to explain this crash motions, since the available bicycle-related literature is scarce and does not provide a detailed description, see Table \ref{tab: motion}. %of the events.
+In the literature, we find three characteristic motions for two-wheeled single-track vehicle crashes \citep{Bed16, Ros17}, see Figures \ref{fig: highside}, \ref{fig: lowside} and \ref{fig: pitchover} for schematic representation of the motions. 
+%
+Note that motorcycle crash analyses are referenced to explain these crash motions, since the available bicycle-related literature is scarce and does not provide a detailed description, see Table \ref{tab: motion}..
+%%
 
+From Section \ref{sec: bike}, we know that crash motions occur directly related to two of the angular degrees of freedom of the rear frame of the bicycle, i.e. pitch and roll.
+%
+However, due to the unstable nature of bicycle lateral dynamics, roll-related crash motions are sub-divided in three different cases.
+%%
 \begin{table}[h!]
 \centering
 \renewcommand{\arraystretch}{1.3} % Adjust row height
@@ -977,23 +969,23 @@ Note that motorcycle crash analyses are referenced to explain this crash motions
 \toprule
 \textbf{Motion} & \textbf{Description} \\
 \midrule
-\textbf{Collision ejection} & this sub-class refers to crashes where the final motion is not clear, the main event is a collision that stops the motion of the bicycle, while the rider gets ejected. \\
-\textbf{Pitch-over} & the main characteristic of this motion is one of the wheels lifting from the ground, following a trajectory that finishes with the front wheel behind the rear wheel \citep{Bec04, Bre10}. Colloquially known as uncontrolled \textit{stoppie} or \textit{wheelie}, depending on whether the motion goes towards the front or the rear, respectively. \\
-\textbf{Low-side} & the rider-bicycle system follows an excessive roll rate in the same direction as at the beginning. \cite{Cos07} explains it as a yaw movement that causes over-steering rotation. \\
-\textbf{High-side} & characterised by a skidding motion followed by sudden deceleration of the wheel while in lateral motion, which leads to an extreme negative roll rate with respect to the direction of the initial motion. \cite{Cos07} adds the characteristic of rider upward ejection as a result, frequently occurred in racing motorcycle crashes. \\
-\textbf{Tip-over} & the bicycle falls into one side as a result of a lack of control at low or no speed. Differs from the low-side crash by the absence of skidding. \\
+\textbf{Collision ejection} & this sub-class refers to crashes where the final motion is not clear, the main event is a collision that stops the motion of the bicycle, while the rider gets ejected \\
+\textbf{Pitch-over} & the main characteristic of this motion is one of the wheels lifting from the ground, following a trajectory that finishes with the front wheel behind the rear wheel \citep{Bec04, Bre10}. Colloquially known as uncontrolled \textit{stoppie} or \textit{wheelie}, depending on whether the motion goes towards the front or the rear, respectively \\
+\textbf{Low-side} & the rider-bicycle system follows an excessive roll rate in the same direction as at the beginning. \cite{Cos07} explains it as a yaw movement that causes over-steering rotation \\
+\textbf{High-side} & characterised by a skidding motion followed by sudden deceleration of the wheel while in lateral motion, which leads to an extreme negative roll rate with respect to the direction of the initial motion. \cite{Cos07} adds the characteristic of rider upward ejection as a result, frequently occurred in racing motorcycle crashes \\
+\textbf{Tip-over} & the bicycle falls into one side as a result of a lack of control at low or no speed. Differs from the low-side crash by the absence of skidding \\
 \bottomrule
 \end{tabularx}
 \caption{Crash motion types.}
 \label{tab: motion}
 \end{table}
 
-\subsubsection{Unknowns blocks}
-
+\subsubsection{Unknowns event features}
+%
 \begin{itemize}
     \item \textbf{Rider factors:} these are intended to explain the interplay between the intrinsic factors of the bicycle and the rider's response.
     %
-    Through these factors, the rider understands their own state and the state of the bicycle.
+    Through these factors, the rider understands their own state, senses the environment, and the state of the bicycle.
     %
     It would be interesting to explore how this closed control loop works in critical scenarios.
     \item \textbf{Signal:} this is expected to have a close relation with the triggered mechanism.
@@ -1006,7 +998,7 @@ Note that motorcycle crash analyses are referenced to explain this crash motions
 
 
 \subsection{Root causes}
-
+%
 The root causes serve as an open field for details about the factors that provide additional information about the crash.
 %
 These can not be realistically classified in discrete events, since the possibilities are extremely extensive.
@@ -1026,9 +1018,9 @@ Thus, Table \ref{tab: root causes} provides a brief explanation of how these cau
 \toprule
 Relation & Description \\
 \midrule
-I--II & how a manoeuvre leads or creates more exposition to one or more of the system's excitations. \\
-II--III & these are the factors commonly discussed in the literature, such as icy road, aerodynamic perturbations, instabilities, among others. \\
-III--IV & how one or more mechanisms translate into a crash motion. This causality relation is strongly related to the physics underneath bicycle motion. \\
+I--II & how a manoeuvre leads or creates more exposition to one or more of the system's excitations \\
+II--III & these are the factors commonly discussed in the literature, such as icy road, aerodynamic perturbations, instabilities, among others \\
+III--IV & how one or more mechanisms translate into a crash motion. This causality relation is strongly related to the physics underneath bicycle motion \\
 \bottomrule
 \end{tabularx}
 \caption{Causality relations between layers.}
@@ -1036,11 +1028,40 @@ III--IV & how one or more mechanisms translate into a crash motion. This causali
 \end{table}
 
 
+\subsection{Classification diagram}
+%
+From all the information gathered and explained above, we construct a diagram (cf. Figure \ref{fig: flowchart}) which give cues to follow a descriptive bicycle-crash classification.
+%
+The diagram shows a sequence of features of an event that lead to a crash; The way of understanding it goes:
+%
+The rider is executing a manoeuvre, then, the system experiences an excitation that leads to a critical situation.
+%
+Depending on the human control and the characteristics of the signal, the task demand increases above the boundary of capability of the rider, which causes one or more crash mechanisms to appear.
+%
+The crash mechanism occur with related spatial information, giving space to the characteristic motions, to finally end in a crash.
+%%
+%
+\begin{landscape}
+  \begin{figure}[p]
+    \centering
+    \includegraphics[width=1.5\textwidth, height=\textheight, keepaspectratio]{Images/class-mindmap-v10.png}
+    \caption{Multi-layer single-cyclist crash classification. Solid line boxes represent already identified and known concepts in the field. Dashed line boxes represent gaps that are currently not discussed in the literature. Arrows indicate the sequence of the layers. Bold arrows should be understood as `cause'.}
+    \label{fig: flowchart}
+  \end{figure}
+\end{landscape}
+
+
+For example, Figure \ref{fig: lowside}, the rider is doing a normal-speed turn to the right at $\sim 5$[m/s] (planned cornering).
+%
+Then, the front wheel steps on a low-grip zone of the road surface (external excitation), which causes the failure mechanism of tyre friction.
+%
+As the front wheel loses grip, the rotational dynamics change and it produces an understeering behaviour, from which the rider can not retake control of the balance through steering inputs, leading to an excessive roll rate (low-side crash).
+%
+Here, would be interesting to know what is the available time between grip decrease and the first response from the rider, or how the loss of grip acts on the system as a signal.
+%%
+
 \section{Discussion} \label{sec: discussion}
-
-% Context
-
-
+%
 In this work, we reviewed the literature where single-cyclist crash classifications, factors, and mechanisms are discussed.
 %
 We found a gap in how existing classifications capture the dynamics of the bicycle and its interaction with the environment.
@@ -1095,7 +1116,7 @@ Therefore, we differ in defining skidding as a crash motion, since it can be exp
 
 
 \subsection{Mechanisms}
-
+%
 One important part of the present work is providing a detailed description of the hypothesised crash mechanisms.
 %
 From the mechanisms present in this classification, only `tyre friction' and `contact forces' are explicitly discussed in the literature \citep{Alg22, Bec16, Boe17, Her18, Sch12}.
@@ -1162,7 +1183,7 @@ The new proposed mechanisms are related to the known mechanisms as shown in Tabl
 
 
 \subsection{Questionnaire results}
-
+%
 The questionnaire, designed to evaluate the scope of this study, revealed a high level of agreement regarding detected mechanisms and motions.
 %
 However, the remaining disagreement may be explained by the statement \textit{`Crash cause is similar to beauty: it is in the eye of the beholder'} \citep{Shi19}.
@@ -1188,7 +1209,7 @@ Finally, among the 100 classified videos, the only open-field response was in th
 
 
 \subsection{Crash types}
-
+%
 Since the most prominent characteristic of a crash is the motion, the ways of crashing are named after them, and the hypothesised mechanisms come as an additional description for the event.
 %
 In general, the authors recommend calling crashes in a descriptive way, following a reverse order from Figure \ref{fig: flowchart}.
@@ -1204,7 +1225,7 @@ At last, an example is \textit{`...he had a low-side crash due to grip issues on
 
 
 \subsection{Limitations and future work}
-
+%
 The limitations of this work are related to the available data used to test the classification, since only videos from social media were used, without personal assessment of the subjects.
 %
 It is expected that the available videos are biased towards the level of visual impact that they provoke.
@@ -1228,8 +1249,7 @@ Moreover, this work highlights the necessity of human motion and control data to
 %%
 
 \section{Conclusion}
-
-
+%
 In summary, this study reviewed existing literature on single-cyclist crashes, identifying various classification methods and mechanisms, none of which explicitly addressed bicycle dynamics.
 %
 To bridge this gap, bicycle dynamics theory was examined to explain known mechanisms and provide a more rigorous theoretical foundation.
@@ -1246,7 +1266,7 @@ Finally, a significant knowledge gap persists regarding human responses to speci
 
 
 \section*{Acknowledgement}
-
+%
 Funding: This project has been made possible in part by grant number 2022-252796 from the Chan Zuckerberg Initiative DAF, an advised fund of Silicon Valley Community Foundation.
 
 % \section*{Declaration of generative AI and AI-assisted technologies in the writing process}
