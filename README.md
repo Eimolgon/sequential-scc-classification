@@ -16,9 +16,10 @@ Add here all commentaries that do not fit on the .tex document
 - [x] Check Union 2023 reference
 - [x] Move Figure 2 closer to the text (bicycle dynamics).
 - [ ] Change figure names for submission to the format `fig_x_label.png`
-- [ ] Expand terminology to description
+- [x] Expand terminology to description
 - [ ] Include notes and definitions from Leveson
-- [ ] New figure 2 (cornering forces) > Change Cossalter's one
+- [x] New figure 2 (cornering forces) > Change Cossalter's one
+- [x] Modify Figure 1. Change arrows.
 
 
 ### Benjamin:
@@ -44,9 +45,7 @@ For this reason, in this Bicycle dynamics-based crash classification, we include
 rider factors that will be studied in the future to understand how and why a
 critical situation results in a crash
 
-
 - Use Beck2004 to explain pitch over crashes.
-
 
 - Safety in numbers (Jacobsen 2015) states that the likelihood of being struck
 by a motorised vehicle as a pedestrian or cyclist, reduces according to the
@@ -64,7 +63,6 @@ the wheel gets caught and it is not capable of climbing, losing
 steering input and balance control.
 
 - [High side pictures](https://motorcyclesmarts.com/highside-crashes/)
-
 
 - By encompassing crashes with similar dynamics, the measures can be developed towards
 avoiding the scenarios that lead to those dynamics. Or write something like that.
