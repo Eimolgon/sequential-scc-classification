@@ -7,7 +7,6 @@ Add here all commentaries that do not fit on the .tex document
 - [x] Update low-side crash
 - [x] Update figure (bike dof) for rear wheel rotation \omega_r
 - [x] Revise citation Mendoza 2017 > Include other authors
-- [ ] Create rider-bicycle figure
 - [x] Diagram Lot p24 fig 1.14
 - [x] Add affiliation
 - [ ] Check CBS full name
@@ -20,6 +19,12 @@ Add here all commentaries that do not fit on the .tex document
 - [ ] Include notes and definitions from Leveson
 - [x] New figure 2 (cornering forces) > Change Cossalter's one
 - [x] Modify Figure 1. Change arrows.
+- [ ] Update terms
+    - [ ] Manoeuvre > Pre-crash state/manoeuvre
+    - [ ] Excitation > Nature of the perturbation
+    - [ ] Extent of loss of control > Recoverability?
+- [ ] Dig into the data from the questionnaire to support the low match on  crash mechanisms.
+- [ ] Put Accident Analysis and Prevention on the cover page.
 
 
 ### Benjamin:
