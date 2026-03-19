@@ -724,7 +724,7 @@ Since most videos come from surveillance and dashboard cameras, the video qualit
 %
 Following TU Delft's Human Research Ethics Committee guidelines, we surveyed 20 participants, who received an informed consent which details the procedure of the experience, regarding data privacy, and participation.
 %
-No personal or identifiable data were collected, and responses were anonymized.
+No personal or identifiable data were collected, all responses were anonymized.
 %
 Participants were informed that they could withdraw at any time and request deletion of their data.
 %
@@ -735,17 +735,19 @@ This questionnaire was approved under the application number 5777.
 The objective of the questionnaire was to test the clarity and scope of the classification.
 %
 It aimed to capture an objective evaluation of crash events recorded on video.
-%%
-
+%
 The questionnaire consisted of 10 sections, one for each video.
 %
-Each section included multiple choice questions for manoeuvre executed at the moment of the crash, nature of the perturbation, and crash motion, while mechanisms were ranked from 0 to 5.
+Each section included multiple choice questions for manoeuvre executed at the moment of the crash, nature of the perturbation that caused the crash, and crash motion.
+%
+The options to choose the crash mechanisms were ranked from 0 to 5.
 %
 The ranking method allows to choose one or more mechanisms and detail its level of importance on the outcome.
 %
 Additionally, after every question there was an open text field for comments in case none of the possible options fit the observed phenomenon.
+%%
 
-%
+
 The questionnaire was created using Google Forms, due to the flexibility available to make the questions.
 %
 It was openly distributed in the single-track vehicles Google group.
@@ -759,33 +761,25 @@ There was no requisite about the knowledge background.
 %
 When the cause of accidents is assessed as a series of discrete events in a specific time, it is called `Linear chain-of-failure event model' \citep{Lev20}.
 %
-Aligned with this idea, we propose a sequential classification, which allows to combine the influence of different factors on the outcome of the event.
+Here, we propose a sequential classification framework for single-cyclist crashes, which allows us to combine the influence of different factors on the outcome of the event.
 %
-The classification consists of five main layers and three sub-layers, as seen in Figure \ref{fig: flowchart}.
+The crash classification consists of five main classes and three inter-classes, as seen in Figure \ref{fig: flowchart}.
 %
-The main layers are composed of already known concepts in the field, such as manoeuvres, excitation of the system, mechanisms of crash, extent of loss of control, and motion of the system during the crash.
+On the one hands, the main classes are composed of already known concepts in the field.
 %
-On the other hand, sub-layers expose gaps found in the literature, such as human control in crash or pre-crash scenarios, characteristics of the excitation of the system, and the spatial location of the mechanisms.
+These are: the manoeuvre executed prior the crash, the nature of the perturbation on the system, the mechanisms of the crash, the level of recoverability, and the motion of the system during the crash.
 %
-This is, include information on whether they act on the front or rear wheel, or if the perturbation, if it exists, acts longitudinally, laterally, or vertically on the system.
+On the other hand, the inter-classes expose gaps found in the literature, such as human control in crash or pre-crash scenarios, characteristics of the excitation of the system, and the spatial location of the mechanisms.
+%
+This includes information on whether they act on the front or rear wheel, or if the perturbation, if it exists, acts longitudinally, laterally, or vertically on the system.
 %
 The intention here is not to fill those gaps but to give some cues for future research to address them.
 %%
 
 
-% The multi-layer approach allows to classify the crash event with different depth levels according to the available information.
-% %
-% Thus, this gives a flexible base that can be applied in different fields, depending on the objective sought.
-%%
-
-
-% Closing paragraph
-
 \subsection{Pre-crash manoeuvre}
 %
-In our classification, the first step consists in identify the manoeuvre executed by the rider in the moment previous to the crash.
-%
-Based on the literature, along with information collected from the video dataset, we cluster the following options:
+In our classification framework, the first step consists of identifying the manoeuvre executed by the rider in the moment previous to the crash, which we cluster in the following options:
 %
 \begin{description}
     \item [Longitudinal acceleration] refers to braking and acceleration, both performed by the user.
@@ -1120,7 +1114,7 @@ Similarly, if the loss of control is substantial, but the rider is capable of co
 \begin{landscape}
   \begin{figure}[p]
     \centering
-    \includegraphics[width=1.5\textwidth, height=\textheight, keepaspectratio]{Images/class-mindmap-v12-2.png}
+    \includegraphics[width=1.5\textwidth, height=\textheight, keepaspectratio]{Images/class-mindmap-v13.png}
     \caption{Sequential single-cyclist crash classification. Solid line boxes represent already identified and known concepts in the field. Dashed line boxes represent gaps that are currently not discussed in the literature. Arrows indicate the sequence of the layers. Bold arrows should be understood as `cause'.}
     \label{fig: flowchart}
   \end{figure}
@@ -1353,67 +1347,65 @@ As the front wheel creates a large deceleration, the rider is ejected over the h
 
 %
 \section{Discussion} \label{sec: discussion}
+
+The proposed crash classification works as a sequential framework to assess the events, consisting of five classes: pre-crash manoeuvre, nature of the perturbation, crash mechanisms, recoverability, and crash motion.
+
+
+Here we propose a single-cyclist crash classification framework.
 %
-In this work, we reviewed the literature where single-cyclist crash classifications, factors, and mechanisms are discussed.
+First, we reviewed existing classification, extracting the hypothesised mechanisms and causes, and contrasted with the theory of bicycle dynamics.
 %
 We found a gap in how existing classifications capture the dynamics of the rider-bicycle system and its interaction with the environment.
 %
 In addition, many commonly used terms are not clarified in all studies, creating space for misconceptions.
 %
-Therefore, we presented the key concepts used in this work, reviewed the existing information and proposed a new classification.
+Therefore, we presented the key concepts used in this work, reviewed the existing information, and proposed a classification framework that presents coherent underlying physics to explain crash mechanisms.
 %%
 
 
 % Bicycle dynamics
-Based on single-trach vehicle dynamics theory \citep{Cos06, Mei07, Pac06, Lot21}, we were able to capture the possible failure mechanisms that lead to crashes.
+Possible failure mechanisms that lead to crashes were derived from single-track vehicle dynamics theory \citep{Cos06, Mei07, Pac06, Lot21}.
 %
-Particularly, we highlight the unstable modes of vibration as a mechanism that overcomes the control capability of the rider.
+Crashes due to slippery surfaces and road irregularities are captured by the tyre-ground friction mechanism.
 %
-Similarly, assessing the tyre-ground friction as a general concept encompasses the crashes due to slippery surfaces and road irregularities.
-%
-Moreover, this mechanism explains the cases where cyclists veers off the road during a corner due to reaching the maximum available friction.
+This mechanism explains the cases where cyclists veers off the road during a corner due to reaching the maximum available friction.
 %%
 
 
+Our classification is based on physics while others are based on characteristics
 % Contrast with existing classifications
 
-The main categories used for the nature of the excitation are in agreement with \cite{Fel76} and \cite{Sch12}. 
+Our crash classification consists of five classes: pre-crash manoeuvre, nature of the perturbation, crash mechanisms, recoverability, and crash motion.
 %
-However, on the sub-categories of causes, here referred as mechanisms, we find major differences with respect to \cite{Sch12}.
+From these five, the nature of the perturbation is in agreement with \cite{Fel76} and \cite{Sch12}. 
 %
-Although there are some similarities, such as identifying collisions, braking mistakes, bicycle malfunction or steering disturbances, the first difference comes from the use of combinations of different mechanisms to explain a single event.
+However, for our crash mechanisms, by others referred as causes, we find major differences with respect to \cite{Sch12}, as we allow for the use of combinations of different mechanisms to explain a single event.
 %
-With our classification, it is possible to point different mechanisms and rank them according to its role on the outcome.
+Although \cite{Sch12} took the dynamics of the bicycle into account, their categories are not tightly related to the underlying physics in the real world.
+%
+In general, their categories were attributed to specific events, showing the effects of infrastructure failures.
+%
+Schepers' made a step to standardise single-cyclist crashes, and not to reconstruct the crash scenario, thereby missing the intended manoeuvre by the rider, or the motion of the system during the crash.
 %%
 
 
-Although \cite{Sch12} took into account the dynamics of the bicycle in his work, the categories are not tightly related to the underlying physics in the real world.
+\cite{Gil21a} includes the fall type in his classification, in our framework referred as crash motion.
 %
-In general, we find categories narrowed to specific events, which show the effects of infrastructure failures.
+In agreement to Gildea's classification, we include the pitch-over and roll-over motions.
 %
-Indeed, Schepers' work did not aim to capture enough information to reconstruct the event, but an attempt to standardise single-cyclist crashes.
+However, the fall type presented by Gildea as `skid-out' is in our framework explained through a crash mechanism.
 %
-However, the information obtained is scarce if the interest is on recreating a certain crash scenario, missing the intended manoeuvre by the rider, or the motion of the system during the crash.
+
 %%
 
 
-Alternatively, \cite{Gil21a} includes the fall type in his classification.
-%
-Compared to Gildea's classification, we agree on the pitch-over and roll-over motions, subdividing the latter into three specific crash motions.
-%
-However, the fall motion presented as `skid-out' may represent a skidding mechanism under large lateral loads, which results in a crash by colliding with the kerb or running off the road.
-%
-Therefore, we differ in defining skidding as a crash motion, since it can be explained as a primary mechanism, which results in a low-side roll-over motion.
-%%
-
-
-\subsection{Mechanisms}
+\subsection{Crash mechanisms}
 %
 One important part of the present work is providing a detailed description of the hypothesised crash mechanisms.
 %
-From the mechanisms present in this classification, only `tyre friction' and `contact forces' are explicitly discussed in the literature \citep{Alg22, Bec16, Boe17, Her18, Sch12}.
+From the crash mechanisms present in this classification, only `tyre friction' and `contact forces' are explicitly discussed in the literature \citep{Alg22, Bec16, Boe17, Her18, Sch12}.
 %
-However, we prefer a broader approach where similar mechanisms belong to the same class, e.g. skidding on wet, icy or leaf-covered pavement, all of them represent a loss of tyre friction.
+However, we prefer a broader approach where similar crash mechanisms belong to the same class, e.g. skidding on wet, icy or leaf-covered pavement, all of them represent a loss of tyre friction.
 %
 Furthermore, crashes involving collision with objects, temporal or permanent, are clustered as contact forces, which also applies for wheels getting stuck on tram tracks.
 %
@@ -1421,15 +1413,15 @@ Similarly, low-speed `loss of control' crashes are explained through lateral and
 %%
 
 
-Based on the crash model from \cite{Ful05}, describing a crash mechanism as `loss of control' becomes redundant, since all crashes occur due to loss of control.
+Based on the crash model from \cite{Ful05}, describing a crash mechanism as `loss of control' becomes redundant, since all single-cyclist crashes occur due to loss of control.
 %
 Therefore, we aim to avoid classes that are not descriptive of the event, such as `other', `unknown' or `loss of control'.
 %
 In this line, the questionnaire proved that our classification gives enough options to cover all the seen cases.
+%%
 
 
-
-\subsection{Crash types}
+\subsection{Crash motion}
 %
 Since the most prominent characteristic of a crash is the motion, the ways of crashing are named after them, and the hypothesised mechanisms come as an additional description for the event.
 %
@@ -1466,7 +1458,7 @@ Thus, classification and interpretation are strongly influenced by the study’s
 %
 To show examples of the working of our classification, we chose four videos that could be challenging to classify with existing classifications.
 %
-For Figure \ref{fig: example 1}, it is expected that under Gildea's classification, this crash woud be classified as a skid-out crash.
+For Figure \ref{fig: example 1}, it is expected that under Gildea's classification, this crash would be classified as a skid-out crash.
 %
 Example 2 (Figure \ref{fig: example 2}) is challenging for Schepers' classification since the road looks in good condition and free of any lubricant interfaces.
 %

@@ -19,10 +19,10 @@ Add here all commentaries that do not fit on the .tex document
 - [ ] Include notes and definitions from Leveson
 - [x] New figure 2 (cornering forces) > Change Cossalter's one
 - [x] Modify Figure 1. Change arrows.
-- [ ] Update terms
-    - [ ] Manoeuvre > Pre-crash state/manoeuvre
-    - [ ] Excitation > Nature of the perturbation
-    - [ ] Extent of loss of control > Recoverability?
+- [x] Update terms
+    - [x] Manoeuvre > Pre-crash state/manoeuvre
+    - [x] Excitation > Nature of the perturbation
+    - [x] Extent of loss of control > Recoverability?
 - [ ] Dig into the data from the questionnaire to support the low match on  crash mechanisms.
 - [ ] Put Accident Analysis and Prevention on the cover page.
 
