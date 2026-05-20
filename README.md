@@ -3,13 +3,21 @@
 Add here all commentaries that do not fit on the .tex document
 
 ## To-Do
+
+- [ ] Change known mechanisms to known causes
+- [ ] Change running to heading in straight running
+- [ ] Add figure slip angle, under/over steering
+- [x] Change citation style
+- [x] Reorganise methods-results
+- [x] Solve short comments Jason
+- [ ] Dig into the data from the questionnaire to support the low match on  crash mechanisms.
 - [x] Update high-side crash
 - [x] Update low-side crash
 - [x] Update figure (bike dof) for rear wheel rotation \omega_r
 - [x] Revise citation Mendoza 2017 > Include other authors
 - [x] Diagram Lot p24 fig 1.14
 - [x] Add affiliation
-- [ ] Check CBS full name
+- [x] Check CBS full name
 - [x] Check SWOV full name
 - [x] Check Dictionary 2025 referencee
 - [x] Check Union 2023 reference
@@ -23,8 +31,7 @@ Add here all commentaries that do not fit on the .tex document
     - [x] Manoeuvre > Pre-crash state/manoeuvre
     - [x] Excitation > Nature of the perturbation
     - [x] Extent of loss of control > Recoverability?
-- [ ] Dig into the data from the questionnaire to support the low match on  crash mechanisms.
-- [ ] Put Accident Analysis and Prevention on the cover page.
+- [x] Put Accident Analysis and Prevention on the cover page.
 
 
 ### Benjamin:
@@ -75,22 +82,23 @@ avoiding the scenarios that lead to those dynamics. Or write something like that
 - Fullner 2005 talks about 'boundary of capability'
 
 
-## Jason
+### Ajay comments
 
-Some overall comments:
+On the positive side the more I read it the more I realize the work is useful, important and could be well cited.
+But, I still think there are some important areas to clarify and terminology that needs to be used consistently to really tighten up the paper:
+1.	what is your classification system composed of? Classes and concepts (or categories) for the things inside? What are sub-classes and inter-classes? Do you need these terms? In sections say what the headings describe. Are these the major classes and inside the categories/concepts?
+2.	why do we refer to the scattering of concepts/descriptors/causes in the previous classifications as "mechanisms"—its confusing—their and our mechanisms? A major motivation is that these "labels" are non-specific and mix causes and mechanisms with environment and rider factors making classification ambiguous. This is why you needed to do this study and where your classification system shines! It links these "concepts" in causal/sequential/logical ways with fewer classes/categories (a source of ambiguity). You show you can span the space of existing "descriptors" in terms of more fundamental concepts and still can describe/classify other scenarios easily. I would try to make this point much stronger to align with the motivation, as well. It also needs to be discussed in the Discussion.
+3.	Are "Root causes" and "Unknown event features" really needed? They do not appear in your final classification system (Figure 8) or example cases. My sense is that these were added to include important details about the Rider and Environment conditions that are descriptive but not mechanistic--e.g. ice, wind, drunk rider. I would instead place these inside of their respective categories associated with the Rider and External (I would personally rename this to Environment, since the other words are nouns/things not adjectives).
+4.	Slip angle definition is not complete and repeated (incompletely) twice. Define it once (well) and refer to it.
+5.	In my view the Discussion is still in a draft state. The key takeaways are not super clear and the limitations are not at all explained or discussed! I also do not think redoing the survey with bigger numbers would be helpful without iterating on the classification system. I would say the biggest limitation is the 1 iteration and more are needed to refine the classifications system. The second is a baseline on bicycle dynamics for survey participants—are they representative of the target audience?
 
-- You should name your classification method (similar to the linear-causal-.... thing you cite in the paper). Are you building on that and then combining in the other prior classification systems?
-- The videos and survey info methods/results/etc are mostly absent so it is difficult to see how those things relate to the classification.
-- As mentioned today, make a diagram to sort all your methodological steps and then structure your more in-depth methods section with that info. Explain what you did and how you arrived at the intermediate and final result (fig 3).
-- Improve the consistency and precision of your language. Be clear what you are inventing and what is from prior work.
-- Maybe a definition section (see definition itemization in latex) that defines the terms you settle on and then use consistently after that in the paper. Show that you considered other terms and prior conflicting terms, but settled on certain things for your exposition.
-- Order the paper that shows how you build/construct (methods) your classification (results).
-- Demonstrate how your classification works where prior ones fail. If you can show yours handles all cases and all prior ones fail on some cases, then you have a more universal classification.
-- Use more prose, fewer sections, maybe fewer tables. It feels broken into very small chunks right now, instead of a flowing story.
-- [x] The "unknown blocks" need more explanation, they seem present but not really explained. Maybe just leave them with big question marks instead of proposing something inside them.
+The submission to Accident Analysis and Prevention is likely going to require "impact", which generally translates to writing about the broader implications for policy makers, designer, engineers (e.g. the journal's audience) interested in improving safety around single-cyclist crashes. I'm a bit concerned it will be returned to us in the current state. I would suggest to invest a few days to polish it up. I made extensive suggestions to get things rolling. Please share your thoughts.
 
-You have a good concept and I think it builds well on the prior art and improves it. It is a bit hard to see this because it isn't always obvious how you arrived at the fig 3 and where all pieces come from in the prior literature.
 
-Have you tried sending this to schepers or gildea or others that did this before and see what they think? You can do that and maybe they will give some feedback.
 
-I'm suggesting a lot of work in my feedback, probably not what you hoped for. You can selectively fix suggestions and then get Alfred and Ajay's approval to try to submit it. You have been working on this for some time, so decide what level you want to edit it to for a submission and you can see if it will get to review.
+
+
+
+
+
+
