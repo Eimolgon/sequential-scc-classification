@@ -4,7 +4,8 @@ Add here all commentaries that do not fit on the .tex document
 
 ## To-Do
 
-- [ ] Change known mechanisms to known causes
+- [ ] Add figure per mechanism?
+- [ ] Change known mechanisms to crash descriptors
 - [ ] Change running to heading in straight running
 - [ ] Add figure slip angle, under/over steering
 - [x] Change citation style
