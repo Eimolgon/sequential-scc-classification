@@ -4,6 +4,8 @@ Add here all commentaries that do not fit on the .tex document
 
 ## To-Do
 
+- [ ] Update bike-dof v0103 file
+- [ ] Root causes as part of the external perturbations
 - [ ] Add figure per mechanism?
 - [ ] Change known mechanisms to crash descriptors
 - [ ] Change running to heading in straight running
