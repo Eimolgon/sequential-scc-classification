@@ -883,10 +883,22 @@ Here, we refer to them as rider, bicycle, and external, respectively, which desc
     This encompasses the stability of the bicycle and mechanical malfunctions.
 
     \item [Rider:] the perturbations on the system that come from the control actions of the rider to the bicycle.
+    % Mention the unknown rider factors
     
     \item [External:] any perturbation, force, change of state, or influence exerted by the environment on the system.
+    % Talk about location here as the unkown factor
 \end{description}
 
+\paragraph{Crash conditions} % Check this > Limited to the nature of the perturbation
+%
+The root causes serve a dual purpose, explaining the transition from the nature of the perturbation to the crash mechanisms, and as an open field for details about the factors that trigger the crash mechanism. 
+%
+% Root causes can not be realistically classified in discrete events, since the possibilities are extensive.
+%
+However, the factors commonly discussed in the literature can be included here.
+%
+For example, icy roads, aerodynamic perturbations, bicycle instabilities, and rider behaviour, among others.
+%%
 
 \begin{figure}[h]
     \centering
@@ -898,6 +910,8 @@ Here, we refer to them as rider, bicycle, and external, respectively, which desc
 
 \subsubsection{Mechanisms of crash}
 %
+
+% Talk about how the signal is the induction mechanism
 
 % Make each mechanism an independent piece and do more back references to connect them all together rather than explaining twice the same.
 
@@ -979,15 +993,7 @@ The relation shows that our crash mechanisms are fewer and more precise categori
 \end{table}
 \normalsize
 
-% \subsubsection{Root causes} > Change to conditions and put this into the nature of the perturbation
-% %
-% The root causes serve a dual purpose, explaining the transition from the nature of the perturbation to the crash mechanisms, and as an open field for details about the factors that trigger the crash mechanism. 
-% %
-% Root causes can not be realistically classified in discrete events, since the possibilities are extensive.
-% %
-% However, the factors commonly discussed in the literature can be included here.
-% %
-% For example, icy roads, aerodynamic perturbations, bicycle instabilities, and rider behaviour, among others.
+
 
 
 \subsubsection{Characteristic motion} \label{subsec: crash motion}
@@ -1109,9 +1115,6 @@ Consequently, we describe the crash motions as:
     \caption{High-side crash schematic sequence.}
     \label{fig: highside}
 \end{figure}
-
-
-
 
 
 \subsubsection{Classification diagram}
@@ -1359,17 +1362,17 @@ As the front wheel creates a large deceleration, the rider is ejected over the h
         & \textbf{Crash motion}
         & \textbf{Outcome} \\
         \midrule
-        Case 1 & Planned cornering & Rider & Tyre friction &
+        Case 1 & Planned cornering & Rider - wrong brake input & Tyre friction &
         Complete loss of control & Rear wheel low-side & Crash \\
         
-        Case 2 & Planned cornering & External & Tyre friction &
+        Case 2 & Planned cornering & External - loss of grip on rear tyre & Tyre friction &
         Complete loss of control & Rear wheel high-side & Crash \\
         
-        Case 3 & Straight running & Rider/Bicycle &
+        Case 3 & Straight running & Rider/Bicycle - left foot slips from the pedal &
         Rider–bicycle interface & Complete loss of control &
         Low-side & Crash \\
         
-        Case 4 & Planned cornering & External &
+        Case 4 & Planned cornering & External - sudden change in tyre grip &
         Load transfer / Tyre friction & Complete loss of control &
         Pitch-over & Crash \\
         \bottomrule
@@ -1431,30 +1434,25 @@ The interpretation of these results is exposed on the discussion.
 
 \section{Discussion} \label{sec: discussion}
 %
-In this work we proposed a new sequential classification framework for single-cyclist crashes (Figure \ref{fig: flowchart}) which demonstrated consistency across users of the classification system (Table \ref{tab: questionnaire}).
-
-Across the different classes, the  54\% and 83\%  of 17 survey participants, from which, six were knowledgeable about vehicle dynamics.
+In this work we proposed a new sequential classification framework for single-cyclist crashes (Figure \ref{fig: flowchart}).
 %
-As part of this classification, we provide a set of standardised definitions for bicycle crashes, along with a connection between crash causality and bicycle dynamics theory.
+Across the different classes, it demonstrated a consistency between 54\% and 83\%, with 17 survey participants, from which, six were knowledgeable about vehicle dynamics (Table \ref{tab: questionnaire}).
 %
-% This approach improved reliability, accuracy, and objectivity on the process of classifying crash events.
+As part of this classification, we provide a set of standardised definitions for bicycle crashes (Section \ref{subsec: terminology}), along with a connection between crash causality and bicycle dynamics theory.
 %
 Although the classification is still evolving, our results show a major progress towards a causal and mechanistic understanding of single-cyclist crashes.
 %%
 
 
-
-% \subsection{Crash mechanisms}
-
-Our classification system is more objective because
+Our classification system improves objectivity on the classification of single-cyclist crashes as we developed it based on the bicycle dynamics theory, and contrasted its causality with the known descriptors.
 %
-Unlike other classification systems, we combine the causality of mechanisms to structure 
+Unlike other classification systems, we combine the causality of mechanisms to structure the sequential nature of the events.
 %
-Furthermore, our classification system was tested 
+Furthermore, our classification system was tested in a broad visual dataset, with 17 participants that tested the classification and gave feedback.
 
 
-%
-Our characterisation of the mechanisms differs from the more common approach of treating them as `causes' \cite{Alg22, Bec16, Boe17, Her18, Sch12}.
+
+We discuss the mechanisms from the bicycle dynamics theory, different from common approach of treating them as `causes' \cite{Alg22, Bec16, Boe17, Her18, Sch12}.
 %
 Only `tyre friction' and `collision forces' are explicitly discussed in the literature as crash factors or causes.
 %
@@ -1486,8 +1484,6 @@ Similarly, limiting the information to a description that does not fit into the 
 %%
 
 
-% \subsection{Crash motion}
-%
 Since the most prominent characteristic of a crash is the motion, the ways of crashing are named after them, and the hypothesised mechanisms come as an additional description for the event.
 %
 In general, we recommend labeling crashes in a descriptive way, following a reverse order from Figure \ref{fig: flowchart}.
@@ -1512,16 +1508,14 @@ However, the fall type presented by Gildea as `skid-out' is in our framework exp
 %%
 
 
-% \subsection{Questionnaire}
-%
 The questionnaire, designed to evaluate the scope of this study, revealed a high level of agreement regarding detected pre-crash manoeuvres, nature of the perturbation crash mechanisms, and motions.
 %
 However, the overall performance of the mechanisms was rather low.
 %
 To the authors' knowledge, this is the first attempt to objectively and mechanistically classification of bicycle crashes.
-%
+%%
 
-%
+
 From the feedback, we understood the ambiguity of technical concepts when assessed from simple visual information, such as low-quality videos.
 %
 Therefore, this is the first framework that takes into account the experience of users outside of the research team.
@@ -1565,35 +1559,6 @@ This assessment may be right, however, it neglects the underlying physics of the
 
 
 
-% Integrate these things here
-% %
-% Although the research on bicycle and motorcycle dynamics has been extensive in the last 50 years, there are still major gaps to fill in the crash analysis field.
-% %
-% Some concepts have been a matter of research interest for single-track vehicle dynamics, but not specifically for the crash analysis field.
-% %
-% The concepts that we expect to play a major role but are not in-depth investigated and linked to crashes are:
-% %
-% \begin{description}
-%     \item [Rider factors:] intend to explain the interplay between the factors of the bicycle and the rider's response.
-%     %
-%     Through these factors, the rider understands their own state, senses the environment, and the state of the bicycle.
-%     %
-%     How this closed control loop control works in critical scenarios is a missing piece in the puzzle of understanding single-cyclist crashes.
-    
-%     \item [Signal:] how a perturbation creates a crash mechanism.
-%     %
-%     For example, unstable oscillatory modes of the bicycle, such as wobble, act as a periodic signal with a frequency between 5 to 10 [Hz] \cite{Lot21}, which goes beyond the human control capability \cite{Van02b}.
-    
-%     \item [Location:] details where the crash mechanism occurs, also exposing which crash motion is more prone to occur.
-%     %
-%     For instance, a failure in the tyre friction mechanism at the rear wheel, in the lateral direction, will create high chances of observing a high-side crash.
-%     %
-%     However, we found a gap in the complete understanding of the relation between the location and direction of the mechanisms and the outcome of the event.
-% \end{description}
-
-
-
-
 \subsection{Limitations and future work}
 %
 In our work, we find four main limitations.
@@ -1630,13 +1595,6 @@ We expect to evolve and improve the classification based on feedback from users,
 The final goal of such a framework is to contribute to the development of safety systems that are aware of the real causes of bicycle crashes.
 %%
 
-% \section*{Acknowledgement}
-% %
-% Funding: This project has been made possible in part by grant number 2022-252796 from the Chan Zuckerberg Initiative DAF, an advised fund of Silicon Valley Community Foundation.
-
-% \section*{Declaration of generative AI and AI-assisted technologies in the writing process}
-
-% During the preparation of this work the authors used Grammarly in order to revise the writing in the text. After using this tool/service, the authors reviewed and edited the content as needed and takes full responsibility for the content of the published article.
 
 \section*{CRediT}
 
