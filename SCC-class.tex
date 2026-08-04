@@ -1444,142 +1444,131 @@ Although the classification is still evolving, our results show a major progress
 %%
 
 
-Our classification system improves objectivity on the classification of single-cyclist crashes as we developed it based on the bicycle dynamics theory, and contrasted its causality with the known descriptors.
+Our classification framework aims to improve the objectivity of single-cyclist crash classification by distinguishing the connection between crash causality and underlying physics.
 %
-Unlike other classification systems, we combine the causality of mechanisms to structure the sequential nature of the events.
+By explicitly representing these mechanisms, the proposed framework supports a causal and mechanistic interpretation of single-cyclist crashes.
 %
-Furthermore, our classification system was tested in a broad visual dataset, with 17 participants that tested the classification and gave feedback.
-
-
-
-We discuss the mechanisms from the bicycle dynamics theory, different from common approach of treating them as `causes' \cite{Alg22, Bec16, Boe17, Her18, Sch12}.
+As shown in Table \ref{tab: mechanism relation}, numerous individual classifications in the current literature are spanned by different combinations of our mechanics-based classes.
 %
-Only `tyre friction' and `collision forces' are explicitly discussed in the literature as crash factors or causes.
-%
-Contrasting our work with \cite{Sch12}, whose categories are not tightly related to the underlying physics, which enables us to .
-%
-In general, their categories were attributed to specific events, showing the effects of infrastructure failures.
-%
-Whereas our classification explains crash events in terms of individual mechanisms in a causal chain.
-%%
-
-
-We expect that our crash classification system will provide a more objective assessment of the mechanics behind a large variety of crashes.
-%
-As demonstrated in Table \ref{tab: mechanism relation}, where numerous individual classifications in the current literature are spanned by different combinations of our mechanics-based classes.
-%
-Although the abstract characterisation of the crash mechanism can be challenging for the non-dynamicist user, it allows for independent assessment of the causes and the underlying physics explanation of the phenomena.
-%
-For this reason,.
+Although the abstract characterisation of the crash mechanism can be challenging for the non-dynamicist user, it allows for independent assessment of the causes.
 %
 Meanwhile, discrete and more technical crash mechanisms provide the foundation to understand what causes the crash and are measurable characteristics in the case of experimental testing.
 %%
 
 
-Unlike previous classifications, our system avoids ambiguous and non-unique categories like `loss of control', `other', or `unknown' as crash mechanisms.
+Unlike other classification systems, we sequentially relate events rather than assigning each crash to a single category.
 %
-Based on the crash model from \cite{Ful05}, describing a crash mechanism as `loss of control' becomes redundant, since all single-cyclist crashes occur due to loss of control.
+This sequential structure allows different combinations of mechanisms and causes to be represented while maintaining a consistent classification procedure. %
 %
-Similarly, limiting the information to a description that does not fit into the proposed fields creates space for misinterpretation.
+As shown in Table \ref{tab: mechanism relation}, several descriptors used in the state of the art can be related to combinations of the mechanistic classes proposed here.
+%
+This provides a common structure for describing a broad range of crash events without requiring each event to fit into a single, mutually exclusive category.
 %%
 
 
-Since the most prominent characteristic of a crash is the motion, the ways of crashing are named after them, and the hypothesised mechanisms come as an additional description for the event.
+This approach differs from existing classifications that primarily group crashes according to external circumstances, observed events, or broad descriptions of rider behaviour.
 %
-In general, we recommend labeling crashes in a descriptive way, following a reverse order from Figure \ref{fig: flowchart}.
+For example, the categories proposed by Schepers \citep{Sch12} are useful for identifying factors associated with the event, but they are not directly structured around the underlying crash physics.
 %
-Thus, the general structure would look like: \textit{`motion'} due to \textit{`mechanism-root cause'}, as a result of \textit{`excitation'} while \textit{`manoeuvre'}.
+Consequently, some events may be difficult to assign uniquely when the observed circumstances do not correspond clearly to the available categories.
 %
-In this way, most low-speed crashes will be a tip-over, due to balance control issues.
+The edge cases presented in Figures \ref{fig: example 1}--\ref{fig: example 4} illustrate this limitation.
 %
-Similarly, cornering crashes are mainly low-side crashes, due to tyre friction issues, where the root cause will be commonly detailed.
-%
-For instance, case 1 would be called \textit{`low-side crash due to rear wheel lock, as a result of rider brake over actuation while turning to the right'} (Figure \ref{fig: lowside}).
+In these examples, the proposed framework can describe the observed motion and its hypothesised mechanism even when the event cannot be confidently attributed to infrastructure, cyclist behaviour, or bicycle failure.
 %%
 
 
-To assess the ability of our classification system we compare our work with Gildea et al \cite{Gil21a}.
+The proposed framework also differs from classifications that include terms such as `loss of control', `other', or `unknown' as crash descriptors.
 %
-Gildea includes the fall type in his classification, which we assess as crash motion.
+Based on the crash model proposed by \cite{Ful05}, `loss of control' is a general characteristic of single-cyclist crashes and therefore provides limited information about the physical process that produced the crash.
 %
-In agreement to Gildea's classification, we include the pitch-over and roll-over motions.
+Similarly, the category `other' does not identify a mechanism and may allow substantially different events to be grouped together.
 %
-However, the fall type presented by Gildea as `skid-out' is in our framework explained as a tyre-friction crash mechanism.
+The present framework instead seeks to identify the specific mechanism involved in the loss of control.
+%
+Although some mechanisms or causal relationships may remain unknown when the available evidence is insufficient, this uncertainty can be represented explicitly without treating `unknown' as a crash mechanism.
 %%
 
 
-The questionnaire, designed to evaluate the scope of this study, revealed a high level of agreement regarding detected pre-crash manoeuvres, nature of the perturbation crash mechanisms, and motions.
+The separation between crash motion and mechanism also provides a consistent way to name and describe crash events.
 %
-However, the overall performance of the mechanisms was rather low.
+Since the crash motion is generally the most directly observable characteristic, we recommend describing the event using the motion followed by the causal sequence represented by the framework.
 %
-To the authors' knowledge, this is the first attempt to objectively and mechanistically classification of bicycle crashes.
+The general structure can be expressed as \textit{`motion' due to `mechanism--root cause', as a result of `excitation' while `manoeuvre'}.
+%
+For example, case 1 can be described as a \textit{`low-side crash due to rear-wheel lock, as a result of rider brake over-actuation while turning to the right'} (Figure \ref{fig: lowside}).
+%
+This structure preserves the descriptive information about the event while linking it to a hypothesised physical explanation.
 %%
 
 
-From the feedback, we understood the ambiguity of technical concepts when assessed from simple visual information, such as low-quality videos.
+The distinction between motion and mechanism also clarifies the relationship between the proposed framework and the classification of Gildea et al. \citep{Gil21a}.
 %
-Therefore, this is the first framework that takes into account the experience of users outside of the research team.
+The fall types included by Gildea are treated here as crash motions.
 %
-We expect the classification to evolve as it gets used in complete crash studies.
+Accordingly, the proposed framework includes pitch-over and roll-over motions.
+%
+In contrast, the `skid-out' category is represented as a tyre-friction mechanism because it describes the physical process that leads to the subsequent crash motion.
+%
+This distinction enables similar observed events to be compared while retaining information about their potentially different underlying mechanisms.
 %%
 
 
-\subsection{Edge cases for classification}
+Furthermore, our classification was tested by requesting participants to classify single-cyclist crashes based on video footage.
 %
-To show examples of the working of our classification, we chose four videos that could be challenging to classify with existing classifications.
+Our work is the first one that includes this level of feedback from potential users.
 %
-For Figure \ref{fig: example 1}, it is expected that under Gildea's classification, this crash would be classified as a skid-out crash.
+This preliminary step helped to clarify ambiguous concepts, and improved the key areas of the work.
 %
-Example 2 (Figure \ref{fig: example 2}) is challenging for Schepers' classification since the road looks in good condition and free of any lubricant interfaces.
-%
-Therefore, it can not be attributed to the infrastructure.
-%
-We did not observe the rider at low speed, with moving baggage, or performing inadequate behaviour, therefore, it is also not a cyclist related crash.
-%
-Similarly, the failure mechanism does not show any correlation with bicycle malfunctions.
-%
-Therefore, under Schepers' classification, this case would be category 4: Other.
+The classification should therefore be regarded as an evolving framework whose terminology and implementation can be refined through its application to larger and more diverse crash datasets.
 %%
-
-
-Concerning example 3 (Figure \ref{fig: example 3}), there is no evident infrastructure failure.
-%
-The pedal motion could be attributed to the bicycle if we could ensure that the pedal used any type of mechanical lock.
-%
-However, since the only available information is the video, it does not seem appropriate to classify it as a bicycle failure mechanism.
-%
-Therefore, it is not a perfect fit for category 3 in Schepers' classification.
-%%
-
-
-At last, example 4 (Figure \ref{fig: example 4}) would be classified as category 2-c-i in Schepers' classification, i.e. loss of control due to abrupt steering manoeuvres.
-%
-This assessment may be right, however, it neglects the underlying physics of the tyre that cause such behaviour, reducing the event to just a human error.
-%%
-
 
 
 \subsection{Limitations and future work}
 %
-In our work, we find four main limitations.
+This study has three main limitations. 
 %
-First, the classification is not simple, requiring previous knowledge about dynamics to completely understand it.
+First, although the proposed classification aims to provide a simpler and less ambiguous structure for describing single-cyclist crashes, it has undergone a limited number of development and evaluation iterations.
 %
-Second, we included inter-classes that are still unknown and may be needed to fully classify a crash from a bicycle dynamics and human control perspective.
+Further testing and contrast with experimental data may reveal overlap or redundancies on the developed mechanisms.
 %
-Third, the data used to test the classification is limited to low-quality videos.
-%
-Fourth, the survey size and demographics of the respondents.
+Additional iterations are therefore required to refine the categories and establish whether the classification provides a sufficiently complete representation of single-cyclist crashes.
 %%
 
 
-For future work, we encourage increasing the survey size, along with more diverse data to test and evolve the classification.
+Second, the understanding of crash mechanisms and motion requires a basic knowledge of bicycle dynamics.
 %
-Additionally, focusing research into answering the unknowns of the inter-classes will fill the gaps shown here.
+Concepts such as tyre slip and slip angle may not be interpreted consistently by users without relevant technical knowledge.
 %
-Finally, as a result of the usage, we expect that the concepts and the background can be simplified in order to lower the requirements for their implementation.
+Consequently, disagreement between respondents may reflect differences in their familiarity with bicycle dynamics rather than ambiguity in the classification itself.
+%
+This distinction is important because the intended users include bicycle-safety and design specialists, policy makers, and engineers, rather than the general public.
+%
+Future iterations should therefore evaluate which are the key areas to clarify 
+define the minimum bicycle-dynamics knowledge required to apply the framework and assess its consistency among users with relevant technical backgrounds. 
+%
+This would help determine whether the observed disagreement results from limitations of the classification or from differences in users' prior knowledge.
 %%
 
+
+Third, the evaluation was based on low-quality video data, which limited the information available for identifying crash mechanisms and root causes. 
+%
+However, the effect of video quality on the classification remains unclear. 
+%
+If consistent classification requires high-resolution footage or observations that are too fine-grained to be obtained from typical crash videos, the practical applicability of the framework to real-world crash analysis may be limited. 
+%
+For example, if identifying a mechanism requires observing detailed tyre behaviour that is not visible in commonly available footage, the corresponding category may need to be redefined, simplified, or supported by additional measurements. 
+%%
+
+
+Future work should therefore identify the minimum observations required for each classification step and determine whether these observations can be obtained reliably from typical crash data.
+%%
+The classification should be tested using different sources of information, including higher-quality videos, experimental measurements, and instrumented bicycle data. 
+%
+These studies can bridge the visual observations with the experimental data and additional measurements.
+%
+Therefore, future developments may improve both the accessibility and the consistency of the classification while preserving its causal and mechanics-based structure.
+%%
 
 
 \section{Conclusion}
