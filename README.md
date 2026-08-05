@@ -5,10 +5,10 @@ Add here all commentaries that do not fit on the .tex document
 ## To-Do
 
 - [ ] Update bike-dof v0103 file
-- [ ] Root causes as part of the external perturbations
+- [x] Root causes as part of the external perturbations
 - [ ] Add figure per mechanism?
-- [ ] Change known mechanisms to crash descriptors
-- [ ] Change running to heading in straight running
+- [x] Change known mechanisms to crash descriptors
+- [x] Change running to heading in straight running
 - [ ] Add figure slip angle, under/over steering
 - [x] Change citation style
 - [x] Reorganise methods-results

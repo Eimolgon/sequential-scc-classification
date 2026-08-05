@@ -248,8 +248,7 @@ Our exclusion criteria were:
     \item Articles about vehicular crashes different than bicycles or motorcycles.
     \item Articles that do not present the classification employed.
 \end{itemize}
-
-
+%
 Regarding the literature about bicycle dynamics, it is based on textbooks that cover the main areas of single-track vehicle dynamics.
 %
 Among all of these texts, we encounter an overlap of the topics discussed in the next sections, namely, common modelling assumptions, lateral stability, longitudinal and lateral motion, rider control, and tyre dynamics.
@@ -313,10 +312,10 @@ There was no requisite about the knowledge background.
 %
 The refinement of the classification consisted in arranging the main concepts according to a chain of causality.
 %
-Additionally, we revised the definitions, and added open-field sub-classes.
+Additionally, we revised the definitions, and added open-field answers to detail specific causes and factors.
 %
 At last, we included examples of challenging-to-classify cases to demonstrate the application our new sequential classification system.
-
+%%
 
 \section{Results} \label{sec: classification}
 %
@@ -332,28 +331,28 @@ Therefore, we develop the terminology used throughout our work based on the conc
     %
     Bicycles and motorcycles are examples of these, and share the main characteristics as dynamical systems, which makes them similar for studies~\cite{Lim06}.
     %
-    In its analytical study, both are usually assumed as four-body wheeled vehicles, with roll, pitch, yaw, steer, and wheel rotation as angular degrees of freedom, plus the spatial position.
+    In its analytical study, both are usually assumed as four-body wheeled vehicles, with roll, pitch, yaw, steer, and wheel rotation as angular degrees of freedom, plus the spatial position (see Figure~\ref{fig: dof}).
     %
     Both vehicles experience similar crash configurations~\cite{Haw13, Ken22, Llo16}, including tyre skidding, inability to control the system through the steering, excessive pitch rotation, among others, discussed later in this paper.
     %
-    The main differences are the mass, the working speed range, and the main power source.
+    The main differences are the mass and the working speed range, both as a result of the main power source.
     %%
     
 
     \item [Rider:] a human operator who senses and can control themselves, and other subsystems, a bicycle, for instance, within a range of actuation and control due to strength and reaction time limitations.
     
 
-    \item [Bicycle:] a two-wheeled human-powered single-track vehicle, which is controlled by the rider through the pedals, handlebar, and brakes as the control interfaces.
+    \item [Bicycle:] a two-wheeled human-powered single-track vehicle, which is controlled by the rider through the phisycal interfaces, such as pedals, handlebar, and brakes as the control interfaces.
     %
     According to the European regulations, pedal cycles with pedal assistance of less than or equal to 250 [W], and that cut off before 25 [km/h] are considered bicycles and not motorcycles~\cite{Eur13}.
     %
-    It is studied as a system on its own, composed of wheels, front and rear frames, pedals, saddle, handlebars, and brakes.
+    The bicycle is studied as a system on its own, composed of wheels, front and rear frames, pedals, saddle, handlebars, and brakes.
     %%
     
 
     \item [Rider-Bicycle System:] the closed loop of a controlled bicycle~\cite{Hor95}.
     %
-    The bicycle and the rider are coupled together through the physical interfaces, primarily pedals, saddle, and handlebars.
+    The bicycle and the rider are coupled together through the physical interfaces, as explained above.
     %
     Thus, the rider controls the lateral balance of the bicycle mainly through handlebars steering, and also with the contribution of hips, pedals, and legs.
     %
@@ -379,7 +378,7 @@ Therefore, we develop the terminology used throughout our work based on the conc
     %%
     
 
-    \item [Skidding:] unlike slip, skidding is relative motion that exceeds the grip limits of the tyre, causing the tyre to slide.
+    \item [Skidding:] unlike slip, skidding is relative motion that exceeds the grip limits of the tyre, causing it to slide.
     %
     We adopt the term `skidding' as it is specifically used in the field of vehicle-dynamics to describe the loss of control due to achieving the maximum lateral force that the tyre can handle \cite{Kar13}.
     %%
@@ -440,7 +439,7 @@ Of these factors, the rider has direct control of the travelling speed, achievin
 %
 However, a major difference between car drivers and bicycle riders is that the latter has an extra task: maintaining lateral balance.
 %
-While car drivers can reduce task demand by decreasing speed, for bicycle riders, decreasing the speed can increase stabilisation requirements, and therefore, increasing task demand \cite{Koo11, Sch13, Vla15}.
+While car drivers can reduce task demand by decreasing speed, for bicycle riders, decreasing the speed can increase stabilisation requirements, and therefore, increasing task demand~\cite{Koo11, Sch13, Vla15}.
 %
 In general, the theory shows an almost constant gap between driver capability and changing task demands.
 %%
@@ -450,7 +449,7 @@ When task demands surpass a rider's capability, a critical scenario becomes a lo
 %
 \cite{Gil23a} characterises the level of loss of control as minor, substantial, and complete.
 %
-Minor is when the wheel gets caught on a track, loses grip, or even the system experiences a disturbance but the rider is able to recover and continue their motion.
+Minor is when, for example, the wheel gets caught on a track, loses grip, or even the system experiences a disturbance but the rider is able to recover and continue their motion.
 %
 Substantial considers when the rider requires to stop or dismount the bicycle to regain balance.
 %
@@ -458,7 +457,7 @@ Finally, complete loss of control is when the result is the cyclist falling from
 %%
 
 
-When the critical scenario becomes a complete loss of control, it leads to a crash as defined in Section \ref{subsec: terminology}.
+When the critical scenario becomes a complete loss of control, it leads to a crash as defined in Section~\ref{subsec: terminology}.
 %
 In order to understand and mitigate crashes, it becomes vital to analyse bicycle crash dynamics.
 %
@@ -466,7 +465,7 @@ Crash dynamics is the study of the forces, energy transfer, and motion during th
 %
 It encompasses the analysis of how the vehicle and its occupant respond to impacts, considering factors like speed, mass, and direction.
 %
-The analysis of crash dynamics is typically divided into three distinct phases: pre-crash, crash, and post-crash motion \cite{Par01}.
+The analysis of crash dynamics is typically divided into three distinct phases: pre-crash, crash, and post-crash motion~\cite{Par01}.
 %%
 
 
@@ -482,7 +481,7 @@ The crash phase is composed of the uncontrolled motions as a result of the crash
 %
 Then, the post-crash is typically brief and not well-defined in single-cyclist crashes, due to the inherent instability of the bicycle, it will tend to rest immediately after the crash itself.
 %
-Therefore, post-crash is defined by the moment the bicycle contacts the ground with components other than the wheels \cite{Llo16}.
+Therefore, post-crash is defined by the moment the bicycle contacts the ground with components other than the wheels~\cite{Llo16}.
 %%
 
 
@@ -507,7 +506,7 @@ Currently, studies on single-cyclist crashes are based on the available data, wh
 %
 Within these studies, \cite{Sch12} present a classification by reviewing the existent description of single-cyclist crashes, along with the basic concepts to understand bicycle dynamics.
 %
-Then, they divide the three components needed for a crash: rider, bicycle, environment, and includes the category `other', analogous to the analysis for car crashes made by \cite{Fel76}.
+Then, they divide the three components needed for a crash: rider, bicycle, environment, and includes the category `other', analogous to the analysis for car crashes made by~\cite{Fel76}.
 %
 They revise the known crash circumstances and factors, such as age, amount of bicycle usage, road surface, type of bicycle, speed, among others.
 %
@@ -523,7 +522,7 @@ It concludes that single-cyclist crashes can be categorized according to direct 
 %
 To identify events where a crash occurs, they develop a hierarchy based on their definition of stages in a crash: riding state, collision, ground hit and tipping over.
 %
-All of them have sub-states, which combined result in 60 possible events, where 38 are categorised as crashes.
+All of them have sub-states, combining them results in 60 possible events, from which 38 are categorised as crashes.
 %
 Interestingly, the last layer of this method distinguishes between nose over (pitch-over), tip over (roll-over), and upright bicycle.
 %
@@ -531,7 +530,7 @@ Nevertheless, this classification does not provide a detailed description of the
 %%
 
 
-To analyse the kinematics of the cyclist during falls,  Gildea et al.~\cite{Gil21a} developed a four-layer approach using direct causes and fall types, which allows to analyse the kinematic form of cyclist's falls.
+To analyse the kinematics of the cyclist during falls, Gildea et al.~\cite{Gil21} developed a four-layer approach using direct causes and fall types, which allows to analyse the kinematic form of cyclist's falls.
 %
 In their work, direct causes are based on~\cite{Sch12} and~\cite{Utr20}, which create the crash scenario depending if it is composed on one or two direct causes.
 %
@@ -1468,7 +1467,7 @@ This provides a common structure for describing a broad range of crash events wi
 
 This approach differs from existing classifications that primarily group crashes according to external circumstances, observed events, or broad descriptions of rider behaviour.
 %
-For example, the categories proposed by Schepers \citep{Sch12} are useful for identifying factors associated with the event, but they are not directly structured around the underlying crash physics.
+For example, the categories proposed by Schepers \cite{Sch12} are useful for identifying factors associated with the event, but they are not directly structured around the underlying crash physics.
 %
 Consequently, some events may be difficult to assign uniquely when the observed circumstances do not correspond clearly to the available categories.
 %
@@ -1496,13 +1495,13 @@ Since the crash motion is generally the most directly observable characteristic,
 %
 The general structure can be expressed as \textit{`motion' due to `mechanism--root cause', as a result of `excitation' while `manoeuvre'}.
 %
-For example, case 1 can be described as a \textit{`low-side crash due to rear-wheel lock, as a result of rider brake over-actuation while turning to the right'} (Figure \ref{fig: lowside}).
+For example, case 1 can be described as a \textit{`low-side crash due to rear-wheel lock, as a result of rider brake over-actuation while turning to the right'} (Figure~\ref{fig: lowside}).
 %
 This structure preserves the descriptive information about the event while linking it to a hypothesised physical explanation.
 %%
 
 
-The distinction between motion and mechanism also clarifies the relationship between the proposed framework and the classification of Gildea et al. \citep{Gil21a}.
+The distinction between motion and mechanism also clarifies the relationship between the proposed framework and the classification of Gildea et al. \cite{Gil21}.
 %
 The fall types included by Gildea are treated here as crash motions.
 %
@@ -1573,13 +1572,15 @@ Therefore, future developments may improve both the accessibility and the consis
 
 \section{Conclusion}
 % 
-In this work, we presented the first single-cyclist crash classification to be tested on a broad audience, demonstrating good reliability.
+In this work, we presented a new sequential classification framework for single-cyclist crashes based on bicycle dynamics, which provides a mechanistic and causal understanding of crashes. 
+%
+We tested it on a broad audience through potential users applying it to video footage, demonstrating good reliability.
 %
 The concepts employed are well-supported by bicycle dynamics, showing how the state of the art requires such a foundation.
 %
-Our classification aims to be employed as a standard base for classifying single-cyclist crashes, being flexible to different research fields.
+Our classification aims to accurately classify crashes that occur in commuting and recreational conditions around the world, being this a main pilar to improve cycling safety.
 %
-We expect to evolve and improve the classification based on feedback from users, but it has already proven to be useful to classify existing single-cyclist crash material.
+We expect to evolve and improve the classification based on feedback from users, but it has already proven to be useful to classify existing single-cyclist crash material from openly available video footage.
 %
 The final goal of such a framework is to contribute to the development of safety systems that are aware of the real causes of bicycle crashes.
 %%
