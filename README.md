@@ -9,7 +9,7 @@ Add here all commentaries that do not fit on the .tex document
 - [ ] Add figure per mechanism?
 - [x] Change known mechanisms to crash descriptors
 - [x] Change running to heading in straight running
-- [ ] Add figure slip angle, under/over steering
+- [x] Add figure slip angle, under/over steering
 - [x] Change citation style
 - [x] Reorganise methods-results
 - [x] Solve short comments Jason
