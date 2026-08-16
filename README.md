@@ -4,16 +4,15 @@ Add here all commentaries that do not fit on the .tex document
 
 ## To-Do
 
-- [ ] Update bike-dof v0103 file
+- [ ] Change figure names for submission to the format `fig_x_label.png`
+- [x] Update bike-dof v0103 file
 - [x] Root causes as part of the external perturbations
-- [ ] Add figure per mechanism?
 - [x] Change known mechanisms to crash descriptors
 - [x] Change running to heading in straight running
 - [x] Add figure slip angle, under/over steering
 - [x] Change citation style
 - [x] Reorganise methods-results
 - [x] Solve short comments Jason
-- [ ] Dig into the data from the questionnaire to support the low match on  crash mechanisms.
 - [x] Update high-side crash
 - [x] Update low-side crash
 - [x] Update figure (bike dof) for rear wheel rotation \omega_r
@@ -25,9 +24,7 @@ Add here all commentaries that do not fit on the .tex document
 - [x] Check Dictionary 2025 referencee
 - [x] Check Union 2023 reference
 - [x] Move Figure 2 closer to the text (bicycle dynamics).
-- [ ] Change figure names for submission to the format `fig_x_label.png`
-- [x] Expand terminology to description
-- [ ] Include notes and definitions from Leveson
+- [x] Expand terminology to descriptionn
 - [x] New figure 2 (cornering forces) > Change Cossalter's one
 - [x] Modify Figure 1. Change arrows.
 - [x] Update terms
