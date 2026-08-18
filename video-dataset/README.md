@@ -12,13 +12,18 @@ Files
 
 - [dataset.csv](dataset.csv): File containing the dataset.
 - [download-dataset.py](download-dataset.py): Script to download the videos.
+- [single-download.py](single-download.py): Downloads a single video.
 
 Use
 ---
 
 Clone the repository
+
 > git clone
 > cd
+
+If you want to download multiple videos, you will need to extract your cookies
+from your browser in order to pass the age restictions.
 
 
 To-Do
