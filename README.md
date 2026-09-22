@@ -7,4 +7,4 @@ This paper is aimed to be submitted to Accident Analysis and Prevention.
 [Alfred Schouten](a.c.schouten@tudelft.nl) 
 [Jason K. Moore](j.k.moore@tudelft.nl)
 
-![image](Images/fig_09_flowchart.png)
+![image](Images/fig_9_flowchart.png)
