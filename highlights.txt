@@ -1,12 +1,12 @@
 Highlights
 ----------
 
-- Bicycle crash studies often overlook the knowledge from motorcycle dynamics related to crashes.
+- Bicycle crash studies often overlook knowledge from motorcycle dynamics.
 
-- Proposing a standard bicycle crash classification is challenging due to the different objectives of the research works.
+- Standard bicycle crash classification is challenging due to different research aims.
 
-- The understanding of bicycle crash dynamics is still in its early steps.
+- The understanding of bicycle crash dynamics is still in its early stages.
 
-- The present work provides a concise base for the commonly used terms in the bicycle safety field.
+- This work provides a concise basis for commonly used bicycle safety concepts.
 
-- This work provides a theoretical background on dynamics for the discussed crash mechanisms.
+- This work provides a theoretical dynamics basis for crash mechanisms.

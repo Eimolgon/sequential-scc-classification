@@ -751,56 +751,10 @@ The distribution of these forces depends on the bicycle mass distribution and th
 %
 The cornering behaviour can be described by the relationship between the steering input and the lateral acceleration.
 %
-% In a \textit{neutral steer} bicycle, the steering input follows the geometric steering requirement as the lateral acceleration increases.
-% %
-% In \textit{understeer}, the front tyre develops a larger slip angle relative to the rear tyre.
-% %
-% Consequently, an increasing steering input is required to maintain the same turning path as lateral acceleration increases.
-% %
-% In \textit{oversteer}, the rear tyre develops a larger slip angle relative to the front tyre. 
-% %
-% Consequently, less steering input is required to maintain the same turning path as lateral acceleration increases.
-% %
-% Thus, the cornering behaviour determines how the bicycle responds as the lateral forces increase and the tyres approach their saturation limits. 
-% %
-% This can, consequently, influence the crash configuration when the tyre-ground interface can no longer provide the required forces.
-% %
-% Note that this is a simplified explanation that fulfils the requirements to understand the underlying mechanism and crash motion; for further reading, refer to the textbooks \cite{Cos06, Gui14, Kar13, Lot21}.
-%%
-
-
-
-Consequently, when the saturation limit is reached, the tyre starts to exhibit a phenomenon called `skidding'. 
+Where the angle can be either smaller or larger than the desired and the actual trajectory, creating different control scenarios.
 %
-The extent of loss of grip will lead to different crash configurations (see Section~\ref{subsec: crash motion}), which is particularly interesting to understand single-cyclist crashes.
-%
-Therefore, cornering and tyre dynamics are fundamental to understand bicycle crashes.
-%
-% \begin{figure}[h!]
-%     \centering
-%     \begin{subfigure}[t]{0.32\textwidth}
-%         \centering
-%         \includegraphics[width=0.9\linewidth]{Images/fig_5a_neutral.png}
-%         \caption{Neutral.}
-%         \label{fig: neutral}
-%     \end{subfigure}
-%     \hfill
-%     \begin{subfigure}[t]{0.32\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{Images/fig_5b_understeering.png}
-%         \caption{Understeering.}
-%         \label{fig: understeering}
-%     \end{subfigure}
-%     \hfill
-%     \begin{subfigure}[t]{0.32\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{Images/fig_5c_oversteering.png}
-%         \caption{Oversteering.}
-%         \label{fig: oversteering}
-%     \end{subfigure}
-%     \caption{Basic representation of cornering dynamics behaviour.}
-%     \label{fig: cornering behaviour}
-% \end{figure}
+Therefore, cornering and tyre dynamics are fundamental to understanding bicycle crashes.
+
 
 
 In summary, bicycles can be self-stable but require human control to maintain balance particularly at lower speeds.
@@ -855,10 +809,8 @@ Here, we refer to them as rider, bicycle, and external, respectively, which desc
     This encompasses the stability of the bicycle and mechanical malfunctions.
 
     \item [Rider:] the perturbations on the system that come from the control actions of the rider to the bicycle.
-    % Mention the unknown rider factors
     
     \item [External:] any perturbation, force, change of state, or influence exerted by the environment on the system.
-    % Talk about location here as the unkown factor
 \end{description}
 
 \paragraph{Crash conditions} % Check this > Limited to the nature of the perturbation
@@ -872,7 +824,7 @@ For example, icy roads, aerodynamic perturbations, bicycle instabilities, and ri
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.75\linewidth]{Images/fig_6_bikeRiderSystem.png}
+    \includegraphics[width=0.75\linewidth]{Images/fig_5_bikeRiderSystem.png}
     \caption{Rider, bicycle, and external interfaces and interactions. Adapted from \cite{Lot21}.}
     \label{fig: rider-bike diagram}
 \end{figure}
@@ -1009,24 +961,23 @@ Consequently, we describe the crash motions as:
     %
     Moreover, this is one of the easily detected cases through inertial measurement sensing as shown by Schnee et al.~\cite{Sch21}.
     %%
-
 \end{description}
 %
 \begin{figure}[h!]
     \centering
     \begin{subfigure}[t]{0.32\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{Images/fig_7a_straightPitch.png}
+        \includegraphics[width=0.9\textwidth]{Images/fig_6a_straightPitch.png}
         \caption{Straight heading.}
     \end{subfigure}%
     \begin{subfigure}[t]{0.32\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{Images/fig_7b_brakingPitch.png}
+        \includegraphics[width=0.9\textwidth]{Images/fig_6b_brakingPitch.png}
         \caption{The rider activates the brakes, and the deceleration generates load transfer that exceeds rear normal force. Therefore, the bicycle exhibits a rotational motion starting around the contact point of the front wheel.}
     \end{subfigure}
     \begin{subfigure}[t]{0.32\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{Images/fig_7c_fallPitch.png}
+        \includegraphics[width=0.9\textwidth]{Images/fig_6c_fallPitch.png}
         \caption{The rotational inertia of the system produces a complete rotation of the system, which ejects the rider above the handlebar.}
     \end{subfigure}
     \caption{Front pitch-over crash sequence.}
@@ -1037,19 +988,19 @@ Consequently, we describe the crash motions as:
     \centering
     \begin{subfigure}[t]{.45\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{Images/fig_89_turn.png}
+        \includegraphics[width=\linewidth]{Images/fig_78_turn.png}
         \caption{First stage: vehicle turning to the right with both wheels following the desired path.}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{.45\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{Images/fig_8b_skidLowSide.png}
+        \includegraphics[width=\linewidth]{Images/fig_7b_skidLowSide.png}
         \caption{Second stage: the front wheel loses grip, wheel dynamics change and modify the trajectory, turning less than the rider input.}
     \end{subfigure}
     \vspace{1em}
     \begin{subfigure}[t]{.45\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{Images/fig_8c_fallLowSide.png}
+        \includegraphics[width=\linewidth]{Images/fig_7c_fallLowSide.png}
         \caption{Third stage: cornering dynamics fail and the bicycle follows an uncontrollable roll rate.}
     \end{subfigure}
     \caption{Low-side crash schematic sequence. Note that this particular example occurs due to understeering, but it can also occur due to uncontrolled oversteering behaviour.}
@@ -1059,13 +1010,13 @@ Consequently, we describe the crash motions as:
 \begin{figure}[h!]
     \begin{subfigure}[t]{.45\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{Images/fig_89_turn.png}
+        \includegraphics[width=\linewidth]{Images/fig_78_turn.png}
         \caption{First stage: vehicle turning to the right with both wheels following the desired path.}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{.45\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{Images/fig_9b_skidHighSide.png}
+        \includegraphics[width=\linewidth]{Images/fig_8b_skidHighSide.png}
         \caption{Second stage: the rear wheel loses grip and the vehicle turns more than rider input. External excitation with tyre friction as failure mechanism, which may be caused by any grip-reducing agent on the road surface.}
     \end{subfigure}
 
@@ -1073,13 +1024,13 @@ Consequently, we describe the crash motions as:
 
     \begin{subfigure}[t]{.45\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{Images/fig_9c_lockHighSide.png}
+        \includegraphics[width=\linewidth]{Images/fig_8c_lockHighSide.png}
         \caption{Third stage: the rear wheel suddenly recovers grip, creating a large rotational acceleration that ejects the rider.}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{.45\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{Images/fig_9d_fallHighSide.png}
+        \includegraphics[width=\linewidth]{Images/fig_8d_fallHighSide.png}
         \caption{Fourth stage: the rider is ejected from the vehicle and the control is completely lost.}
     \end{subfigure}
     \caption{High-side crash schematic sequence.}
@@ -1095,7 +1046,7 @@ The diagram exposes a sequence of features of an event that can lead to a crash.
 %
 The way of understanding it goes: the rider is executing a manoeuvre prior to the crash, then, the system experiences an perturbation that leads to a critical situation.
 %
-Depending on the crash conditions (see Section \ref{subsec: nop}, the task demand increases above the boundary of the rider's capability, which causes one or more crash mechanisms to arise.
+Depending on the crash conditions (see Section \ref{subsec: nop}), the task demand increases above the boundary of the rider's capability, which causes one or more crash mechanisms to arise.
 %
 The crash mechanism occurs to different extents of recovery possibilities for the rider.
 %
@@ -1113,7 +1064,7 @@ Similarly, if the loss of control is substantial, but the rider is capable of co
 \begin{landscape}
   \begin{figure}[p]
     \centering
-    \includegraphics[width=1.5\textwidth, height=\textheight, keepaspectratio]{Images/fig_10_flowchart.png}
+    \includegraphics[width=1.5\textwidth, height=\textheight, keepaspectratio]{Images/fig_9_flowchart.png}
     \caption{Sequential single-cyclist crash classification. 
     %
     The boxes represent already identified and known concepts in the field. 
@@ -1186,19 +1137,19 @@ As the front wheel creates a large deceleration, the rider is ejected over the h
     \centering
     \begin{subfigure}[t]{0.32\textwidth}
         \centering
-        \includegraphics[width=0.95\linewidth]{Images/examples/fig_11a_turn.png}
+        \includegraphics[width=0.95\linewidth]{Images/examples/fig_10a_turn.png}
         \caption{Rider plans the turn.}
     \end{subfigure}%
     \hfill
     \begin{subfigure}[t]{0.32\textwidth}
         \centering
-        \includegraphics[width=0.95\linewidth]{Images/examples/fig_11b_skid.png}
+        \includegraphics[width=0.95\linewidth]{Images/examples/fig_10b_skid.png}
         \caption{Rear wheel loses grip and starts skidding.}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.32\textwidth}
         \centering
-        \includegraphics[width=0.95\linewidth]{Images/examples/fig_11c_crash.png}
+        \includegraphics[width=0.95\linewidth]{Images/examples/fig_10c_crash.png}
         \caption{Low-side crash. Rider turning to the right, fall occurs to the right.}
     \end{subfigure}
     \caption{Case 1, rear wheel skid low-side. Images extracted from~\cite{The21}.}
@@ -1209,19 +1160,19 @@ As the front wheel creates a large deceleration, the rider is ejected over the h
     \centering
     \begin{subfigure}[t]{0.32\textwidth}
         \centering
-        \includegraphics[width=0.95\linewidth]{Images/examples/fig_12a_turn.png}
+        \includegraphics[width=0.95\linewidth]{Images/examples/fig_11a_turn.png}
         \caption{Rider plans the turn.}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.32\textwidth}
         \centering
-        \includegraphics[width=0.95\linewidth]{Images/examples/fig_12b_skid.png}
+        \includegraphics[width=0.95\linewidth]{Images/examples/fig_11b_skid.png}
         \caption{Rear wheel loses grip. It is possible to see an oversteering behaviour since the bicycle is turning more than the curvature radius.}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.32\textwidth}
         \centering
-        \includegraphics[width=0.95\linewidth]{Images/examples/fig_12c_crash.png}
+        \includegraphics[width=0.95\linewidth]{Images/examples/fig_11c_crash.png}
         \caption{Rear wheel suddenly regains grip, creating a high-side motion. The rider turns to the left, the fall occurs to the right.}
     \end{subfigure}
     \caption{Case 2, high-side. Images extracted from \cite{Tel19}.}
@@ -1232,32 +1183,32 @@ As the front wheel creates a large deceleration, the rider is ejected over the h
     \centering
     \begin{subfigure}[t]{0.19\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{Images/examples/fig_13a_ride.png}
+        \includegraphics[width=0.9\linewidth]{Images/examples/fig_12a_ride.png}
         \caption{Rider going in straight line.}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.19\textwidth} 
         \centering
-        \includegraphics[width=0.9\linewidth]{Images/examples/fig_13b_slip.png}
+        \includegraphics[width=0.9\linewidth]{Images/examples/fig_12b_slip.png}
         \caption{The left foot of the rider slips out of the pedal.}
         \label{subfig: footslip}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.19\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{Images/examples/fig_13c_loss.png}
+        \includegraphics[width=0.9\linewidth]{Images/examples/fig_12c_loss.png}
         \caption{The rider loses control of the bicycle.}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.19\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{Images/examples/fig_13d_fall.png}
+        \includegraphics[width=0.9\linewidth]{Images/examples/fig_12d_fall.png}
         \caption{The system enters in an uncontrolled roll, with not enough available grip due to load transfer.}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.19\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{Images/examples/fig_13e_crash.png}
+        \includegraphics[width=0.9\linewidth]{Images/examples/fig_12e_crash.png}
         \caption{The rider falls in a low-side motion.}
     \end{subfigure}
     \caption{Case 3, rider bicycle joint failure. Images extracted from \cite{Gcn23}.}
@@ -1268,31 +1219,31 @@ As the front wheel creates a large deceleration, the rider is ejected over the h
     \centering
     \begin{subfigure}[t]{0.19\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{Images/examples/fig_14a_turn.png}
+        \includegraphics[width=0.9\linewidth]{Images/examples/fig_13a_turn.png}
         \caption{The rider is turning right in a planned manoeuvre.}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.19\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{Images/examples/fig_14b_lock.png}
+        \includegraphics[width=0.9\linewidth]{Images/examples/fig_13b_lock.png}
         \caption{The rider turns left to correct the trajectory, but the front tyre loses grip.}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.19\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{Images/examples/fig_14c_deceleration.png}
+        \includegraphics[width=0.9\linewidth]{Images/examples/fig_13c_deceleration.png}
         \caption{As a sudden deceleration occurs, the rider goes over the handlebar.}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.19\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{Images/examples/fig_14d_pitchOver.png}
+        \includegraphics[width=0.9\linewidth]{Images/examples/fig_13d_pitchOver.png}
         \caption{A pitch-over motion occurs due to large longitudinal load transfer.}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.19\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{Images/examples/fig_14e_crash.png}
+        \includegraphics[width=0.9\linewidth]{Images/examples/fig_13e_crash.png}
         \caption{The rider falls.}
     \end{subfigure}
     \caption{Case 4, longitudinal load transfer. Images extracted from \cite{Wir22}.}
@@ -1301,7 +1252,7 @@ As the front wheel creates a large deceleration, the rider is ejected over the h
 %
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{Images/fig_15_exampleFlowchart.png}
+    \includegraphics[width=\linewidth]{Images/fig_14_exampleFlowchart.png}
     \caption{Sequence classification of example cases using the flowchart.}
     \label{fig: example-flowchart}
 \end{figure}

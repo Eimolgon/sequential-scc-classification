@@ -1,6 +1,6 @@
 # A new single-cyclist crash classification framework
 
-This paper is going to be submitted to Accident Analysis and Prevention.
+This paper is aimed to be submitted to Accident Analysis and Prevention.
 
 [Benjamín E. González T.](mailto:b.gonzaleztoleod@tudelft.nl) 
 [Ajay Seth](a.seth@tudelft.nl) 
